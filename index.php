@@ -15,8 +15,8 @@ get_header();
 $jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true );
 ?>
 <div id="content" class="page-content blog  <?php echo esc_attr($jot_shop_sidebar); ?>">
+            <div class="container">
             <div class="content-wrap" >
-                <div class="container">
                     <div class="main-area">
                         <div id="primary" class="primary-content-area">
                             <div class="primary-content-wrap">
@@ -53,7 +53,7 @@ $jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true );
                             }
                  ?><!-- end sidebar-primary  sidebar-content-area-->
                     </div> <!-- end main-area -->
-                </div>
-            </div> <!-- end content-wrap -->
+                </div> <!-- end content-wrap -->
+            </div> 
         </div> <!-- end content page-content -->
 <?php get_footer();?>

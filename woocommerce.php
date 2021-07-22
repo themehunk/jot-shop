@@ -20,8 +20,8 @@ if((is_product() && $singleproduct_layout ==true)){
 }
 ?>
 <div id="content" class="page-content  <?php echo esc_attr($layout); ?>">
-        	<div class="content-wrap" >
-        		<div class="container">
+        	<div class="container">
+          <div class="content-wrap" >
         			<div class="main-area">
         				<div id="primary" class="primary-content-area">
         					<div class="primary-content-wrap">
@@ -50,7 +50,7 @@ if((is_product() && $singleproduct_layout ==true)){
                   } 
                  ?><!-- end sidebar-primary  sidebar-content-area-->
         			</div> <!-- end main-area -->
-        		</div>
-        	</div> <!-- end content-wrap -->
+        		</div>  <!-- end content-wrap -->
+        	</div> 
         </div> <!-- end content page-content -->
 <?php get_footer();?>

@@ -9,7 +9,7 @@ get_header();?>
    <div id="content">
     <div class="container">
           <div class="content-wrap">
-           
+           <?php get_template_part( 'front-page/front-topslider'); ?>
               <div class="main-area">
                 <?php get_sidebar('primary'); ?>
                 <div id="primary" class="primary-content-area">

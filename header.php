@@ -30,7 +30,7 @@
 
 	<?php 
 $classes = '';
-if(is_page_template( 'page-contact.php' ) || is_page_template( 'page-faq.php' ) ||is_page_template( 'page-aboutus.php' )||is_page_template( 'frontpage.php' )){
+if(is_page_template( 'page-contact.php' ) || is_page_template( 'page-faq.php' ) ||is_page_template( 'page-aboutus.php' )){
 $classes = 'no-sidebar';
 }
 elseif(!is_404() && !is_search() && is_page()){ 
