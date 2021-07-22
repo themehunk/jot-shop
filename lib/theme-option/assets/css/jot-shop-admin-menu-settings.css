@@ -1,0 +1,390 @@
+/**
+ * CSS code for all open mart Extensions admin screens
+ *
+ * @package open mart
+ * @since 1.0.0
+ */
+
+.jot-shop-clear:before, .jot-shop-clear:after {
+	content: " ";
+	display: table;
+}
+.jot-shop-clear:after {
+	clear: both;
+}
+
+/**
+ * Error Message
+ */
+#message {
+    display: block;
+    margin-left: 0;
+}
+/*Home Page Settings */
+
+li#accordion-section-section_default_home h3 {
+    background: #a5a7ad !important;
+    color: #fff !important;
+}
+.button-large.flactvate{ display:none; }
+
+.flactvate-activating{
+  color:#f7a205;
+  margin-top: 15px;
+  display:none;
+  float: right;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #1b619d;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+    float: right;
+    margin-top: 10px;
+    display: none;
+      margin-left:5px;
+
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/**
+ * CSS code for all open mart Extensions admin screens
+ *
+ * @package open mart
+ * @since 1.2.4
+ */
+/**
+ * open mart Welcome Page
+ */
+.appearance_page_big-store #wpcontent{
+ 	padding: 0;
+ }
+.jot-shop-menu-page-wrapper.wrap{
+	margin: 0;
+}
+.jot-shop-menu-page-wrapper .jot-shop-normal-cusror a{
+	text-decoration: none;
+    font-weight:500;
+    color: #fff;
+    font-size: 14px
+}
+.jot-shop-theme-page-header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.jot-shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.jot-shop-container .jot-shop-normal-cusror.hndle{
+    cursor: initial;
+}
+.jot-shop-container .postbox .hndle {
+    background: #f9f9f9;
+    border-bottom: 1px solid #f1f1f1;
+
+}
+/* Top Right Links. */
+.jot-shop-top-links {
+    flex: auto;
+    text-align: right;
+}
+
+.jot-shop-top-links ul{
+    margin: 0;
+}
+.jot-shop-top-links ul li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.jot-shop-quick-setting-section span.dashicons {
+    margin: 1px 3px 0 10px;
+}
+.jot-shop-container div.notice,
+.jot-shop-container div.updated,
+.jot-shop-container div.error{
+	margin-top: 0;
+}
+.jot-shop-container #poststuff h2{
+	padding: 10px 12px;
+}
+.jot-shop-container img.jot-shop-starter-sites-img {
+    width: 100%;
+}
+.jot-shop-flex{
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.jot-shop-theme-title {
+    align-content: flex-start;
+    text-align: left;
+}
+.jot-shop-theme-title .jot-shop-theme-version {
+    border-radius: 3px;
+    font-size:  0.5em;
+    font-weight:  400;
+    padding: 2px 7px;
+}
+.jot-shop-theme-title a {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:100%;
+    margin: 0 auto;
+}
+.jot-shop-theme-title a,
+.jot-shop-theme-title span{
+	font-size: 1.5rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+.jot-shop-theme-icon{
+	width: 60px;
+    vertical-align: bottom;
+}
+.jot-shop-theme-title,.ast-top-links{
+width:100%;
+margin-bottom:10px;
+}
+.jot-shop-top-links {
+    flex: auto;
+    text-align: center;
+}
+.jot-shop-theme-page-header {
+    background-color: #FFDD4D;
+}
+.jot-shop-theme-title a:focus,.jot-shop-theme-title a:focus-within{
+outline:0;
+box-shadow:none;
+}
+.jot-shop-menu-page-wrapper .jot-shop-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        align-items: flex-start;
+}
+.jot-shop-menu-page-wrapper .jot-shop-content .postbox{
+  width:48%;
+} 
+.jot-shop-container .rcp{
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+.jot-shop-container .rcp img{
+    float: left;
+    display: block;
+    margin-right:10px;
+    width:17%;
+}
+.jot-shop-container .rcp p{
+margin: 10px 0px;
+}
+.jot-shop-container .rcp:last-child{
+border-bottom:0px;
+}
+/**
+ * open mart Quick Settings
+ */
+ .jot-shop-quick-setting-section ul,
+ .jot-shop-addon-list-section ul{
+ 	margin: 0;
+ }
+.jot-shop-quick-setting-section li{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 0;
+}
+.jot-shop-addon-list-section li{
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 0;
+}
+.jot-shop-quick-setting-section li{
+    padding: 10px 0;
+}
+.jot-shop-quick-setting-section li:nth-child(odd){
+    width: 50%;
+}
+.jot-shop-quick-setting-section li:nth-child(even){
+    width: 50%;
+}
+.jot-shop-quick-setting-section li a{
+	margin: 5px;
+	display: inline-block;
+}
+.jot-shop-addon-list-section li{
+	padding: 10px 15px;
+}
+.jot-shop-quick-setting-section a.ast-quick-setting-title{
+	flex: auto;
+}
+
+.jot-shop-addon-list-section .jot-shop-addon-list li {
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 10px 15px; 
+}
+
+.jot-shop-addon-list-section .jot-shop-addon-list li:nth-child(even){
+    background-color: #fbfbfb;
+}
+
+.jot-shop-addon-link-wrapper{
+	-js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    flex: auto;
+}
+.jot-shop-addon-link-wrapper a{
+    line-height: 1.6;
+}
+.jot-shop-addon-link-wrapper a:nth-child(even){
+    margin: 0 10px;
+}
+
+/**
+ * jot-shop Welcome screen sidebar
+ */
+.ast-sidebar .hndle .dashicons{
+	margin: 0 5px 0 0;
+}
+
+@media (max-width: 544px){
+	.jot-shop-quick-setting-section li{
+		width: 100%;
+	}
+}
+
+/**
+ * jot-shop Custom Notice for static position
+ */
+.brv-notice{
+    margin-bottom: 20px;
+}
+.ast-notice.ast-notice-error{
+    border-left-color: #dc3232;
+}
+
+.ast-notice{
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+    padding: 1px 12px;
+}
+.ast-notice p{
+    margin: 0.5em 0;
+    padding: 2px;
+}
+
+.jot-shop-menu-page-wrapper .jot-shop-content .postbox.jot-shop-recommend-plugins,
+.jot-shop-menu-page-wrapper .jot-shop-content .postbox.jot-shop-useful-plugins{
+width:100%;
+}
+.jot-shop-container .postbox.jot-shop-recommend-plugins .rcp,
+.jot-shop-container .postbox.jot-shop-useful-plugins .rcp {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.jot-shop-container .postbox.jot-shop-recommend-plugins .rcp:nth-child(3n+3),
+.jot-shop-container .postbox.jot-shop-useful-plugins .rcp:nth-child(3n+3){
+
+margin-right:0;
+}
+
+.jot-shop-container .postbox.jot-shop-recommend-plugins .rcp:nth-child(4),
+.jot-shop-container .postbox.jot-shop-useful-plugins .rcp:nth-child(4){
+clear:both;
+}
+.jot-shop-container .postbox .inside {
+    margin: 15px 0!important;
+    position: relative;
+}
+.jot-shop-container .postbox.jot-shop-recommend-plugins .rcp:nth-child(7),
+.jot-shop-container .postbox.jot-shop-useful-plugins .rcp:nth-child(7){
+clear:both;
+}
+.jot-shop-useful-plugins .inside{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tabs-list a{
+    display: inline-block;
+    padding: 20px;
+    color: #111;
+    text-decoration: none;
+    font-size: 15px;
+}
+.tabs-list a{
+    background: #eaeaea;
+}
+.tabs-list a.active{
+    background: #FFF;
+}
