@@ -29,50 +29,30 @@
 
 
 	<?php 
-$classes = '';
-if(is_page_template( 'page-contact.php' ) || is_page_template( 'page-faq.php' ) ||is_page_template( 'page-aboutus.php' )){
-$classes = 'no-sidebar';
-}
-elseif(!is_404() && !is_search() && is_page()){ 
+$page_post_meta_sidebar = '';
+if(!is_404() && !is_search() && is_page()){ 
 	$page_post_meta_sidebar = get_post_meta(get_the_ID(), 'jot_shop_sidebar_dyn', true );
-		if ($page_post_meta_sidebar=='on'){
-			$classes = 'no-sidebar';
-		}
+		
 }elseif(is_single() && (class_exists( 'WooCommerce' ) && !is_product())){
 	    $page_post_meta_sidebar = get_post_meta(get_the_ID(), 'jot_shop_sidebar_dyn', true );
 	    if(get_theme_mod('jot_shop_blog_single_sidebar_disable')==true){
-	     	$classes = 'no-sidebar';
-	      }else{
-	      	if ($page_post_meta_sidebar=='on'){
-			$classes = 'no-sidebar';
-		     }
-	     }
-	     
+	     	$page_post_meta_sidebar = 'no-sidebar';
+	  }	     
 }elseif(jot_shop_is_blog()){
 	    $blog_page_id = get_option( 'page_for_posts' );
         $page_post_meta_sidebar = get_post_meta( $blog_page_id, 'jot_shop_sidebar_dyn', true );
-		if ($page_post_meta_sidebar=='on'){
-			$classes = 'no-sidebar';
-		}
 }elseif(class_exists( 'WooCommerce' ) && is_shop()){
 	    $shop_page_id = get_option( 'woocommerce_shop_page_id' );
         $page_post_meta_sidebar = get_post_meta( $shop_page_id, 'jot_shop_sidebar_dyn', true );
-		if ($page_post_meta_sidebar=='on'){
-			$classes = 'no-sidebar';
-		}
 }elseif(class_exists( 'WooCommerce' ) && is_product()){
 	    $page_post_meta_sidebar = get_post_meta(get_the_ID(), 'jot_shop_sidebar_dyn', true );
 	    if(get_theme_mod('jot_shop_product_single_sidebar_disable')==true){
-	     	$classes = 'no-sidebar';
-	      }else{
-		 if ($page_post_meta_sidebar=='on'){
-			$classes = 'no-sidebar';
-		 }
-	}
+	     	$page_post_meta_sidebar = 'no-sidebar';
+	      }
 }
 ?>
 <?php do_action('jot_shop_site_preloader'); ?>
-<div id="page" class="jotshop-site <?php echo esc_attr($classes);?>">
+<div id="page" class="jotshop-site <?php echo esc_attr($page_post_meta_sidebar);?>">
 	<header>
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'jot-shop' ); ?></a>
 		<?php do_action( 'jot_shop_sticky_header' ); ?> 

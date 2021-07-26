@@ -321,7 +321,6 @@ function jot_shop_load_dashicons_front_end(){
  */
 require_once trailingslashit(JOT_SHOP_THEME_DIR).'inc/init.php';
 //require_once trailingslashit(JOT_SHOP_THEME_DIR).'jot-shop-pro/jot-shop-pro.php';
-require_once trailingslashit(JOT_SHOP_THEME_DIR).'import/themehunk.php';
 
 
 
