@@ -67,9 +67,3 @@ get_template_part('customizer-front/heading/class-heading');
 get_template_part('customizer-front/typography/class-jot-shop-control-typography');
 
 
-//typography
-get_template_part('jot-shop-admin/typography/class-jot-shop-enqueue-script');
-get_template_part('jot-shop-admin/typography/class-jot-shop-filesystem');
-get_template_part('jot-shop-admin/typography/class-jot-shop-font-families');
-//get_template_part('customizer-front/typography/class-jot-shop-control-typography');
-get_template_part('jot-shop-admin/typography/jot-shop-typography-style');

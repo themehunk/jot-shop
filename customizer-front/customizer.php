@@ -8,7 +8,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 function jot_shop_pro_front_customize_register( $wp_customize ){
 $wp_customize->register_section_type( 'Heading' );
-$wp_customize->register_section_type( 'Jot_Shop_Control_Typography' );
 //Front Page Settings
 require JOT_SHOP_THEME_DIR . '/customizer-front/section/frontpage/top-slider.php';
 require JOT_SHOP_THEME_DIR . '/customizer-front/section/frontpage/brand.php';

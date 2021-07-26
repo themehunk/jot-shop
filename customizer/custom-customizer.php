@@ -138,16 +138,20 @@ function jot_shop_sanitize_number( $val, $setting ){
             return is_numeric( $val ) ? $val : 0;
         }
 // radio
-function jot_shop_sanitize_radio( $input, $setting ){
+function jot_shop_sanitize_radio( $input='', $setting='' ){
 
   // Ensure input is a slug.
   $input = sanitize_key( $input );
 
   // Get list of choices from the control associated with the setting.
-  $choices = $setting->manager->get_control( $setting->id )->choices;
-
+  $choices = $setting->manager->get_control( $setting->id );
+  if (is_object($choices)) {
+    $choices = $choices->choices;
+  }
   // If the input is a valid key, return it; otherwise, return the default.
-  return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+  if (is_array($choices)) {
+    return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+  }
 }
 // MULTI-CHOICE
 function open_sanitize_multi_choices( $input, $setting ){

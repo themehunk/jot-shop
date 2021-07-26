@@ -345,7 +345,6 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 
 function jot_shop_pro_scripts(){
 //wp_add_inline_style('jot-shop-style', jot_shop_pro_custom_style());
-wp_add_inline_style('jot-shop-style', jot_shop_typography_style());
 wp_enqueue_script( 'thunk-jot-shop-woo-js', JOT_SHOP_THEME_URI.'inc/woo-extra/js/woo.js', array( 'jquery' ), '1.0.0',true );
  $localize = array(
                 'ajaxUrl'  => admin_url( 'admin-ajax.php' ),

@@ -4,7 +4,7 @@ Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, fou
 Requires at least: WordPress 5.3
 Requires PHP: 5.3
 Tested up to: 5.8
-Stable tag: 1.6.0
+Stable tag: 1.0.0
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -25,19 +25,13 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 = 1.0.0 =
-* Released: 
+* Released:
+* Typography removed 
 
 Initial release
 
 == Upgrade Notice ==
-= 1.5.8=
-* Product image cropping added.
-* Shop page list view style improved.
-* category heading slider layout 3 issue resolved.
-* Z-index issue with product image zoom at single page.
-* Selected wishlist icon color issue resolved.
-* Improved category page list view.
-* Sidebar issue in tag pages.
+
 
 == Resources ==
  

@@ -2845,7 +2845,7 @@ vertical-align: middle;
     /*background:#3F2803;*/
     /*color: #fff;*/
     font-family: 'Lato-Regular';
-    color: #000;
+    color: #FFF;
     /*padding: 0px 0px 0px 0px;
     margin: 0px 10px 0px 0px;
     -webkit-border-radius: 4px;
@@ -3038,15 +3038,12 @@ position: relative;
     color: #000000;
     background: #EEEEEE;
     font-size: 18px;
+    line-height: 25px;
     font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 20px;
+    letter-spacing: 1px;
     padding: 15px;
     margin: 0;
     position: relative;
-    text-transform: uppercase;
-
-
 }
 .widget-title{padding-bottom: 15px;}
 .widget.woocommerce .woocommerce-widget-layered-nav-list__item a,
