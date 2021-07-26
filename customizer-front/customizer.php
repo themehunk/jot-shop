@@ -49,9 +49,9 @@ require JOT_SHOP_THEME_DIR . '/customizer-front/section/color/pan-color.php';
 require JOT_SHOP_THEME_DIR . '/customizer-front/section/color/woocommerce-color.php';
 require JOT_SHOP_THEME_DIR . '/customizer-front/section/color/footer-color.php';
 // typo
-require JOT_SHOP_THEME_DIR . '/customizer-front/section/typo/base-typography.php';
-require JOT_SHOP_THEME_DIR . '/customizer-front/section/typo/content-typography.php';
-require JOT_SHOP_THEME_DIR . '/customizer-front/section/typo/title-typography.php';
+// require JOT_SHOP_THEME_DIR . '/customizer-front/section/typo/base-typography.php';
+// require JOT_SHOP_THEME_DIR . '/customizer-front/section/typo/content-typography.php';
+// require JOT_SHOP_THEME_DIR . '/customizer-front/section/typo/title-typography.php';
 // important doc link
 /*************************/
 /*Typography Panel*/
