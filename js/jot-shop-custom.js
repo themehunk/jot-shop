@@ -13,6 +13,7 @@
              $this.sticky_sidebar_hide_toggle();
              $this.sticky_product_search();
              $this.pre_loader();
+             $this.sideabr_toggle();
              $this.CatMenu();
              $this.DefaultMenu();
              $this.MainMenu();
@@ -112,6 +113,19 @@
                                 }
 
           },
+
+          sideabr_toggle: function () {
+                    $(document).ready(function() {
+                          if ($(window).width() <= 990) { 
+                          $('.sidebar-content-area .widget-title').click(function() {
+                          $(this).next().slideToggle();
+                          $(this).toggleClass("open");
+                          });
+                         
+                          }     
+                });
+                         
+        },
         
         CatMenu : function () {
                  // category toggle

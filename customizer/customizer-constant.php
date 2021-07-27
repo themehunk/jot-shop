@@ -39,6 +39,3 @@ define('BIG_STORE_BANNER_IMG_LAYOUT_5', JOT_SHOP_THEME_URI. "customizer/images/b
 define('BIG_STORE_CUSTOM_LAYOUT_1', JOT_SHOP_THEME_URI. "customizer/images/widget-footer-1.png");
 define('BIG_STORE_CUSTOM_LAYOUT_2', JOT_SHOP_THEME_URI. "customizer/images/widget-footer-2.png");
 define('BIG_STORE_CUSTOM_LAYOUT_3', JOT_SHOP_THEME_URI. "customizer/images/widget-footer-3.png");
-
-
-define('BIG_STORE_ABOUT_IMG_1', JOT_SHOP_THEME_URI. "image/founder.png");

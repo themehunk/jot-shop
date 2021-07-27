@@ -21,7 +21,7 @@ get_template_part( 'lib/breadcrumbs/breadcrumbs');
 //page-post-meta
 get_template_part( 'lib/page-meta-box/jotshop-page-meta-box');
 //custom-style
-//get_template_part( 'inc/jot-shop-custom-style');
+get_template_part( 'inc/jot-shop-custom-style');
 
 //pagination
 //get_template_part( 'inc/pagination/pagination');

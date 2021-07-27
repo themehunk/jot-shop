@@ -16,25 +16,18 @@ get_header();?>
                   <div class="primary-content-wrap">
                         <?php
                           $section = array(
-                                                    
-                                                    'categoryslider',
-                                                    'productslider',
-                                                    'tabproduct',
-                                                    'productlist',
-                                                    'tabproductlist',
-                                                    'banner',
-                                                    'ribbon',
-                                                    'brand',
-                                                    'highlight',
-                                                    'featureproduct',
-                                                    'customone',
-                                                    'customtwo',
-                                                    'customthree',
-                                                    'customfour',
-                                                    );
-                          foreach($section as $value):
-                            get_template_part( 'front-page/front-'.$value);
-                          endforeach;
+                                                    'front-tabproduct',
+                                                    'front-categoryslider',
+                                                    'front-tabproductimage',
+                                                    'front-ribbon',
+                                                    'front-productslider',
+                                                    'front-banner',
+                                                    'front-productlist',
+                                                    'front-highlight',                                             
+    );
+    foreach($section as $value):
+    get_template_part( 'front-page/'.$value);
+    endforeach;
                         ?>
                   </div>  <!-- end primary-content-wrap-->
                 </div>  <!-- end primary primary-content-area-->

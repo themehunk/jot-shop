@@ -902,6 +902,7 @@ flex: inherit;
   display: flex;
   position: relative;
   padding: 0 15px;
+  flex-wrap: wrap;
 }
 .sidebar-content-area{
     width: 21%;
@@ -2838,35 +2839,16 @@ display: table-cell;
 vertical-align: middle;
 }
 .header-icon a{
-    /*height: 38px;
-    width: 38px;
-    line-height: 38px;*/
-    /*background: #1f4c94;*/
-    /*background:#3F2803;*/
-    /*color: #fff;*/
     font-family: 'Lato-Regular';
     color: #FFF;
-    /*padding: 0px 0px 0px 0px;
-    margin: 0px 10px 0px 0px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;*/
-    padding-right: 1.5rem;
-
- 
+    padding-right: 20px;
 }
-
-
 /*header-icon*/
-
 .header-icon a:hover{
   color:#ff6f00;
 }
-
 .header-icon a i{
-/*font-size:15px;*/
-font-size: 1.2rem;
-
+  font-size: 1.2rem;
 }
 
 .cart-contents .count-item {
@@ -2875,12 +2857,11 @@ font-size: 1.2rem;
     height: 23px;
     width: 23px;
     line-height: 23px;
-    /*background: #ffd200;*/
     border-radius: 50%;
     text-align: center;
     top: -22px;
     font-size: 11px;
-   color: #fff!important;
+    color: #fff;
     z-index: 9999;
     background:#ff6f00;
 }
@@ -2891,23 +2872,15 @@ font-size: 1.2rem;
     border-radius: 4px;
 }
 .thunk-icon .cart-icon a.cart-contents {
-    /*color: #fff;*/
     position: relative;
-    /*padding: 0 0px 0 38px;*/
     padding: 0 0px 0 15px;
     display: flex;
-    color: #000;
-    /*margin-left: 35px;*/
+    align-items: center;
+    color: #111;
 }
-
-
 .thunk-icon .cart-icon a.cart-contents:hover{
 	color:#ff6f00;
 }
-
-
-
-
 .thunk-icon .cart-icon a.cart-contents i {
     /*height: 38px;
     width: 38px;
@@ -3649,33 +3622,28 @@ color:#1c1d1e;
 /****************************/
 .thunk-woo-product-list{
 list-style:none;
-/*text-align:left;*/
 text-align: center;
 }
 .thunk-woo-product-list .woocommerce-loop-product__title{
-line-height:24px;
-font-weight: 400;
+    line-height:24px;
+    font-weight: 400;
     font-size: 16px;
-    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
 }
 
 .woocommerce .thunk-woo-product-list .price{
-text-decoration:none;
-font-family: 'Lato-regular';
-margin-bottom: 5px!important;
+    text-decoration:none;
+    font-family: 'Lato-regular';
 }
 .woocommerce .thunk-product-content .star-rating{
-font-size:12px;
-float: none;
-margin-bottom:5px;
-width: 5.7em;
-/*color: #1f4c94;*/
-/*for center */
-  color:#80b435;
-  margin: 0 auto;
+    font-size:12px;
+    float: none;
+    margin-bottom:5px;
+    width: 5.7em;
+    color:#80b435;
+    margin: 0 auto;
 }
 
 .thunk-wishlist .yith-wcwl-add-to-wishlist{
@@ -5377,7 +5345,7 @@ padding-top:15px;
     font-family: 'Lato-Bold';
     color: #111;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 	
 }
 
@@ -7672,8 +7640,8 @@ display:none;
 }
 .sticky-header .count-item{
     position: absolute;
-    top: -10px;
-    left: 20px;
+    top: -2px;
+    left: 9px;
     background: #141415;
     color: #fff;
     width: 20px;
@@ -7698,9 +7666,6 @@ position:relative;
     font-size: 10px;
     text-align:center;
 }
-
-
-
 /******************************/
         /*Responsive*/
 /******************************/
@@ -8199,32 +8164,6 @@ position:relative;
   text-align: center;
 }
 /* Servives CSS End*/
-/* Founder CSS Starts*/
-.thunk-founder{
-  background: #fff;
-  background-image: url('image/founder.png');
-  background-size: cover;
-}
-.thunk-founder .thunk-founder-wrapper{
-  padding:80px 0;
-  width: 57%;
-  margin-left: auto;
-  text-align: center;
-}
-.thunk-founder-title{
-  font-size: 24px;
-  line-height:31px;
-
-}
-.thunk-founder-sign{
-  font-style: italic;
-}
-.thunk-founder-description{
-  font-size: 14px;
-  line-height: 25px;
-  margin: 30px 0;
-  color: #9c9c9c;
-}
 /*Testimonial*/
 .testimonial-post{
   background-color: transparent;
@@ -9685,6 +9624,34 @@ background:none!important;
 
 }
 @media screen and (max-width: 767px){
+.primary-content-area,
+.sidebar-content-area{
+  width: 100%;
+}
+.primary-content-area{
+  order: 1;
+}
+.sidebar-content-area{
+  order: 2;
+}
+/*sidebar slide CSS Start  */
+.sidebar-content-area .widget-title+ul,
+.sidebar-content-area .widget-title+div,
+.sidebar-content-area .widget-title+form{
+  display: none;
+  padding: 20px 0;
+}
+.sidebar-content-area .widget-title:after,
+.sidebar-content-area .widget-title:after{
+  position: absolute;
+  font-family: 'fontAwesome';
+  content: "\f107";
+  right: 10px;
+}
+.sidebar-content-area .widget-title.open:after,
+.sidebar-content-area .widget-title.open:after{
+  content: "\f106";
+}
 .thunk-title .title:before, .slider-cat-title a:before{
     line-height:23px;
 }
