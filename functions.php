@@ -320,7 +320,6 @@ function jot_shop_load_dashicons_front_end(){
  * Load init.
  */
 require_once trailingslashit(JOT_SHOP_THEME_DIR).'inc/init.php';
-//require_once trailingslashit(JOT_SHOP_THEME_DIR).'jot-shop-pro/jot-shop-pro.php';
 
 
 
@@ -339,50 +338,3 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 		do_action( 'wp_body_open' );
 	}
 }
-
-//extra function
-
-
-function jot_shop_pro_scripts(){
-//wp_add_inline_style('jot-shop-style', jot_shop_pro_custom_style());
-wp_enqueue_script( 'thunk-jot-shop-woo-js', JOT_SHOP_THEME_URI.'inc/woo-extra/js/woo.js', array( 'jquery' ), '1.0.0',true );
- $localize = array(
-                'ajaxUrl'  => admin_url( 'admin-ajax.php' ),
-                //brand
-                'jot_shop_brand_slider_optn' => get_theme_mod('jot_shop_brand_slider_optn',false),
-                'jot_shop_brand_slider_speed' => get_theme_mod('jot_shop_brand_slider_speed','3000'),
-                //cat-tab-list-filter
-                'jot_shop_single_row_slide_cat_tb_lst' => get_theme_mod('jot_shop_single_row_slide_cat_tb_lst',false),
-                'jot_shop_cat_tb_lst_slider_optn' => get_theme_mod('jot_shop_cat_tb_lst_slider_optn',false),
-                'jot_shop_cat_tb_lst_slider_speed' => get_theme_mod('jot_shop_cat_tb_lst_slider_speed','3000'),
-            );
- wp_localize_script( 'thunk-jot-shop-woo-js', 'jotshop',  $localize );  
- // pagination
-    wp_enqueue_script('jot-shop-pagination', JOT_SHOP_THEME_URI.'inc/woo-extra/js/shop-pagination.js', array( 'jquery' ), '2.0.0', true );
-    wp_localize_script('jot-shop-pagination', 'jotshoppagi', apply_filters( 'open_theme_js_localize',array('ajax_url' => admin_url( 'admin-ajax.php' ))));
-}
- add_action( 'wp_enqueue_scripts', 'jot_shop_pro_scripts' );
-
-function jot_shop_pro_customizer_script_registers(){
-wp_enqueue_script( 'jot_shop_pro_custom_customizer_script', JOT_SHOP_THEME_URI . 'customizer-front/js/customizer.js', array("jquery"), '', true ); 
-wp_enqueue_script( 'jot_shop_customizer_heading', JOT_SHOP_THEME_URI .'customizer-front/heading/js/heading-customizer.js', array("jquery"), '', true );
-
-}
-add_action('customize_controls_enqueue_scripts', 'jot_shop_pro_customizer_script_registers',999);
-     
-
-
-function jot_shop_pro_customizer_style_registers(){
-    wp_enqueue_style('jot_shop_customizer_heading_styles', JOT_SHOP_THEME_URI .'customizer-front/heading/css/heading-style.css');
-}
-add_action('customize_controls_print_styles', 'jot_shop_pro_customizer_style_registers');
-
-/**
- * Used by hook: 'customize_preview_init'
- * 
- * @see add_action('customize_preview_init',$func)
- */
-function jot_shop_pro_customizer_live_preview(){
-wp_enqueue_script( 'jot_shop_pro_live_customizer', JOT_SHOP_THEME_URI .'/customizer-front/js/live-customizer.js', array("jquery"),'', true );  
-}
-add_action('customize_preview_init','jot_shop_pro_customizer_live_preview');

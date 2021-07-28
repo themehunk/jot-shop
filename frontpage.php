@@ -9,25 +9,19 @@ get_header();?>
    <div id="content">
     <div class="container">
           <div class="content-wrap">
-           <?php get_template_part( 'front-page/front-topslider'); ?>
+           <?php 
+           if( shortcode_exists( 'jot-shop' ) ){
+             get_template_part(THEMEHUNK_CUSTOMIZER_PLUGIN_PATH . 'jot-shop/jot-shop-front-page/front-topslider');
+           }
+           get_template_part( 'front-page/front-topslider'); ?>
               <div class="main-area">
                 <?php get_sidebar('primary'); ?>
                 <div id="primary" class="primary-content-area">
                   <div class="primary-content-wrap">
                         <?php
-                          $section = array(
-                                                    'front-tabproduct',
-                                                    'front-categoryslider',
-                                                    'front-tabproductimage',
-                                                    'front-ribbon',
-                                                    'front-productslider',
-                                                    'front-banner',
-                                                    'front-productlist',
-                                                    'front-highlight',                                             
-    );
-    foreach($section as $value):
-    get_template_part( 'front-page/'.$value);
-    endforeach;
+                          if( shortcode_exists( 'jot-shop' ) ){
+                             do_shortcode("[jot-shop section='jot_shop_show_frontpage']");
+                          }
                         ?>
                   </div>  <!-- end primary-content-wrap-->
                 </div>  <!-- end primary primary-content-area-->

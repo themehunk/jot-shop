@@ -222,7 +222,6 @@ if($jot_shop_banner_layout=='bnr-one'){?>
 
 function jot_shop_widget_script_registers(){
 //widget
-wp_enqueue_script( 'big-store_widget_js', JOT_SHOP_THEME_URI .'customizer/js/widget.js', array("jquery"), '', true  );
  wp_enqueue_style( 'wp-color-picker' );
  wp_enqueue_script( 'wp-color-picker');
 }

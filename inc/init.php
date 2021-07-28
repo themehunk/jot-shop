@@ -23,10 +23,6 @@ get_template_part( 'lib/page-meta-box/jotshop-page-meta-box');
 //custom-style
 get_template_part( 'inc/jot-shop-custom-style');
 
-//pagination
-//get_template_part( 'inc/pagination/pagination');
-//get_template_part( 'inc/pagination/infinite-scroll');
-
 // customizer
 get_template_part('customizer/models/class-jot-shop-singleton');
 get_template_part('customizer/models/class-jot-shop-defaults-models');
@@ -53,17 +49,4 @@ get_template_part('customizer/customizer');
 get_template_part( 'inc/woocommerce/woo-core');
 get_template_part( 'inc/woocommerce/woo-function');
 get_template_part('inc/woocommerce/woocommerce-ajax');
-
-//woocommerce extra 
-
-get_template_part( 'inc/woo-extra/jot-shop-woo');
-get_template_part( 'inc/woo-extra/woo-ajax');
-
-
-//customizer-frontpage
-get_template_part('customizer-front/customizer');
-get_template_part('customizer-front/customizer-constant');
-get_template_part('customizer-front/heading/class-heading');
-get_template_part('customizer-front/typography/class-jot-shop-control-typography');
-
 
