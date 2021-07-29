@@ -15,16 +15,16 @@ $wp_customize->add_control(
                     'section'  => 'jot-shop-main-header',
                     'choices'  => array(
                         'mhdrthree' => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_ONE,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_ONE,
                         ),
                         'mhdrdefault'   => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_TWO,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_TWO,
                         ),
                         'mhdrone'   => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_THREE,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_THREE,
                         ),
                         'mhdrtwo' => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_FOUR,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_FOUR,
                         ),
                         
                                      

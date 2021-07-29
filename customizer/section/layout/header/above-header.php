@@ -33,16 +33,16 @@ $wp_customize->add_control(
                     'section'  => 'jot-shop-above-header',
                     'choices'  => array(
                        'abv-none'   => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_NONE,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_NONE,
                         ),
                         'abv-one'   => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_1,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_1,
                         ),
                         'abv-two' => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_2,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_2,
                         ),
                         'abv-three' => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_3,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_3,
                         ),
                     ),
                 )

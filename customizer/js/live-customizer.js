@@ -565,7 +565,7 @@ jot_shop_css( 'jot_shop_abv_content_txt_clr','color', '.top-header .top-header-b
 jot_shop_css( 'jot_shop_abv_content_link_clr','color', '.top-header .top-header-bar a,body.jot-shop-dark .top-header .top-header-bar a');
 jot_shop_css( 'jot_shop_abv_content_link_hvr_clr','color', '.top-header .top-header-bar a:hover,body.jot-shop-dark .top-header .top-header-bar a:hover');
 // main header
-jot_shop_css( 'jot_shop_main_hd_bg_clr','background', '.main-header:before,.sticky-header:before, .search-wrapper:before');
+// jot_shop_css( 'jot_shop_main_hd_bg_clr','background', '.main-header:before,.sticky-header:before, .search-wrapper:before');
 jot_shop_css( 'jot_shop_main_content_txt_clr','color', '.site-description,main-header-col1,.header-support-content,.mhdrthree .site-description p');
 jot_shop_css( 'jot_shop_main_content_link_clr','color', '.mhdrthree .site-title span a,.header-support-content a, .thunk-icon .count-item,.main-header a,.thunk-icon .cart-icon a.cart-contents,.sticky-header .site-title a');
 //Below Header Color Option

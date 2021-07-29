@@ -11,9 +11,9 @@ get_header();?>
           <div class="content-wrap">
            <?php 
            if( shortcode_exists( 'jot-shop' ) ){
-             get_template_part(THEMEHUNK_CUSTOMIZER_PLUGIN_PATH . 'jot-shop/jot-shop-front-page/front-topslider');
+             require_once (THEMEHUNK_CUSTOMIZER_PLUGIN_PATH . 'jot-shop/jot-shop-front-page/front-topslider.php');
            }
-           get_template_part( 'front-page/front-topslider'); ?>
+           ?>
               <div class="main-area">
                 <?php get_sidebar('primary'); ?>
                 <div id="primary" class="primary-content-area">

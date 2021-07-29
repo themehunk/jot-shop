@@ -110,6 +110,10 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                 'name' => esc_html__( 'Woocommerce', 'jot-shop' ),
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
+            'th-variation-swatches' => array(
+                'name' => esc_html__( 'TH Variation Swatches', 'jot-shop' ),
+                'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
+            ), 
             'woo-smart-wishlist' => array(
                  'name' => esc_html__( 'WPC Smart Wishlist for WooCommerce', 'jot-shop' ),
                  'active_filename' => 'woo-smart-wishlist/wpc-smart-wishlist.php',
@@ -281,7 +285,7 @@ function jot_shop_scripts(){
 	}	
 
 	wp_enqueue_style( 'jot-shop-style', get_stylesheet_uri(), array(), JOT_SHOP_THEME_VERSION );
-	// wp_add_inline_style('jot-shop-style', jot_shop_custom_style());
+	wp_add_inline_style('jot-shop-style', jot_shop_custom_style());
 	
     //enqueue js
     wp_enqueue_script("jquery-effects-core",array( 'jquery' ));

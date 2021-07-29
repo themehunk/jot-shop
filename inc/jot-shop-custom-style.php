@@ -102,7 +102,7 @@ $jot_shop_style.="#move-to-top{background:{$jot_shop_move_to_top_bg_clr};color:{
    $jot_shop_ribbon_bg_background_size           = esc_html(get_theme_mod('jot_shop_ribbon_bg_background_size','auto'));
    $jot_shop_ribbon_bg_background_attach         = esc_html(get_theme_mod('jot_shop_ribbon_bg_background_attach','scroll'));
    
-   $jot_shop_style.="section.thunk-ribbon-section{background-image:url($jot_shop_ribbon_bg_img_url);
+   $jot_shop_style.="section.thunk-ribbon-section .content-wrap{background-image:url($jot_shop_ribbon_bg_img_url);
     background-repeat:{$jot_shop_ribbon_bg_background_repeat};
     background-position:{$jot_shop_ribbon_bg_background_position};
     background-size:{$jot_shop_ribbon_bg_background_size};
@@ -125,10 +125,10 @@ $jot_shop_style.="#move-to-top{background:{$jot_shop_move_to_top_bg_clr};color:{
   /**************************/
   //Main Header Color Option
   /**************************/
-   $jot_shop_main_hd_bg_clr = esc_html(get_theme_mod('jot_shop_main_hd_bg_clr','#2457AA'));
+   // $jot_shop_main_hd_bg_clr = esc_html(get_theme_mod('jot_shop_main_hd_bg_clr','#2457AA'));
    $jot_shop_main_content_txt_clr = esc_html(get_theme_mod('jot_shop_main_content_txt_clr','#fff'));
    $jot_shop_main_content_link_clr = esc_html(get_theme_mod('jot_shop_main_content_link_clr','#fff'));
-   $jot_shop_style.=".main-header:before,.sticky-header:before, .search-wrapper:before{background:{$jot_shop_main_hd_bg_clr}}
+   $jot_shop_style.="
     .site-description,main-header-col1,.header-support-content,.mhdrthree .site-description p{color:{$jot_shop_main_content_txt_clr}} .mhdrthree .site-title span a,.header-support-content a, .thunk-icon .count-item,.main-header a,.thunk-icon .cart-icon a.cart-contents,.sticky-header .site-title a{color:{$jot_shop_main_content_link_clr}}";
 
   /**************************/
