@@ -285,7 +285,7 @@ function jot_shop_scripts(){
 	}	
 
 	wp_enqueue_style( 'jot-shop-style', get_stylesheet_uri(), array(), JOT_SHOP_THEME_VERSION );
-	wp_add_inline_style('jot-shop-style', jot_shop_custom_style());
+	// wp_add_inline_style('jot-shop-style', jot_shop_custom_style());
 	
     //enqueue js
     wp_enqueue_script("jquery-effects-core",array( 'jquery' ));

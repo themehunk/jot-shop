@@ -14,7 +14,17 @@ get_header();
         	<div class="container">
           <div class="content-wrap" >
         			<div class="main-area">
-        				  <?php 
+
+                 <div id="primary" class="primary-content-area">
+                  <div class="primary-content-wrap">
+                          <div class="page-head">
+                   <?php jot_shop_get_page_title();?>
+                   <?php jot_shop_breadcrumb_trail();?>
+                    </div>
+                            <?php woocommerce_content();?>  
+                           </div> <!-- end primary-content-wrap-->
+                </div> <!-- end primary primary-content-area-->
+                 <?php 
     if(class_exists( 'WooCommerce' ) && is_shop()){
        $shoppage_id = get_option( 'woocommerce_shop_page_id' );
         if(get_post_meta( $shoppage_id, 'jot_shop_sidebar_dyn', true )!=='no-sidebar'){
@@ -32,16 +42,6 @@ get_header();
                     get_sidebar();
                   } 
                  ?><!-- end sidebar-primary  sidebar-content-area-->
-
-                 <div id="primary" class="primary-content-area">
-                  <div class="primary-content-wrap">
-                          <div class="page-head">
-                   <?php jot_shop_get_page_title();?>
-                   <?php jot_shop_breadcrumb_trail();?>
-                    </div>
-                            <?php woocommerce_content();?>  
-                           </div> <!-- end primary-content-wrap-->
-                </div> <!-- end primary primary-content-area-->
         			</div> <!-- end main-area -->
         		</div>  <!-- end content-wrap -->
         	</div> 

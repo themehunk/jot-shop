@@ -26,16 +26,14 @@
     position: relative;
     margin: 0;
     border: 0px;
-    /*font-size:14px;*/
-    font-size: .9rem;
-     font-family: 'Lato-Bold';
+    font-size:14px;
+     font-family: "Roboto-Regular", sans-serif;
     padding: 12px;
-    /*color: #fff;*/
-    color: #000;
+    color: #111;
 }
  #open-above-menu.jot-shop-menu > li > a{
 font-size: 13px;
-font-family: 'Lato-Bold';
+font-family: "Roboto-regular", sans-serif;
 }
 .jot-shop-menu li a i {
     padding-right: 5px;
@@ -150,8 +148,7 @@ background-color: #2457AA;
     display: block !important;
     width: 25px;
     height: 2px;
-    /*background-color:#fff;*/
-    background-color: #000;
+    background-color:#fff;
     margin:4px;
 }
 .menu-toggle .menu-btn{
@@ -231,14 +228,12 @@ transition: all 0.2s ease-in-out;
     overflow-y: auto;
     font-size: 15px;
     background-color: #fff;
-    
     -webkit-touch-callout: none;
     user-select: none;
     -webkit-overflow-scrolling: touch;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     padding:0;
-    
 }
 
 .mobile-nav-bar.sider.left {
@@ -297,8 +292,8 @@ display: -webkit-inline-box;
     display: block;
 }
 .demo{
-		width:96%;
-		padding:2%;
+        width:96%;
+        padding:2%;
     }
     ul[data-menu-style="vertical"] , ul[data-menu-style="accordion"],
     ul[data-menu-style="vertical"] li ul.sub-menu {
@@ -375,8 +370,7 @@ top:0;
     top: 0;
     height: 100vh;
     z-index: 999999;
-    /*width: 280px;*/
-    width: 325px;
+    width: 280px;
     padding: 2em 1.5em;
     max-width: 100%;
     -webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,.4);
@@ -390,8 +384,6 @@ top:0;
     -webkit-overflow-scrolling: touch;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    background-color: #f7f8f9;
-    
 }
 .sider.left {
     left:-100%;
@@ -407,20 +399,15 @@ top:0;
 .sider.overcenter ul#jot-shop-menu::-webkit-scrollbar,
 .mobile-nav-bar .sider-inner .panel::-webkit-scrollbar {
     width: 5px;
-
 }
 .mobile-nav-bar .sider-inner .panel{
-    /*padding: 15px;*/
-    border: solid 1px #f7f8f9;
-    overflow: hidden;
-    padding: 0px 0 15px 0;
+    padding: 15px;
     
 }
 .mobile-menu-active .sider.left,
 .sticky-mobile-menu-active .sider.left,
 .mobile-bottom-menu-active .sider.left{
     left:0px;
-    
 }
 .mobile-nav-widget{
 position: fixed;
@@ -441,15 +428,14 @@ transition: all 0.2s ease-in-out;
     top: 0;
     height: 100vh;
     z-index: 999999;
-    /*width: 280px;*/
-    width: 325px;
+    width: 280px;
     padding: 3em 1.5em;
     max-width: 100%;
     border-right: 1px solid rgba(0,0,0,.1);
     overflow-x: hidden;
     overflow-y: auto;
     font-size: 15px;
-    /*background-color: #fff;*/
+    background-color: #fff;
     -webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,.4);
     box-shadow: 0 0 12px 0 rgba(0,0,0,.4);
     -webkit-touch-callout: none;
@@ -457,9 +443,6 @@ transition: all 0.2s ease-in-out;
     -webkit-overflow-scrolling: touch;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    background-color: #fff;
-    
-
 }
 .sider.right {
     right:-100%;
@@ -532,7 +515,6 @@ background: rgba(16,18,19,.95);
 .mobile-nav-tabs {
     display: block;
         text-align: center;
-
 }
 .mobile-nav-tabs ul {
     display: -ms-flexbox;
@@ -558,16 +540,6 @@ background: rgba(16,18,19,.95);
 }
  .mobile-nav-tabs li a.active {
     background-color: #fff;
-    border-bottom: solid 2px #000;
-    transition: all 0.5s ease;
-    border-left: solid 1px #f7f8f9;
-    border-right: solid 1px #f7f8f9;
-}
-.mobile-nav-tabs li a.active::before {
-    border-bottom: solid 2px #000;
-    transition: all 0.5s ease;
-}
-
 }
 .mobile-nav-tabs li a{
     background-color:#f4f7f9;
@@ -594,7 +566,6 @@ background: rgba(16,18,19,.95);
     display: inline-block;
     cursor: pointer;
     line-height: 30px;
-
 }
 .menu-close-btn:before {
     -webkit-transform: rotate(45deg);
@@ -626,17 +597,16 @@ background-color:#ffd200;
     display:block;
         background: #111;
             text-align: center;
-            line-height: 40px;
 }
 .sider-inner .panel{
-/*padding:15px;*/
+padding:15px;
 }
 .mobile-menu-active .mobile-nav-bar.sider{
 opacity:1;
 visibility:visible;
 }
 .main-menu,.menu-category-list{
-/*display:none;*/
+display:none;
 }
 
 /*left pan*/
@@ -696,6 +666,7 @@ position: inherit;
 }
 .menu-toggle .menu-btn{
 display:flex;
+align-items: center;
 }
 .menu-toggle .menu-btn span{
 color:#fff;
@@ -748,7 +719,7 @@ width:100%!important;
 .sider.overcenter .sider-inner ul.jot-shop-menu li a{
 font-size:20px;
 color:#fff;
-font-family: 'Lato-Bold';
+font-family: 'Roboto-Bold';
 line-height: initial;
 padding: 10px 0px 10px 0px!important;
 
