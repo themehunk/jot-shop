@@ -230,7 +230,7 @@ if($main_header_layout!=='mhdrtwo'):?>
                        <span class="cat-bot"></span>
                      </span>
 						  	  	<span class="toggle-title">
-                      <?php echo esc_html(get_theme_mod('jot_shop_main_hdr_cat_txt','Category'));?>
+                      <?php echo esc_html(get_theme_mod('jot_shop_main_hdr_cat_txt','All Departments'));?>
                         
                       </span>
 						  	  	<span class="toggle-icon"></span>

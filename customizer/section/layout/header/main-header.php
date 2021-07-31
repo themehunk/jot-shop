@@ -273,7 +273,7 @@ function jot_shop_get_category_id($arr='',$all=true){
      return $cats;
   }
 $wp_customize->add_setting('jot_shop_main_hdr_cat_txt', array(
-        'default' => __('Category','jot-shop'),
+        'default' => __('All Departments','jot-shop'),
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_text',
         'transport'         => 'postMessage',

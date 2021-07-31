@@ -340,15 +340,15 @@ AutoCompleteSearch:function(){
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:5,
+                                           items:4,
                                        }
-                                   }
+                   }
                                 });
                           $('.thunk-product-tab-section #thunk-cat-tab li a:first').addClass('active');
                           $(document).on('click', '.thunk-product-tab-section #thunk-cat-tab li a', function(e){
@@ -388,20 +388,20 @@ AutoCompleteSearch:function(){
                                  autoplayHoverPause: true, // Stops autoplay
                                  
                                  responsive:{
-                                  0:{
+                                       0:{
                                            items:2,
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:5,
+                                           items:4,
                                        }
-                             }
+                   }
                                });
                             $(".thunk-product-tab-section .thunk-loadContainer").css("display", "none");
 
@@ -457,13 +457,13 @@ AutoCompleteSearch:function(){
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:5,
+                                           items:4,
                                        }
                    }
                 });
@@ -507,20 +507,20 @@ AutoCompleteSearch:function(){
                                    autoplayHoverPause: true, // Stops autoplay
                                    
                                    responsive:{
-                                   0:{
+                                       0:{
                                            items:2,
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
                                            items:4,
                                        }
-                               }
+                   }
                             });
                       
       },
@@ -555,14 +555,14 @@ AutoCompleteSearch:function(){
                             
                              responsive:{
                              0:{
-                                           items:3,
+                                           items:2,
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:5,
+                                           items:2,
                                        },
                                        900:{
-                                           items:7,
+                                           items:3,
                                        },
                                        1025:{
                                            items:column_no,

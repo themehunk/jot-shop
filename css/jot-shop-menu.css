@@ -19,7 +19,7 @@
 }
 .jot-shop-menu li a:hover,
 .jot-shop-menu .current-menu-item a{
-    color:#1f4c94;
+    color:#ff3377;
 }
 .jot-shop-menu > li > a {
     display: block;
@@ -27,13 +27,13 @@
     margin: 0;
     border: 0px;
     font-size:14px;
-     font-family: "Roboto-Regular", sans-serif;
+     font-family: "NotoSans-Regular", sans-serif;
     padding: 12px;
     color: #111;
 }
  #open-above-menu.jot-shop-menu > li > a{
 font-size: 13px;
-font-family: "Roboto-regular", sans-serif;
+font-family: "NotoSans-Regular", sans-serif;
 }
 .jot-shop-menu li a i {
     padding-right: 5px;
@@ -76,7 +76,7 @@ min-width: 166px;
 opacity: 0;
 visibility: hidden;
 z-index: 99;
-background-color: #2457AA;
+background-color: #FFF;
     margin: 0;
     -webkit-transition: -webkit-transform .3s ease,opacity .3s ease,visibility .3s ease;
     transition: transform .3s ease,opacity .3s ease,visibility .3s ease;
@@ -102,7 +102,7 @@ background-color: #2457AA;
     text-decoration: none;
     font-weight: normal;
     background: none;
-        color: #fff;
+        color: #111;
 }
 .jot-shop-menu > li > ul.sub-menu > li {
     position: relative;
@@ -148,7 +148,7 @@ background-color: #2457AA;
     display: block !important;
     width: 25px;
     height: 2px;
-    background-color:#fff;
+    background-color: #111;
     margin:4px;
 }
 .menu-toggle .menu-btn{
@@ -669,7 +669,7 @@ display:flex;
 align-items: center;
 }
 .menu-toggle .menu-btn span{
-color:#fff;
+    color: #FFF;
 }
 .menu-toggle .menu-btn .text span,.bar-menu-toggle .menu-btn .text span{
 margin-left:5px;
@@ -719,7 +719,7 @@ width:100%!important;
 .sider.overcenter .sider-inner ul.jot-shop-menu li a{
 font-size:20px;
 color:#fff;
-font-family: 'Roboto-Bold';
+font-family: 'NotoSans-Bold';
 line-height: initial;
 padding: 10px 0px 10px 0px!important;
 
@@ -735,7 +735,7 @@ transition: inherit;
 }
 .sider.overcenter .sider-inner ul.jot-shop-menu li a:hover {
  background:none;
-color:#1f4c94;
+color:#ff3377;
 }
 .sider.overcenter .jot-shop-menu.collapse span.arrow{
 right:auto;
