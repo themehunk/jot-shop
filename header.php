@@ -46,7 +46,7 @@ if(!is_404() && !is_search() && is_page()){
         $page_post_meta_sidebar = get_post_meta( $shop_page_id, 'jot_shop_sidebar_dyn', true );
 }elseif(class_exists( 'WooCommerce' ) && is_product()){
 	    $page_post_meta_sidebar = get_post_meta(get_the_ID(), 'jot_shop_sidebar_dyn', true );
-	    if(get_theme_mod('jot_shop_product_single_sidebar_disable')==true){
+	    if(get_theme_mod('jot_shop_product_single_sidebar_disable',false)==true){
 	     	$page_post_meta_sidebar = 'no-sidebar';
 	      }
 }

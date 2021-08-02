@@ -117,7 +117,7 @@
           sideabr_toggle: function () {
                     $(document).ready(function() {
                           if ($(window).width() <= 990) { 
-                          $('.sidebar-content-area .widget-title').click(function() {
+                          $('.sidebar-content-area .widget-title, .sidebar-content-area .wp-block-group h2').click(function() {
                           $(this).next().slideToggle();
                           $(this).toggleClass("open");
                           });

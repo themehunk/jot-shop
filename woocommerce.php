@@ -24,7 +24,7 @@ get_header();
       }
       elseif(class_exists( 'WooCommerce' ) && is_product()){
 
-                if(get_theme_mod('jot_shop_product_single_sidebar_disable',true) !==true){
+                if(get_theme_mod('jot_shop_product_single_sidebar_disable',false) !==true){
                     if(get_post_meta(get_the_ID(), 'jot_shop_sidebar_dyn', true )!=='no-sidebar'){
                          get_sidebar();
                     }

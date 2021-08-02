@@ -578,7 +578,7 @@ background: rgba(16,18,19,.95);
     right: 0;
 }
 .menu-close-btn:hover:before, .menu-close-btn:hover:after,.cart-close-btn:hover:after,.cart-close-btn:hover:before{
-background-color:#ffd200;
+background-color: #ff3377;
 }
 .menu-close-btn:before, .menu-close-btn:after {
     content: " ";

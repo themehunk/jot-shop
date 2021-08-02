@@ -306,7 +306,7 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 				//big-feature-product
 				'jot_shop_feature_product_slider_optn' => get_theme_mod('jot_shop_feature_product_slider_optn',false),
 				//category slider coloum
-				'jot_shop_cat_item_no' => get_theme_mod('jot_shop_cat_item_no','4'),
+				'jot_shop_cat_item_no' => get_theme_mod('jot_shop_cat_item_no','5'),
 				'jot_shop_rtl' => (bool)get_theme_mod('jot_shop_rtl'),
 				
 				

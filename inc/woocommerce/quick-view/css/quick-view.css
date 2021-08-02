@@ -212,7 +212,7 @@ body #alm-quick-view-modal div.product .flex-viewport {
 
 #alm-quick-view-modal .alm-qv-image-slider .flex-control-paging li a.flex-active {
   background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background: #ff3377;
   cursor: default;
 }
 
@@ -319,14 +319,23 @@ body #alm-quick-view-modal div.product .flex-viewport {
     padding-bottom: calc(70px + 1em);
   }
   #alm-quick-view-content div.summary form.cart {
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: #fff;
     margin: 0 -30px;
     padding: 20px 30px 30px;
-    width: 50%;
-    width: -webkit-calc( 50% - 30px);
-    width: calc( 50% - 30px);
+    width: 100%;
+    /*width: -webkit-calc( 50% - 30px);
+    width: calc( 50% - 30px);*/
+  }
+  #alm-quick-view-content .woocommerce-variation-add-to-cart{
+    display: flex;
+  }
+  #alm-quick-view-content .variations_form.cart{
+    display: block;
+  }
+  #alm-quick-view-content .cart{
+    display: flex;
   }
 }
 
