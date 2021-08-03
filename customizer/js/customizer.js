@@ -15,7 +15,7 @@ jQuery( '.focus-customizer-social_media-redirect-col1,.focus-customizer-social_m
 } ); 
 
 jQuery('input[id=jot_shop_main_header_layout-mhdrdefault],input[id=jot_shop_main_header_layout-mhdrone],input[id=jot_shop_main_header_layout-mhdrtwo]').attr("disabled",true);
-jQuery('input[id=jot_shop_top_slide_layout-slide-layout-4],input[id=jot_shop_top_slide_layout-slide-layout-2]').attr("disabled",true);
+jQuery('input[id=jot_shop_top_slide_layout-slide-layout-2],input[id=jot_shop_top_slide_layout-slide-layout-3],input[id=jot_shop_top_slide_layout-slide-layout-4],input[id=jot_shop_top_slide_layout-slide-layout-6],input[id=jot_shop_top_slide_layout-slide-layout-9]').attr("disabled",true);
 jQuery('input[id=jot_shop_cat_slide_layout-cat-layout-2],input[id=jot_shop_cat_slide_layout-cat-layout-3]').attr("disabled",true);
 jQuery('input[id=jot_shop_banner_layout-bnr-four],input[id=jot_shop_banner_layout-bnr-three],input[id=jot_shop_banner_layout-bnr-five],input[id=jot_shop_banner_layout-bnr-six]').attr("disabled",true);
 jQuery('input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-one],input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-two],input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-three],input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-five],input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-six],input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-seven],input[id=jot_shop_bottom_footer_widget_layout-ft-wgt-eight]').attr("disabled",true);

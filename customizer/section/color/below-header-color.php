@@ -4,7 +4,7 @@
 /******************/
 // BG color
  $wp_customize->add_setting('jot_shop_below_hd_bg_clr', array(
-        'default'           => '#1f4c94',
+        'default'           => '',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',
@@ -51,7 +51,7 @@ $wp_customize->add_control(
 // icon color
 //********************/
 $wp_customize->add_setting('jot_shop_sq_icon_bg_clr', array(
-        'default'           => '#1f4c94',
+        'default'           => '',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',
@@ -67,7 +67,7 @@ $wp_customize->add_control(
 
  // icon color
 $wp_customize->add_setting('jot_shop_sq_icon_clr', array(
-        'default'           => '#fff',
+        'default'           => '',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',

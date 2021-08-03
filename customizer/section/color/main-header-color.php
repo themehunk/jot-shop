@@ -13,21 +13,7 @@ $wp_customize->add_control( new jot_shop_Misc_Control( $wp_customize, 'jot_shop_
         'description' => wp_kses_post('Background','jot-shop' ),
         'priority'    => 1,
 )));
-// BG color
- $wp_customize->add_setting('jot_shop_main_hd_bg_clr', array(
-        'default'           => '#2457AA',
-        'capability'        => 'edit_theme_options',
-        'sanitize_callback' => 'jot_shop_sanitize_color',
-        'transport'         => 'postMessage',
-    ));
-$wp_customize->add_control( 
-    new Jot_Shop_Customizer_Color_Control($wp_customize,'jot_shop_main_hd_bg_clr', array(
-        'label'      => __('Background Color', 'jot-shop' ),
-        'section'    => 'jot-shop-main-header-clr',
-        'settings'   => 'jot_shop_main_hd_bg_clr',
-        'priority'   => 2,
-    ) ) 
- );  
+
 
 // above content header
 $wp_customize->add_setting('jot_shop_divide_main_hdr_content', array(
@@ -40,33 +26,3 @@ $wp_customize->add_control( new jot_shop_Misc_Control( $wp_customize, 'jot_shop_
         'description' => wp_kses_post('Main Header Content','jot-shop' ),
         'priority'    => 3,
 )));
-
-$wp_customize->add_setting('jot_shop_main_content_txt_clr', array(
-        'default'        => '',
-        'capability'     => 'edit_theme_options',
-        'sanitize_callback' => 'jot_shop_sanitize_color',
-        'transport'         => 'postMessage',
-    ));
-$wp_customize->add_control( 
-    new WP_Customize_Color_Control($wp_customize,'jot_shop_main_content_txt_clr', array(
-        'label'      => __('Text Color', 'jot-shop' ),
-        'section'    => 'jot-shop-main-header-clr',
-        'settings'   => 'jot_shop_main_content_txt_clr',
-        'priority' => 4,
-    ) ) 
- );
-
-$wp_customize->add_setting('jot_shop_main_content_link_clr', array(
-        'default'           => '#fff',
-        'capability'        => 'edit_theme_options',
-        'sanitize_callback' => 'jot_shop_sanitize_color',
-        'transport'         => 'postMessage',
-    ));
-$wp_customize->add_control( 
-    new WP_Customize_Color_Control($wp_customize,'jot_shop_main_content_link_clr', array(
-        'label'      => __('Link Color ', 'jot-shop' ),
-        'section'    => 'jot-shop-main-header-clr',
-        'settings'   => 'jot_shop_main_content_link_clr',
-        'priority'   => 12,
-    ) ) 
- );

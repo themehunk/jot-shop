@@ -5,7 +5,7 @@
 
 // theme color
  $wp_customize->add_setting('jot_shop_theme_clr', array(
-        'default'        => '#ffd200',
+        'default'        => '#ff3377',
         'capability'     => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',

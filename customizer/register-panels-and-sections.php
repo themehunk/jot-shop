@@ -286,13 +286,6 @@ $jot_shop_4_custom_sec = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_
     'priority' => 4,
   ));
 $wp_customize->add_section( $jot_shop_4_custom_sec );
-//section ordering
-$jot_shop_section_order = new Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-section-order', array(
-    'title'    => __('Section Ordering', 'jot-shop'),
-    'panel'    => 'jot-shop-panel-frontpage',
-    'priority' => 6,
-));
-$wp_customize->add_section($jot_shop_section_order);
 /******************/
 // Color Option
 /******************/
