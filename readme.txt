@@ -81,8 +81,8 @@ Licensed under the CCO license.
 License link : https://stocksnap.io/license
 
 == Theme License & Copyright ==
-Big Store is distributed under the terms of the GNU GPL
-Open-Shop-Pro-Copyright 2020, themehunk.com
+Jot Shop is distributed under the terms of the GNU GPL
+Jot-Shop-Pro-Copyright 2021, themehunk.com
 License : GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 

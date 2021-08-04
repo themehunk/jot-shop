@@ -416,7 +416,7 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
                 <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
       <?php } ?>
-                 <?php if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
+                 <?php if( class_exists( 'YITH_WCWL' )){?>
                 <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
       <?php } ?>
@@ -599,7 +599,7 @@ if( class_exists( 'WPCleverWoosw' )){?>
   <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
 <?php }
- if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
+ if( class_exists( 'YITH_WCWL' )){?>
  <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
       <?php } 
@@ -686,7 +686,7 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
                       ?>
                       <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
                      <?php } 
-                    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){
+                    if( class_exists( 'YITH_WCWL' )){
                       ?>
                       <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
                      <?php } 
@@ -737,14 +737,12 @@ function jotshop_mobile_navbar(){?>
      if( class_exists( 'WPCleverWoosw' )) { ?>
     <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
     <?php }
-    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){ ?>
+    if( class_exists( 'YITH_WCWL' )){ ?>
     <li><a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
     <?php } ?>
     <li>
-            <a href="#" class="menu-btn" id="mob-menu-btn">
-              
-                <i class="icon fa fa-bars" aria-hidden="true"></i>
-                
+            <a href="#" class="menu-btn" id="mob-menu-btn">           
+                <i class="icon fa fa-bars" aria-hidden="true"></i>             
             </a>
  
        </li>

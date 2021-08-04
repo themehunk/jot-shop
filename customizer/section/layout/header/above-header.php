@@ -1,10 +1,10 @@
 <?php
 /**
- * Header Options for  Big StoreTheme.
+ * Header Options for  Jot Shop Theme.
  * @package      Jot Shop
  * @author      ThemeHunk
  * @copyright   Copyright (c) 2018,  Jot Shop
- * @since       Big Store1.0.0
+ * @since       Jot Shop 1.0.0
  */
 //above header
 $wp_customize->add_setting( 'jot_shop_above_mobile_disable', array(

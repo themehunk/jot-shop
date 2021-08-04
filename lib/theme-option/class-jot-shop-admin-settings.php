@@ -483,12 +483,6 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
             if($plugin_slug=='yith-woocommerce-wishlist' || $plugin_slug=='yith-woocommerce-compare'){
                 $active_file_name = $plugin_slug . '/init.php';
                 }
-            elseif($plugin_slug=='woo-smart-wishlist'){
-                $active_file_name = $plugin_slug . '/wpc-smart-wishlist.php';
-                }
-            elseif($plugin_slug=='woo-smart-compare'){
-                $active_file_name = $plugin_slug . '/wpc-smart-compare.php';
-                }
             else{
                 	$active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
                 }
@@ -562,17 +556,11 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
                 }elseif($plugin_slug=='woocommerce'){
                 	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/woocommerce.png' ).'" />'; 
                 $detail='';
-                }elseif($plugin_slug=='woo-smart-wishlist'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.png' ).'" />'; 
-                $detail='';
-                }elseif($plugin_slug=='woo-smart-compare'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.png' ).'" />'; 
-                $detail='';
                 }elseif($plugin_slug=='yith-woocommerce-wishlist'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/whislist.png' ).'" />'; 
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.jpg' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='yith-woocommerce-compare'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.png' ).'" />'; 
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.jpg' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='one-click-demo-import'){
                 	echo'<img src="'.esc_url(  JOT_SHOP_THEME_URI . 'lib/theme-option/assets/images/one-click-demo-import.png' ).'" />'; 

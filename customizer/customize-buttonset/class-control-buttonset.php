@@ -1,6 +1,6 @@
 <?php
 /**
- * Customizer Control: Big Storebuttonset.
+ * Customizer Control: Jot Shop buttonset.
  *
  * @package      Jot Shop
  * @subpackage  Controls

@@ -4,8 +4,8 @@
  *
  * @package      Jot Shop
  * @author       Jot Shop
- * @copyright   Copyright (c) 2019,  Jot Shop
- * @since        Big Store1.0.0
+ * @copyright    Copyright (c) 2019,  Jot Shop
+ * @since        Jot Shop 1.0.0
  */
 //General Section
 if ( ! class_exists( 'WooCommerce' ) ){

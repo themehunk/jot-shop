@@ -1,6 +1,6 @@
 <?php
 /**
- * big store functions and definitions
+ * Jot Shop functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -114,13 +114,13 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                 'name' => esc_html__( 'TH Variation Swatches', 'jot-shop' ),
                 'active_filename' => 'th-variation-swatches/th-variation-swatches.php',
             ), 
-            'woo-smart-wishlist' => array(
-                 'name' => esc_html__( 'WPC Smart Wishlist for WooCommerce', 'jot-shop' ),
-                 'active_filename' => 'woo-smart-wishlist/wpc-smart-wishlist.php',
+            'yith-woocommerce-wishlist' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Wishlist', 'jot-shop' ),
+                 'active_filename' => 'yith-woocommerce-wishlist/init.php',
              ),
-            'woo-smart-compare' => array(
-                 'name' => esc_html__( 'WPC Smart Compare for WooCommerce', 'jot-shop' ),
-                 'active_filename' => 'woo-smart-compare/wpc-smart-compare.php',
+            'yith-woocommerce-compare' => array(
+                 'name' => esc_html__( 'YITH WooCommerce Compare', 'jot-shop' ),
+                 'active_filename' => 'yith-woocommerce-compare/init.php',
              ),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'jot-shop' ),

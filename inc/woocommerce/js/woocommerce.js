@@ -1,5 +1,5 @@
 /********************************/
-// BigStoreWooLib Custom Function
+// JotShopWooLib Custom Function
 /********************************/
 (function ($) {
     var JotShopWooLib = {
@@ -65,8 +65,8 @@
                   $('html').removeClass( 'jot-shop-enabled-overlay' );
                  };
                  var trigger_class = 'off-canvas-button';
-                 if( 'undefined' != typeof BigStore_Off_Canvas && '' != BigStore_Off_Canvas.off_canvas_trigger_class ){
-                       trigger_class = BigStore_Off_Canvas.off_canvas_trigger_class;
+                 if( 'undefined' != typeof JotShop_Off_Canvas && '' != JotShop_Off_Canvas.off_canvas_trigger_class ){
+                       trigger_class = JotShop_Off_Canvas.off_canvas_trigger_class;
                  }
                  $(document).on( 'click', '.' + trigger_class, function(e){
                         e.preventDefault();

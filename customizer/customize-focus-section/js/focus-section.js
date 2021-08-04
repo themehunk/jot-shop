@@ -4,7 +4,7 @@
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
  */
 jQuery(document).ready(function($){
-    $.bigStore = {
+    $.jotShop = {
         init: function () {
             this.focusForCustomShortcut();
         },
@@ -34,9 +34,9 @@ jQuery(document).ready(function($){
             });
         }
     };
-    $.bigStore.init();
+    $.jotShop.init();
     // color
-    $.bigStoreColor = {
+    $.jotShopColor = {
         init: function () {
             this.focusForCustomShortcutColor();
         },
@@ -66,5 +66,5 @@ jQuery(document).ready(function($){
             });
         }
     };
-    $.bigStoreColor.init();
+    $.jotShopColor.init();
 });

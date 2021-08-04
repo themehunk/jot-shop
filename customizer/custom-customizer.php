@@ -4,7 +4,7 @@
  *
  * @package     Jot Shop
  * @author      ThemeHunk
- * @since       Big Store1.0.0
+ * @since       Jot Shop 1.0.0
  */
 
 /**

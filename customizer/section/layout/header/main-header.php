@@ -166,17 +166,6 @@ $wp_customize->add_control( new Jot_Shop_Customizer_Buttonset_Control( $wp_custo
                 'priority'   => 9,
         ) ) );
 
-  $wp_customize->add_setting( 'jot_shop_shadow_header', array(
-    'default'           => false,
-    'sanitize_callback' => 'jot_shop_sanitize_checkbox',
-  ) );
-  $wp_customize->add_control( new Jot_Shop_Toggle_Control( $wp_customize, 'jot_shop_shadow_header', array(
-    'label'       => esc_html__( 'Header Shadow', 'jot-shop' ),
-    'section'     => 'jot-shop-main-header',
-    'type'        => 'toggle',
-    'settings'    => 'jot_shop_shadow_header',
-    'priority'   => 10,
-  ) ) );
 /***********************************/  
 // Sticky Header
 /***********************************/ 

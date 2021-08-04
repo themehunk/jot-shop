@@ -30,8 +30,8 @@ require JOT_SHOP_THEME_DIR . 'customizer/section/layout/blog/blog.php';
 //Color Option
 require JOT_SHOP_THEME_DIR . 'customizer/section/color/global-color.php';
 require JOT_SHOP_THEME_DIR . 'customizer/section/color/above-header-color.php';
-require JOT_SHOP_THEME_DIR . 'customizer/section/color/main-header-color.php';
-require JOT_SHOP_THEME_DIR . 'customizer/section/color/below-header-color.php';
+
+
 //woo-product
 require JOT_SHOP_THEME_DIR . 'customizer/section/woo/product.php';
 require JOT_SHOP_THEME_DIR . 'customizer/section/woo/single-product.php';

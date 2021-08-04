@@ -1,8 +1,8 @@
 /**************/
-// BigStoreLib
+// JotShopLib
 /**************/
 (function ($) {
-    var BigStoreLib = {
+    var JotShopLib = {
         init: function (){
             this.bindEvents();
         },
@@ -153,53 +153,53 @@
                              });
         },
         DefaultMenu: function(){
-                 $("#menu-all-pages.jot-shop-menu").bigStoreResponsiveMenu({
+                 $("#menu-all-pages.jot-shop-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
              });
-                 $(".menu ul.jot-shop-menu").bigStoreResponsiveMenu({
+                 $(".menu ul.jot-shop-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
              });
-                  $("#mobile-nav-tab-menu #menu-all-pages.jot-shop-menu").bigStoreResponsiveMenu({
+                  $("#mobile-nav-tab-menu #menu-all-pages.jot-shop-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
              });
-                  $("#mobile-nav-tab-menu .menu ul.jot-shop-menu").bigStoreResponsiveMenu({
+                  $("#mobile-nav-tab-menu .menu ul.jot-shop-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
              });
         },
         MainMenu : function(){
-                $("#jot-shop-menu").bigStoreResponsiveMenu({
+                $("#jot-shop-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
             });
-                $("#mobile-nav-tab-menu #jot-shop-menu").bigStoreResponsiveMenu({
+                $("#mobile-nav-tab-menu #jot-shop-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
             });
         },
         StickMenu : function(){
-                $("#jot-shop-stick-menu").bigStoreResponsiveMenu({
+                $("#jot-shop-stick-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
             });
         },
         AboveMenu : function(){
-                $("#open-above-menu").bigStoreResponsiveMenu({
+                $("#open-above-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
              });    
-             $("#mobile-nav-tab-menu #open-above-menu").bigStoreResponsiveMenu({
+             $("#mobile-nav-tab-menu #open-above-menu").jotShopResponsiveMenu({
                  resizeWidth:'1024', // Set the same in Media query       
                  animationSpeed:'medium', //slow, medium, fast
                  accoridonExpAll:true//Expands all the accordion menu on click
@@ -542,7 +542,7 @@ jotshopmenu.modalMenu = {
   }
 }; // jotshopmenu.modalMenu   
    
-BigStoreLib.init();
+JotShopLib.init();
   $(".menu-close-btn").click(function(){
     // focus and select
    $('.menu-toggle .menu-btn').focus().select();

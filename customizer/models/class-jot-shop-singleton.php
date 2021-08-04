@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit; 
 /**
- *  Big StoreSingleton Pattern.
+ *  Jot Shop Singleton Pattern.
  *
  * @package Hunk Companion
  */

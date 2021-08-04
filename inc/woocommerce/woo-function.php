@@ -2,7 +2,7 @@
 /**
  * Perform all main WooCommerce configurations for this theme
  *
- * @package  Big StoreWordPress theme
+ * @package  Jot Shop WordPress theme
  */
 // If plugin - 'WooCommerce' not exist then return.
 if ( ! class_exists( 'WooCommerce' ) ){
@@ -262,7 +262,7 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'jot_shop_product_image_e
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_show_product_sale_flash',4);
 add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_quickview',11);
 add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_whish_list',11);
-if ( ( class_exists( 'YITH_Woocompare' )) && (! class_exists( 'WPCleverWooscp' ))) {
+if ( ( class_exists( 'YITH_Woocompare' ))) {
 add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_add_to_compare_fltr',11);
 }
 
@@ -347,9 +347,9 @@ echo '</div>';
 /****************/
 // add to compare
 /****************/
-function jot_shop_add_to_compare_fltr(){
+function jot_shop_add_to_compare_fltr($pid = ''){
   global $product;
-      $product_id = $product->get_id();
+      $product_id = $pid;
         if( is_plugin_active('yith-woocommerce-compare/init.php') ){
           echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.esc_url(home_url()).'?action=yith-woocompare-add-product&id='.esc_attr($product_id).'" class="compare button" data-product_id="'.esc_attr($product_id).'" rel="nofollow">Compare</a></div></span></div>';
 
@@ -358,10 +358,9 @@ function jot_shop_add_to_compare_fltr(){
 /**********************/
 /** wishlist **/
 /**********************/
-function jot_shop_whish_list(){
-       if( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) && (! class_exists( 'WPCleverWoosw' ))){
-        echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist icon="fa fa-heart" label='.__('wishlist','jot-shop').'
-         already_in_wishslist_text='.__('Already','jot-shop').' browse_wishlist_text='.__('Added','jot-shop').']' ).'</span></div>';
+function jot_shop_whish_list($pid = ''){
+       if( shortcode_exists( 'yith_wcwl_add_to_wishlist' )){
+       echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="fa fa-heart" label='.__('wishlist','jot-shop').' already_in_wishslist_text='.__('Already','jot-shop').' browse_wishlist_text='.__('Added','jot-shop').']' ).'</span></div>';
        }
  } 
 
