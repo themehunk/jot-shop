@@ -287,3 +287,14 @@ $wp_customize->add_control( 'jot_shop_main_hdr_cat_txt', array(
     ));
 
 }  
+$wp_customize->add_setting('jot_shop_exclde_doc', array(
+    'sanitize_callback' => 'jot_shop_sanitize_text',
+    ));
+$wp_customize->add_control(new Jot_Shop_Misc_Control( $wp_customize, 'jot_shop_exclde_doc',
+            array(
+        'section'     => 'jot_shop_exclde_cat_header',
+        'type'        => 'doc-link',
+        'url'         => 'https://themehunk.com/docs/jot-shop/#exclude-category',
+        'description' => esc_html__( 'To know more go with this', 'jot-shop' ),
+        'priority'   =>100,
+    )));

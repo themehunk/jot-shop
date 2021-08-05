@@ -196,12 +196,6 @@ $jot_shop_cat_slide_section = new Jot_Shop_WP_Customize_Section( $wp_customize, 
     'priority' => 4,
   ));
 $wp_customize->add_section( $jot_shop_cat_slide_section );
-$jot_shop_product_tab_image = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_product_tab_image', array(
-    'title'    => __( 'Product Tab Image Carousel', 'jot-shop' ),
-    'panel'    => 'jot-shop-panel-frontpage',
-    'priority' => 4,
-  ));
-$wp_customize->add_section( $jot_shop_product_tab_image );
 // ribbon
 $jot_shop_ribbon = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_ribbon', array(
     'title'    => __( 'Ribbon', 'jot-shop' ),

@@ -348,7 +348,7 @@ if( $iPod || $iPhone ){
  $return .=  $cat_list;
  $return .= '</ul>';
  if($count > $device_cat){
-  $return .= '<div class="header__cat__item dropdown"><a href="#" class="more-cat" title="More categories...">•••</a><ul class="dropdown-link">';
+  $return .= '<div class="header__cat__item dropdown"><a href="#" class="more-cat" title="'.__('More categories...','jot-shop').'">•••</a><ul class="dropdown-link">';
  $return .=  $cat_list_drop;
  $return .= '</ul></div>';
 }

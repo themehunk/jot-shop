@@ -310,7 +310,7 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
 						?>
 					</p>
 					<?php
-					$jot_shop_knowledge_base_doc_link      = 'https://themehunk.com/docs/jot-shop/';
+					$jot_shop_knowledge_base_doc_link      = 'https://themehunk.com/docs/jot-shop';
 					$jot_shop_knowledge_base_doc_link_text = apply_filters( 'jot_shop_knowledge_base_documentation_link_text', __( 'Visit Us', 'jot-shop' ) );
 					printf(
 						'%1$s',
@@ -431,7 +431,7 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
 						?>
                   </p>
                       <?php
-						$jot_shop_pro_link       = apply_filters( 'jot_shop_pro_link', 'https://themehunk.com/product/jot-shop/' );
+						$jot_shop_pro_link       = apply_filters( 'jot_shop_pro_link', 'https://themehunk.com/product/jot-shop-pro/' );
 						$jot_shop_pro_link_text  = apply_filters( 'jot_shop_pro_link_text', __( 'Go with Jot Shop Pro', 'jot-shop' ) );
 
 						printf(

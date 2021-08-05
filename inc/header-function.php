@@ -603,8 +603,6 @@ if( class_exists( 'WPCleverWoosw' )){?>
  <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
       <?php } 
-
-
       ?>
 </div>
 <?php } }

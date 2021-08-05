@@ -20,7 +20,6 @@ jQuery(document).ready(function($){
                 'jot_shop_ribbon',
                 'jot_shop_banner',
                 'jot_shop_highlight',
-                'jot_shop_product_tab_image',
                 'jot_shop_product_big_feature',
                 'jot_shop_1_custom_sec',
                 'jot_shop_2_custom_sec',

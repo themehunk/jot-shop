@@ -83,8 +83,8 @@ $jot_shop_style.="#move-to-top{background:{$jot_shop_move_to_top_bg_clr};color:{
    $jot_shop_style.= ".top-header{background-image:url($jot_shop_abv_header_background_image);
    }";
    
-    $jot_shop_abv_content_txt_clr = esc_html(get_theme_mod('jot_shop_abv_content_txt_clr','#fff'));
-    $jot_shop_abv_content_link_clr = esc_html(get_theme_mod('jot_shop_abv_content_link_clr','#fff'));
+    $jot_shop_abv_content_txt_clr = esc_html(get_theme_mod('jot_shop_abv_content_txt_clr','#111'));
+    $jot_shop_abv_content_link_clr = esc_html(get_theme_mod('jot_shop_abv_content_link_clr','#111'));
     $jot_shop_style.= ".top-header .top-header-bar{color:{$jot_shop_abv_content_txt_clr}} .top-header .top-header-bar a{color:{$jot_shop_abv_content_link_clr}}";
 
 //Product title in single line

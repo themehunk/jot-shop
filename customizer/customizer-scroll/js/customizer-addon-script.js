@@ -46,9 +46,6 @@ var thunk_customizer_section_scroll = function ( $ ) {
 							case'sub-accordion-section-jot_shop_highlight':
 							sectionClass = 'section.thunk-product-highlight-section';
 							break;
-							case'sub-accordion-section-jot_shop_product_tab_image':
-							sectionClass = 'section.thunk-product-image-tab-section';
-							break;
 							case'sub-accordion-section-jot_shop_product_big_feature':
 							sectionClass = 'section.thunk-feature-product-section';
 							break;
