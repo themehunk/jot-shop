@@ -404,6 +404,11 @@ AutoCompleteSearch:function(){
                    }
                                });
                             $(".thunk-product-tab-section .thunk-loadContainer").css("display", "none");
+                            $('li.thvs_loop-available-attributes__value').hover(function () {
+                               var src = $(this).attr('data-o-src');
+                               var id = $(this).attr('data-product-id');
+                               $(this).closest('.product.post-'+ id ).find('img.attachment-woocommerce_thumbnail').attr("srcset", src );
+                            });
 
                               
              
