@@ -329,7 +329,7 @@ $jot_shop_menu_alignment = get_theme_mod('jot_shop_menu_alignment','center');
 $jot_shop_menu_open = get_theme_mod('jot_shop_mobile_menu_open','left');
 $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
 ?>
-<div class="main-header <?php echo esc_attr($main_header_layout);?> <?php echo esc_attr($main_header_opt);?> <?php echo esc_attr($jot_shop_menu_alignment);?>  <?php echo esc_attr($offcanvas);?>">
+<div class="main-header <?php echo esc_attr($main_header_layout);?> <?php echo esc_attr($main_header_opt);?> <?php echo esc_attr($jot_shop_menu_alignment).'-menu';?>  <?php echo esc_attr($offcanvas);?>">
 			<div class="container">
         <div class="desktop-main-header">
 				<div class="main-header-bar thnk-col-3">
@@ -480,7 +480,7 @@ function jot_shop_main_header_optn(){
           
          
               <div class="header-support-content">
-                 <i class="fa fa-headphones" aria-hidden="true"></i>
+                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span class="sprt-tel"><b><?php echo esc_html(get_theme_mod('jot_shop_main_hdr_calto_txt','Call To')); ?></b> <a href="tel:<?php echo esc_html(get_theme_mod('jot_shop_main_hdr_calto_nub','+1800090098')); ?>"><?php echo esc_html(get_theme_mod('jot_shop_main_hdr_calto_nub','+1800090098')); ?></a></span>
                 
               </div>

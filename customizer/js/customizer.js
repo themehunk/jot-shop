@@ -14,6 +14,7 @@ jQuery( '.focus-customizer-social_media-redirect-col1,.focus-customizer-social_m
             wp.customize.section( 'jot-shop-social-icon' ).focus();
 } ); 
 
+
 jQuery('input[id=jot_shop_main_header_layout-mhdrdefault],input[id=jot_shop_main_header_layout-mhdrone],input[id=jot_shop_main_header_layout-mhdrtwo]').attr("disabled",true);
 jQuery('input[id=jot_shop_top_slide_layout-slide-layout-2],input[id=jot_shop_top_slide_layout-slide-layout-3],input[id=jot_shop_top_slide_layout-slide-layout-4],input[id=jot_shop_top_slide_layout-slide-layout-6],input[id=jot_shop_top_slide_layout-slide-layout-9]').attr("disabled",true);
 jQuery('input[id=jot_shop_cat_slide_layout-cat-layout-2],input[id=jot_shop_cat_slide_layout-cat-layout-3]').attr("disabled",true);
