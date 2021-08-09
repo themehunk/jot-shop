@@ -7,7 +7,6 @@
  */
 get_template_part( 'inc/admin-function');
 get_template_part( 'inc/header-function');
-get_template_part( 'inc/admin-extra-function');
 get_template_part( 'inc/footer-function');
 get_template_part( 'inc/blog-function');
 // theme-option
