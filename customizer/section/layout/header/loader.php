@@ -55,15 +55,3 @@ $wp_customize->add_control(new Jot_Shop_Misc_Control( $wp_customize, 'jot_shop_l
         'description' => esc_html__( 'To know more go with this', 'jot-shop' ),
         'priority'   =>100,
     )));
-
-// rtl
-$wp_customize->add_setting( 'jot_shop_rtl', array(
-    'default'           => false,
-    'sanitize_callback' => 'jot_shop_sanitize_checkbox',
-  ) );
-$wp_customize->add_control( new Jot_Shop_Toggle_Control( $wp_customize, 'jot_shop_rtl', array(
-    'label'       => esc_html__( 'Enable', 'jot-shop' ),
-    'section'     => 'jot-shop-rtl',
-    'type'        => 'toggle',
-    'settings'    => 'jot_shop_rtl',
-  ) ) );
