@@ -17,16 +17,16 @@ $wp_customize->add_control(
                     'section'  => 'jot-shop-bottom-footer',
                     'choices'  => array(
                        'ft-btm-none'   => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_NONE,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_NONE,
                         ),
                         'ft-btm-one'   => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_1,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_1,
                         ),
                         'ft-btm-two' => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_2,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_2,
                         ),
                         'ft-btm-three' => array(
-                            'url' => BIG_STORE_TOP_HEADER_LAYOUT_3,
+                            'url' => JOT_SHOP_TOP_HEADER_LAYOUT_3,
                         ),
                     ),
                 )

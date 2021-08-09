@@ -546,7 +546,7 @@ class jot_shop_Breadcrumb_Trail {
 		if ( false !== $taxonomy->rewrite ) {
 
 			// If 'with_front' is true, dd $wp_rewrite->front to the trail.
-			if ( $taxonomy->rewrite['with_front'] && $wp_rewrite->front )
+			if ( isset($taxonomy->rewrite['with_front']) && $wp_rewrite->front )
 				$this->add_rewrite_front_items();
 
 			// Get parent pages by path if they exist.
@@ -650,7 +650,7 @@ class jot_shop_Breadcrumb_Trail {
 		if ( false !== $post_type_object->rewrite ) {
 
 			// If 'with_front' is true, add $wp_rewrite->front to the trail.
-			if ( $post_type_object->rewrite['with_front'] )
+			if ( isset($post_type_object->rewrite['with_front']) )
 				$this->add_rewrite_front_items();
 
 			// If there's a rewrite slug, check for parents.
@@ -970,7 +970,7 @@ class jot_shop_Breadcrumb_Trail {
 		elseif ( false !== $post_type_object->rewrite ) {
 
 			// If 'with_front' is true, add $wp_rewrite->front to the trail.
-			if ( $post_type_object->rewrite['with_front'] )
+			if ( isset($post_type_object->rewrite['with_front']) )
 				$this->add_rewrite_front_items();
 
 			// If there's a path, check for parents.

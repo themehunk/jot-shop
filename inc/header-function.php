@@ -230,7 +230,7 @@ if($main_header_layout!=='mhdrtwo'):?>
                        <span class="cat-bot"></span>
                      </span>
 						  	  	<span class="toggle-title">
-                      <?php echo esc_html(get_theme_mod('jot_shop_main_hdr_cat_txt','Category'));?>
+                      <?php echo esc_html(get_theme_mod('jot_shop_main_hdr_cat_txt','All Departments'));?>
                         
                       </span>
 						  	  	<span class="toggle-icon"></span>
@@ -329,7 +329,7 @@ $jot_shop_menu_alignment = get_theme_mod('jot_shop_menu_alignment','center');
 $jot_shop_menu_open = get_theme_mod('jot_shop_mobile_menu_open','left');
 $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
 ?>
-<div class="main-header <?php echo esc_attr($main_header_layout);?> <?php echo esc_attr($main_header_opt);?> <?php echo esc_attr($jot_shop_menu_alignment);?>  <?php echo esc_attr($offcanvas);?>">
+<div class="main-header <?php echo esc_attr($main_header_layout);?> <?php echo esc_attr($main_header_opt);?> <?php echo esc_attr($jot_shop_menu_alignment).'-menu';?>  <?php echo esc_attr($offcanvas);?>">
 			<div class="container">
         <div class="desktop-main-header">
 				<div class="main-header-bar thnk-col-3">
@@ -416,7 +416,7 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
                 <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
       <?php } ?>
-                 <?php if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
+                 <?php if( class_exists( 'YITH_WCWL' )){?>
                 <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
       <?php } ?>
@@ -480,7 +480,7 @@ function jot_shop_main_header_optn(){
           
          
               <div class="header-support-content">
-                 <i class="fa fa-headphones" aria-hidden="true"></i>
+                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span class="sprt-tel"><b><?php echo esc_html(get_theme_mod('jot_shop_main_hdr_calto_txt','Call To')); ?></b> <a href="tel:<?php echo esc_html(get_theme_mod('jot_shop_main_hdr_calto_nub','+1800090098')); ?>"><?php echo esc_html(get_theme_mod('jot_shop_main_hdr_calto_nub','+1800090098')); ?></a></span>
                 
               </div>
@@ -599,12 +599,10 @@ if( class_exists( 'WPCleverWoosw' )){?>
   <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
 <?php }
- if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){?>
+ if( class_exists( 'YITH_WCWL' )){?>
  <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
       <?php } 
-
-
       ?>
 </div>
 <?php } }
@@ -686,7 +684,7 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
                       ?>
                       <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
                      <?php } 
-                    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){
+                    if( class_exists( 'YITH_WCWL' )){
                       ?>
                       <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
                      <?php } 
@@ -737,14 +735,12 @@ function jotshop_mobile_navbar(){?>
      if( class_exists( 'WPCleverWoosw' )) { ?>
     <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
     <?php }
-    if( class_exists( 'YITH_WCWL' ) && (! class_exists( 'WPCleverWoosw' ))){ ?>
+    if( class_exists( 'YITH_WCWL' )){ ?>
     <li><a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
     <?php } ?>
     <li>
-            <a href="#" class="menu-btn" id="mob-menu-btn">
-              
-                <i class="icon fa fa-bars" aria-hidden="true"></i>
-                
+            <a href="#" class="menu-btn" id="mob-menu-btn">           
+                <i class="icon fa fa-bars" aria-hidden="true"></i>             
             </a>
  
        </li>

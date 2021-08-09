@@ -4,7 +4,7 @@ Theme URI: https://themehunk.com/product/jot-shop/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Jot Shop is an eCommerce WordPress theme specially made for shopping websites. You can create any type of online shopping website using it. Theme is best suited for Fashion & Clothing store, furniture, grocery, clothing, electronic, gadget store and decorative gifts stores. Theme option panel is so easy to use and theme is also fully responsive to each & every device like Mobile, ipads etc. Some theme features are Tabbed product carousel, Woo Category layouts, Header & Footer combinations, quick view, translation ready, Ajax search, shop with category, Top slider layouts, Product Filter, Product styles, Color & Background options etc. Theme is deeply integrated with WooCommerce plugin to sell your products online.  See demo here: https://themehunk.com/jot-shop-ecommerce-wordpress-theme/
-Version: 2.0.0
+Version: 1.0.0
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -21,32 +21,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 @font-face{
-  font-family: 'Lato-Bold';
-  src: url('third-party/fonts/site-font/Lato-Bold.ttf') format('truetype');
+  font-family: 'NotoSans-Bold';
+  src: url('third-party/fonts/site-font/NotoSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face{
-  font-family: 'Lato-Regular';
-  src: url('third-party/fonts/site-font/Lato-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'Lato-Black';
-  src: url('third-party/fonts/site-font/Lato-Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'Lato-Light';
-  src: url('third-party/fonts/site-font/Lato-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'Lato-Thin';
-  src: url('third-party/fonts/site-font/Lato-Thin.ttf') format('truetype');
+  font-family: 'NotoSans-Regular';
+  src: url('third-party/fonts/site-font/NotoSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

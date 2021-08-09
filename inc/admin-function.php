@@ -275,8 +275,6 @@ if($jot_shop_banner_layout=='bnr-one'){?>
 <?php
  
 }
-
-
 /**********************/
 // Top Slider Function
 /**********************/
@@ -662,6 +660,9 @@ $jot_shop_color_scheme = get_theme_mod( 'jot_shop_color_scheme','opn-light' );
                  $classes[] = 'jot-shop-wishlist-activate';
          } 
 
+if (get_theme_mod( 'jot_shop_main_header_layout','mhdrthree' ) == 'mhdrtwo') {
+$classes[] = 'th-boxed-layout';
+}
 return $classes;
 }
 add_filter( 'body_class', 'jot_shop_body_classes' );

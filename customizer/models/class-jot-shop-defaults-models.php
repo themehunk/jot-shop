@@ -83,12 +83,6 @@ public function get_brand_default() {
 						'subtitle'   => esc_html__( 'On all order over ', 'jot-shop' ),
 						
 					),
-					array(
-						'icon_value' => 'fa-cog',
-						'title'      => esc_html__( 'Free Shiping', 'jot-shop' ),
-						'subtitle'   => esc_html__( 'On all order over ', 'jot-shop' ),
-						
-					),
 				)
 			)
 		);
@@ -345,35 +339,4 @@ public function get_team_default() {
 			)	
 		);
 	}
-
-	/**
-	 * Get default values for Counter section.
-
-	 * @access public
-	 */
-public function get_counter_default() {
-		return apply_filters(
-			'jot_shop_counter_default_content', json_encode(
-				array(
-					array(
-						
-						'title'       => 'Tea Consumed',
-						'number' => esc_html__( '1008', 'jot-shop' ),
-					),
-					array(
-						'title'       => 'Projects Completed',
-						'number' => esc_html__( '1008', 'jot-shop' ),
-					),
-					array(
-						'title'       => 'Hours Spent',
-						'number' => esc_html__( '1008', 'jot-shop' ),
-					),
-					array(
-						'title'       => 'Awards Recieved',
-						'number' => esc_html__( '1008', 'jot-shop' ),
-					),
-				)
-			)
-		);
-	}	
 }

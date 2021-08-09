@@ -95,7 +95,7 @@ $wp_customize->add_control(new Jot_Shop_Misc_Control( $wp_customize, 'jot_shop_s
             array(
         'section'    => 'title_tagline',
         'type'      => 'doc-link',
-        'url'       => 'https://themehunk.com/docs/#site-identity',
+        'url'       => 'https://themehunk.com/docs/jot-shop/#site-identity',
         'description' => esc_html__( 'To know more go with this', 'jot-shop' ),
         'priority'   =>100,
     )));

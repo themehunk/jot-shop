@@ -6,8 +6,8 @@ $jot_shop_sidebar = 'right';
 $jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true );
 }?>
 <div id="content" class="page-content thunk-single-post  <?php echo esc_attr($jot_shop_sidebar); ?>">
+            <div class="container">
         	<div class="content-wrap" >
-        		<div class="container">
         			<div class="main-area">
         				<div id="primary" class="primary-content-area">
                    <div class="page-head">
@@ -52,7 +52,7 @@ $jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true );
             endif;
                  ?><!-- end sidebar-primary  sidebar-content-area-->
         			</div> <!-- end main-area -->
-        		</div>
-        	</div> <!-- end content-wrap -->
+        		</div>  <!-- end content-wrap -->
+        	</div> 
         </div> <!-- end content page-content -->
 <?php get_footer();?>

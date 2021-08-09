@@ -17,31 +17,31 @@ $wp_customize->add_control(
                     'section'  => 'jot-shop-widget-footer',
                     'choices'  => array(
                        'ft-wgt-none'   => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_NONE,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_NONE,
                         ),
                         'ft-wgt-one'   => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_1,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_1,
                         ),
                         'ft-wgt-two' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_2,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_2,
                         ),
                         'ft-wgt-three' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_3,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_3,
                         ),
                         'ft-wgt-four' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_4,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_4,
                         ),
                         'ft-wgt-five' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_5,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_5,
                         ),
                         'ft-wgt-six' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_6,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_6,
                         ),
                         'ft-wgt-seven' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_7,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_7,
                         ),
                         'ft-wgt-eight' => array(
-                            'url' => BIG_STORE_FOOTER_WIDGET_LAYOUT_8,
+                            'url' => JOT_SHOP_FOOTER_WIDGET_LAYOUT_8,
                         ),
                     ),
                 )

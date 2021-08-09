@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) exit; 
 /**
- *  Big StoreSingleton Pattern.
+ *  Jot Shop Singleton Pattern.
  *
  * @package Hunk Companion
  */
@@ -41,6 +41,6 @@ class Jot_Shop_Singleton{
 	/**
 	 * Make wakeup magic method private, so nobody can unserialize instance.
 	 */
-	private function __wakeup() {}
+	public function __wakeup() {}
 
 }

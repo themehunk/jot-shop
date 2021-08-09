@@ -1,5 +1,5 @@
 /********************************/
-// BigStoreWooLib Custom Function
+// JotShopWooLib Custom Function
 /********************************/
 (function ($) {
     var JotShopWooLib = {
@@ -65,8 +65,8 @@
                   $('html').removeClass( 'jot-shop-enabled-overlay' );
                  };
                  var trigger_class = 'off-canvas-button';
-                 if( 'undefined' != typeof BigStore_Off_Canvas && '' != BigStore_Off_Canvas.off_canvas_trigger_class ){
-                       trigger_class = BigStore_Off_Canvas.off_canvas_trigger_class;
+                 if( 'undefined' != typeof JotShop_Off_Canvas && '' != JotShop_Off_Canvas.off_canvas_trigger_class ){
+                       trigger_class = JotShop_Off_Canvas.off_canvas_trigger_class;
                  }
                  $(document).on( 'click', '.' + trigger_class, function(e){
                         e.preventDefault();
@@ -340,15 +340,15 @@ AutoCompleteSearch:function(){
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:5,
+                                           items:4,
                                        }
-                                   }
+                   }
                                 });
                           $('.thunk-product-tab-section #thunk-cat-tab li a:first').addClass('active');
                           $(document).on('click', '.thunk-product-tab-section #thunk-cat-tab li a', function(e){
@@ -388,22 +388,27 @@ AutoCompleteSearch:function(){
                                  autoplayHoverPause: true, // Stops autoplay
                                  
                                  responsive:{
-                                  0:{
+                                       0:{
                                            items:2,
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:5,
+                                           items:4,
                                        }
-                             }
+                   }
                                });
                             $(".thunk-product-tab-section .thunk-loadContainer").css("display", "none");
+                            $('li.thvs_loop-available-attributes__value').hover(function () {
+                               var src = $(this).attr('data-o-src');
+                               var id = $(this).attr('data-product-id');
+                               $(this).closest('.product.post-'+ id ).find('img.attachment-woocommerce_thumbnail').attr("srcset", src );
+                            });
 
                               
              
@@ -457,13 +462,13 @@ AutoCompleteSearch:function(){
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:5,
+                                           items:4,
                                        }
                    }
                 });
@@ -507,20 +512,20 @@ AutoCompleteSearch:function(){
                                    autoplayHoverPause: true, // Stops autoplay
                                    
                                    responsive:{
-                                   0:{
+                                       0:{
                                            items:2,
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:3,
+                                           items:2,
                                        },
                                        900:{
-                                           items:4,
+                                           items:3,
                                        },
                                        1025:{
-                                           items:4,
+                                           items:3,
                                        }
-                               }
+                   }
                             });
                       
       },
@@ -555,14 +560,14 @@ AutoCompleteSearch:function(){
                             
                              responsive:{
                              0:{
-                                           items:3,
+                                           items:2,
                                            margin:7.5,
                                        },
                                        768:{
-                                           items:5,
+                                           items:2,
                                        },
                                        900:{
-                                           items:7,
+                                           items:3,
                                        },
                                        1025:{
                                            items:column_no,

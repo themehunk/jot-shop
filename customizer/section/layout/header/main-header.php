@@ -15,16 +15,16 @@ $wp_customize->add_control(
                     'section'  => 'jot-shop-main-header',
                     'choices'  => array(
                         'mhdrthree' => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_ONE,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_ONE,
                         ),
                         'mhdrdefault'   => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_TWO,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_TWO,
                         ),
                         'mhdrone'   => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_THREE,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_THREE,
                         ),
                         'mhdrtwo' => array(
-                            'url' => BIG_STORE_MAIN_HEADER_LAYOUT_FOUR,
+                            'url' => JOT_SHOP_MAIN_HEADER_LAYOUT_FOUR,
                         ),
                         
                                      
@@ -166,17 +166,6 @@ $wp_customize->add_control( new Jot_Shop_Customizer_Buttonset_Control( $wp_custo
                 'priority'   => 9,
         ) ) );
 
-  $wp_customize->add_setting( 'jot_shop_shadow_header', array(
-    'default'           => false,
-    'sanitize_callback' => 'jot_shop_sanitize_checkbox',
-  ) );
-  $wp_customize->add_control( new Jot_Shop_Toggle_Control( $wp_customize, 'jot_shop_shadow_header', array(
-    'label'       => esc_html__( 'Header Shadow', 'jot-shop' ),
-    'section'     => 'jot-shop-main-header',
-    'type'        => 'toggle',
-    'settings'    => 'jot_shop_shadow_header',
-    'priority'   => 10,
-  ) ) );
 /***********************************/  
 // Sticky Header
 /***********************************/ 
@@ -273,7 +262,7 @@ function jot_shop_get_category_id($arr='',$all=true){
      return $cats;
   }
 $wp_customize->add_setting('jot_shop_main_hdr_cat_txt', array(
-        'default' => __('Category','jot-shop'),
+        'default' => __('All Departments','jot-shop'),
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_text',
         'transport'         => 'postMessage',
@@ -298,3 +287,14 @@ $wp_customize->add_control( 'jot_shop_main_hdr_cat_txt', array(
     ));
 
 }  
+$wp_customize->add_setting('jot_shop_exclde_doc', array(
+    'sanitize_callback' => 'jot_shop_sanitize_text',
+    ));
+$wp_customize->add_control(new Jot_Shop_Misc_Control( $wp_customize, 'jot_shop_exclde_doc',
+            array(
+        'section'     => 'jot_shop_exclde_cat_header',
+        'type'        => 'doc-link',
+        'url'         => 'https://themehunk.com/docs/jot-shop/#exclude-category',
+        'description' => esc_html__( 'To know more go with this', 'jot-shop' ),
+        'priority'   =>100,
+    )));

@@ -310,7 +310,7 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
 						?>
 					</p>
 					<?php
-					$jot_shop_knowledge_base_doc_link      = 'https://themehunk.com/docs/jot-shop/';
+					$jot_shop_knowledge_base_doc_link      = 'https://themehunk.com/docs/jot-shop';
 					$jot_shop_knowledge_base_doc_link_text = apply_filters( 'jot_shop_knowledge_base_documentation_link_text', __( 'Visit Us', 'jot-shop' ) );
 					printf(
 						'%1$s',
@@ -431,7 +431,7 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
 						?>
                   </p>
                       <?php
-						$jot_shop_pro_link       = apply_filters( 'jot_shop_pro_link', 'https://themehunk.com/product/jot-shop/' );
+						$jot_shop_pro_link       = apply_filters( 'jot_shop_pro_link', 'https://themehunk.com/product/jot-shop-pro/' );
 						$jot_shop_pro_link_text  = apply_filters( 'jot_shop_pro_link_text', __( 'Go with Jot Shop Pro', 'jot-shop' ) );
 
 						printf(
@@ -482,12 +482,6 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
             $status = is_dir( WP_PLUGIN_DIR . '/' . $plugin_slug );
             if($plugin_slug=='yith-woocommerce-wishlist' || $plugin_slug=='yith-woocommerce-compare'){
                 $active_file_name = $plugin_slug . '/init.php';
-                }
-            elseif($plugin_slug=='woo-smart-wishlist'){
-                $active_file_name = $plugin_slug . '/wpc-smart-wishlist.php';
-                }
-            elseif($plugin_slug=='woo-smart-compare'){
-                $active_file_name = $plugin_slug . '/wpc-smart-compare.php';
                 }
             else{
                 	$active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
@@ -553,23 +547,20 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
                 }elseif($plugin_slug=='wp-popup-builder'){
 				echo'<img src="'.esc_url( JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wp-popup-builder.png' ).'" />'; 
 		        $detail='';
+                }elseif($plugin_slug=='th-variation-swatches'){
+				echo'<img src="'.esc_url( JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-variation-swatches.png' ).'" />'; 
+		        $detail='';
                 }elseif($plugin_slug=='themehunk-customizer'){
                 	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/themehunk-customizer.png' ).'" />'; 
 		        $detail= '';
                 }elseif($plugin_slug=='woocommerce'){
                 	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/woocommerce.png' ).'" />'; 
                 $detail='';
-                }elseif($plugin_slug=='woo-smart-wishlist'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.png' ).'" />'; 
-                $detail='';
-                }elseif($plugin_slug=='woo-smart-compare'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.png' ).'" />'; 
-                $detail='';
                 }elseif($plugin_slug=='yith-woocommerce-wishlist'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/whislist.png' ).'" />'; 
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.jpg' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='yith-woocommerce-compare'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.png' ).'" />'; 
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.jpg' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='one-click-demo-import'){
                 	echo'<img src="'.esc_url(  JOT_SHOP_THEME_URI . 'lib/theme-option/assets/images/one-click-demo-import.png' ).'" />'; 

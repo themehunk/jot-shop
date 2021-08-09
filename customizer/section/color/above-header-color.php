@@ -5,7 +5,7 @@
 
 // BG color
  $wp_customize->add_setting('jot_shop_above_hd_bg_clr', array(
-        'default'           => '#1f4c94',
+        'default'           => '',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',
@@ -32,7 +32,7 @@ $wp_customize->add_control( new jot_shop_Misc_Control( $wp_customize, 'jot_shop_
 )));
 
 $wp_customize->add_setting('jot_shop_abv_content_txt_clr', array(
-        'default'        => '#fff',
+        'default'        => '#111',
         'capability'     => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',
@@ -47,7 +47,7 @@ $wp_customize->add_control(
  );
 
 $wp_customize->add_setting('jot_shop_abv_content_link_clr', array(
-        'default'           => '',
+        'default'           => '#111',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',

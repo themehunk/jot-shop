@@ -1,9 +1,9 @@
 /* 
-Big StoreResponsive Menu script
+Jot Shop Responsive Menu script
 ----------------------------------------*/
 (function ($){
   
-    $.fn.bigStoreResponsiveMenu = function (options){
+    $.fn.jotShopResponsiveMenu = function (options){
         //plugin's default options
         var defaults = {
             resizeWidth: '',
