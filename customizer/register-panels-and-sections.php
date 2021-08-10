@@ -144,13 +144,6 @@ $jot_shop_shop_bottom_footer = new  Jot_Shop_WP_Customize_Section($wp_customize,
     'priority' => 5,
 ));
 $wp_customize->add_section( $jot_shop_shop_bottom_footer);
-// rtl
-$jot_shop_rtl = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot-shop-rtl', array(
-    'title' =>  __( 'RTL', 'jot-shop' ),
-    'panel' => 'jot-shop-panel-layout',
-    'priority' => 6,
-));
-$wp_customize->add_section($jot_shop_rtl);
 /*************************/
 /* Preloader */
 /*************************/

@@ -3770,7 +3770,7 @@ margin:0;padding:0;
 .thunk-cat-tab .tab-link li a{
     display: block;
     padding:0px 15px;
-    color: #8f9696;
+    color: #5a5a5a;
     font-size: 15px;
     font-family: 'NotoSans-Bold';
 }
@@ -6792,7 +6792,7 @@ display:none;
 .sticky-header-bar .menu-toggle .menu-btn{ height: 38px;
     width: 38px;
     line-height: 38px;
-    background: #ff3377;
+    background: none;
     color: #fff;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;

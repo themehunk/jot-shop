@@ -277,12 +277,8 @@ function jot_shop_scripts(){
 	wp_enqueue_style( 'font-awesome', JOT_SHOP_THEME_URI . 'third-party/fonts/font-awesome/css/font-awesome.css', '', JOT_SHOP_THEME_VERSION );
 	wp_enqueue_style( 'animate', JOT_SHOP_THEME_URI . 'css/animate.css','',JOT_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'owl.carousel-css', JOT_SHOP_THEME_URI . 'css/owl.carousel.css','',JOT_SHOP_THEME_VERSION);
-	wp_enqueue_style( 'jot-shop-pro-menu', JOT_SHOP_THEME_URI . 'css/jot-shop-menu.css','',JOT_SHOP_THEME_VERSION);
-    if((bool)get_theme_mod('jot_shop_rtl')==true){
-	wp_enqueue_style( 'jot-shop-rtl-style', JOT_SHOP_THEME_URI . 'css/rtl.css','',JOT_SHOP_THEME_VERSION);	
-	}else{
-	wp_enqueue_style( 'jot-shop-main-style', JOT_SHOP_THEME_URI . 'css/style.css','',JOT_SHOP_THEME_VERSION);	
-	}	
+	wp_enqueue_style( 'jot-shop-pro-menu', JOT_SHOP_THEME_URI . 'css/jot-shop-menu.css','',JOT_SHOP_THEME_VERSION);	
+	wp_enqueue_style( 'jot-shop-main-style', JOT_SHOP_THEME_URI . 'css/style.css','',JOT_SHOP_THEME_VERSION);
 
 	wp_enqueue_style( 'jot-shop-style', get_stylesheet_uri(), array(), JOT_SHOP_THEME_VERSION );
 	wp_add_inline_style('jot-shop-style', jot_shop_custom_style());

@@ -10,8 +10,11 @@ get_header();?>
     <div class="container">
           <div class="content-wrap">
            <?php 
-           if( shortcode_exists( 'jot-shop' ) ){
+           if( shortcode_exists( 'jot-shop' ) && (!defined('JOT_SHOP_PRO'))){
              require_once (THEMEHUNK_CUSTOMIZER_PLUGIN_PATH . 'jot-shop/jot-shop-front-page/front-topslider.php');
+           }
+           elseif (defined('JOT_SHOP_PRO')) {
+            require_once (JOT_SHOP_PRO_DIR_PATH . 'front-page/front-topslider.php');
            }
            ?>
               <div class="main-area">
