@@ -315,6 +315,11 @@ AutoCompleteSearch:function(){
                       var bgstr_rtl = false;
                      }
 
+                     if(jotshop.jot_shop_frontpage_sidebar =='no-sidebar'){
+                             var numslide = parseInt('5');
+                            }else{
+                             var numslide = parseInt('4');
+                            }
                             
                             var owl = $('.thunk-product-cat-slide');
                                      owl.owlCarousel({
@@ -346,7 +351,7 @@ AutoCompleteSearch:function(){
                                            items:3,
                                        },
                                        1025:{
-                                           items:4,
+                                           items:numslide,
                                        }
                    }
                                 });
@@ -399,7 +404,7 @@ AutoCompleteSearch:function(){
                                            items:3,
                                        },
                                        1025:{
-                                           items:4,
+                                           items:numslide,
                                        }
                    }
                                });
@@ -436,7 +441,11 @@ AutoCompleteSearch:function(){
                      }else{
                       var bgstr_rtl = false;
                      }
-
+                     if(jotshop.jot_shop_frontpage_sidebar =='no-sidebar'){
+                             var numslide = parseInt('5');
+                            }else{
+                             var numslide = parseInt('4');
+                            }
                 
                 var owl = $('.thunk-product-slide');
                      owl.owlCarousel({
@@ -468,7 +477,7 @@ AutoCompleteSearch:function(){
                                            items:3,
                                        },
                                        1025:{
-                                           items:4,
+                                           items:numslide,
                                        }
                    }
                 });
@@ -492,6 +501,11 @@ AutoCompleteSearch:function(){
                      }else{
                       var bgstr_rtl = false;
                      }
+                      if(jotshop.jot_shop_frontpage_sidebar =='no-sidebar'){
+                             var numslide = parseInt('4');
+                            }else{
+                             var numslide = parseInt('3');
+                            }
 
                             var owl = $('.thunk-product-list');
                                  owl.owlCarousel({
@@ -523,7 +537,7 @@ AutoCompleteSearch:function(){
                                            items:3,
                                        },
                                        1025:{
-                                           items:3,
+                                           items:numslide,
                                        }
                    }
                             });

@@ -5,7 +5,10 @@
  * @subpackage Jot Shop
  * @since 1.0.0
  */
-get_header();?>
+get_header();
+$jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true ); 
+$frontpage_id = get_option( 'page_on_front' );
+$jot_shop_frontpage_sidebar = get_post_meta( $frontpage_id, 'jot_shop_sidebar_dyn', true ); ?>
    <div id="content">
     <div class="container">
           <div class="content-wrap">
@@ -18,7 +21,10 @@ get_header();?>
            }
            ?>
               <div class="main-area">
-                <?php get_sidebar('primary'); ?>
+                <?php 
+                if ( $jot_shop_sidebar != 'no-sidebar') {
+                get_sidebar('primary');
+                } ?>
                 <div id="primary" class="primary-content-area">
                   <div class="primary-content-wrap">
                         <?php
