@@ -17,7 +17,7 @@
 
   // BG color
  $wp_customize->add_setting('jot_shop_move_to_top_bg_clr', array(
-        'default'           => '#141415',
+        'default'           => '',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'jot_shop_sanitize_color',
         'transport'         => 'postMessage',

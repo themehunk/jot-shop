@@ -38,7 +38,3 @@ define('JOT_SHOP_BANNER_IMG_LAYOUT_2', JOT_SHOP_THEME_URI. "customizer/images/ba
 define('JOT_SHOP_BANNER_IMG_LAYOUT_3', JOT_SHOP_THEME_URI. "customizer/images/banner-image-3.png");
 define('JOT_SHOP_BANNER_IMG_LAYOUT_4', JOT_SHOP_THEME_URI. "customizer/images/banner-image-4.png");
 define('JOT_SHOP_BANNER_IMG_LAYOUT_5', JOT_SHOP_THEME_URI. "customizer/images/banner-image-5.png");
-//Custom section
-define('JOT_SHOP_CUSTOM_LAYOUT_1', JOT_SHOP_THEME_URI. "customizer/images/widget-footer-1.png");
-define('JOT_SHOP_CUSTOM_LAYOUT_2', JOT_SHOP_THEME_URI. "customizer/images/widget-footer-2.png");
-define('JOT_SHOP_CUSTOM_LAYOUT_3', JOT_SHOP_THEME_URI. "customizer/images/widget-footer-3.png");
