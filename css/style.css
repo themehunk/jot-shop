@@ -883,13 +883,6 @@ flex: inherit;
 .no-sidebar .primary-content-area{
   width: 100%;
 }
-.no-sidebar .menu-category-list ul[data-menu-style="vertical"]{
-position: absolute;
-    float: none;
-    width: 198px;
-    z-index: 999;
-    display:none;
-}
 .container > .content-wrap{
   background: #FFF;
   border-bottom-left-radius: 15px;
@@ -2113,7 +2106,8 @@ opacity: 1;
     text-decoration: none;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
-    font-size: 1rem;
+    font-size: 13px;
+    line-height: 21px;
     background: #fff;
     color: #1c1d1e;
 }
@@ -2631,7 +2625,7 @@ vertical-align: middle;
    border: 1px solid #eeeeee;
 }
 .widget-footer .widget-footer-wrap{
-    padding: 15px 0px;
+    padding: 30px 0px;
     margin: 0px -7.5px;
 }
 .jot-shop-widget-content {
@@ -2654,6 +2648,14 @@ vertical-align: middle;
     padding: 10px;
     margin: 0;
     position: relative;
+}
+footer .widget.woocommerce .widget-title,
+footer .jot-shop-widget-content .widget-title,.widget-title,
+footer .wp-block-group h2{
+  background: none;
+}
+.widget_block{
+  margin-bottom: 15px;
 }
 .widget-title{padding-bottom: 15px;}
 .widget.woocommerce .woocommerce-widget-layered-nav-list__item a,
@@ -2767,8 +2769,8 @@ color:#9c9c9c;
 }
 .widget-footer .widget ul {
     margin: 0;
+    border: 0;
     list-style-type: none;
-    border: solid 1px #eee;
     padding: 15px;
 }
 .tagcloud {
@@ -3274,8 +3276,8 @@ display:none!important;
 .woocommerce .thunk-woo-product-list span.onsale{
 position: absolute;
 border-radius:1px;
-top: 0;
-left:0;
+top: 7px;
+left: 7px;
 right: auto;
 padding:5px 10px;
 line-height:normal;
@@ -3491,7 +3493,8 @@ a.add_to_cart_button.ajax_add_to_cart,
     border: 5px solid #FFF;
     z-index: 999;
 }
-.product-type-variable .thunk-product .add-to-cart > a:before{
+.product-type-variable .thunk-product .add-to-cart > a:before,
+.product-type-grouped .add-to-cart .button:before{
   content: "\f067";
     font-family: "FontAwesome";
     font-size: 20px;
@@ -7044,7 +7047,7 @@ padding:0
 .post-slide-widget .owl-nav {
     position: absolute;
     top: -35px;
-    right: 0px;
+    right: 9px;
     color: #a3a3a3;
     left: auto;
     margin: 0;
@@ -7052,29 +7055,30 @@ padding:0
 .post-slide-widget .owl-carousel .owl-nav button{
     width: 25px;
     height: 25px;
-    line-height: 25px!important;
-    font-size: 17px;
+    line-height: 25px;
+    font-size: 14px;
     text-align: center;
-    background: #fff;
-    color: #999;
-    border: 1px solid #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
 }
 .post-slide-widget .owl-carousel .owl-nav .owl-prev {
     margin-right: 5px;
 }
-.post-slide-widget .slide-widget-title{
-    line-height:normal;
-}
 .post-slide-widget .post-thumb{
     margin-bottom:10px;
 }
-.post-slide-widget .title{font-size: 14px;}
-
+.post-slide-widget .title{
+  font-size: 14px;
+  font-family: "NotoSans-Bold";
+}
+.widget.th-about-me a.read-more:hover{
+  color: #FFF;
+}
 /******************************/
 /*extra list in drop down style*/
 /******************************/
@@ -8116,6 +8120,34 @@ header .mobile-nav-bar.sider.left, header .mobile-nav-bar.sider.right {
   opacity: 1;
   background: #e4e4e4;
   color: #111;
+}
+/******************/
+/*About us widget*/
+/******************/
+.widget.th-about-me .about-social-meta ul{
+display:flex;
+justify-content: flex-start;
+}
+.widget.th-about-me p{
+  margin: 15px 0;
+}
+.widget.th-about-me a.read-more{
+   border-radius: 5px;
+   padding: 5px 10px;
+   font-weight: normal;
+    line-height: normal;
+    display:inline-block;
+    color: #FFF;
+    margin-bottom: 15px;
+    background: #111;
+}
+.widget.th-about-me a.read-more:hover{
+color: #FFF;
+}
+.widget.th-about-me li.about-social-social{
+margin-right:15px;
+font-size: 18px;
+line-height: 25px;
 }
 @media screen and (max-width: 1200px){
 /*hedaer*/
@@ -9861,6 +9893,10 @@ a.add_to_cart_button.ajax_add_to_cart,
 .product-type-variable .thunk-product .add-to-cart > a:before{
   font-size: 13px;
   line-height: 21px;
+}
+.post-slide-widget .owl-nav{
+  top: -40px;
+  right: 39px;
 }
 }
 @media screen and (max-width:550px){
