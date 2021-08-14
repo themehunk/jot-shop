@@ -586,6 +586,13 @@ function jot_shop_customizer_style_registers(){
 }
 add_action('customize_controls_print_styles', 'jot_shop_customizer_style_registers');
 
+function jot_shop_widget_script_registers(){
+//widget
+wp_enqueue_script( 'jot_shop_widget_js', JOT_SHOP_THEME_URI .'customizer/js/widget.js', array("jquery"), '', true  );
+}
+add_action('customize_controls_enqueue_scripts', 'jot_shop_widget_script_registers' );
+add_action('admin_enqueue_scripts', 'jot_shop_widget_script_registers' );
+
 /**
  * Used by hook: 'customize_preview_init'
  * 

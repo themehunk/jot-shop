@@ -6,9 +6,7 @@
  * @since 1.0.0
  */
 get_header();
-$jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true ); 
-$frontpage_id = get_option( 'page_on_front' );
-$jot_shop_frontpage_sidebar = get_post_meta( $frontpage_id, 'jot_shop_sidebar_dyn', true ); ?>
+$jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true ); ?>
    <div id="content">
     <div class="container">
           <div class="content-wrap">
