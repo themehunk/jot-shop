@@ -23,7 +23,7 @@ function  jot_shop_product_remove(){
 function jot_shop_product_count_update(){
    global $woocommerce; 
   ?>
-<span class="cart-content"><?php echo sprintf ( _n( '<span class="count-item">%d <span class="item">item</span></span>', '<span class="count-item">%d <span class="item">items</span></span>', WC()->cart->get_cart_contents_count(),'m-shop' ), WC()->cart->get_cart_contents_count(),'m-shop'); ?><?php echo WC()->cart->get_cart_total(); ?></span>
+<span class="cart-content"><?php echo sprintf ( _n( '<span class="count-item">%d <span class="item">item</span></span>', '<span class="count-item">%d <span class="item">items</span></span>', WC()->cart->get_cart_contents_count(),'jot-shop' ), WC()->cart->get_cart_contents_count(),'jot-shop'); ?><?php echo WC()->cart->get_cart_total(); ?></span>
 <?php 
   die();
 }

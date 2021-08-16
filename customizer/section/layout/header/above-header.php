@@ -331,8 +331,8 @@ $wp_customize->add_control(
 );
 
 $wp_customize->add_setting('jot_shop_abv_hdr_botm_brd', array(
-        'sanitize_callback' => 'jot_shop_sanitize_range_value',
         'default'           => '0',
+        'sanitize_callback' => 'jot_shop_sanitize_range_value',
         'transport'         => 'postMessage',
             ));
 $wp_customize->add_control(
