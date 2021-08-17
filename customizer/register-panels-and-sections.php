@@ -233,6 +233,13 @@ $jot_shop_brand = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_br
   ));
 $wp_customize->add_section( $jot_shop_brand );
 
+$jot_shop_product_tab_image = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_product_tab_image', array(
+    'title'    => __( 'Tabbed Image Product Carousel', 'jot-shop' ),
+    'panel'    => 'jot-shop-panel-frontpage',
+    'priority' => 4,
+  ));
+$wp_customize->add_section( $jot_shop_product_tab_image );
+
 $jot_shop_product_big_feature = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_product_big_feature', array(
     'title'    => __( 'Big Featured Product', 'jot-shop' ),
     'panel'    => 'jot-shop-panel-frontpage',

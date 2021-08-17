@@ -1,7 +1,7 @@
 /**
- * CSS code for all open mart Extensions admin screens
+ * CSS code for all jot shop Extensions admin screens
  *
- * @package open mart
+ * @package jot shop
  * @since 1.0.0
  */
 
@@ -60,13 +60,13 @@ li#accordion-section-section_default_home h3 {
   100% { transform: rotate(360deg); }
 }
 /**
- * CSS code for all open mart Extensions admin screens
+ * CSS code for all jot shop Extensions admin screens
  *
- * @package open mart
+ * @package jot shop
  * @since 1.2.4
  */
 /**
- * open mart Welcome Page
+ * jot shop Welcome Page
  */
 .appearance_page_big-store #wpcontent{
  	padding: 0;
@@ -218,7 +218,7 @@ margin: 10px 0px;
 border-bottom:0px;
 }
 /**
- * open mart Quick Settings
+ * jot shop Quick Settings
  */
  .jot-shop-quick-setting-section ul,
  .jot-shop-addon-list-section ul{
