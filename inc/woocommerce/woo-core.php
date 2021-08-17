@@ -293,16 +293,6 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 				//product-list
 				'jot_shop_single_row_prdct_list' => get_theme_mod('jot_shop_single_row_prdct_list',false),
 				'jot_shop_product_list_slide_optn' => get_theme_mod('jot_shop_product_list_slide_optn',false),
-				//cat-tab-list-filter
-				'jot_shop_single_row_slide_cat_tb_lst' => get_theme_mod('jot_shop_single_row_slide_cat_tb_lst',false),
-				'jot_shop_cat_tb_lst_slider_optn' => get_theme_mod('jot_shop_cat_tb_lst_slider_optn',false),
-				//product tab image
-				'jot_shop_product_img_sec_single_row_slide' => get_theme_mod('jot_shop_product_img_sec_single_row_slide',true),
-				'jot_shop_product_img_sec_slider_optn' => get_theme_mod('jot_shop_product_img_sec_slider_optn',false),
-				'jot_shop_product_img_sec_adimg' =>  get_theme_mod('jot_shop_product_img_sec_adimg',''),
-
-				//brand
-				'jot_shop_brand_slider_optn' => get_theme_mod('jot_shop_brand_slider_optn',false),
 				//big-feature-product
 				'jot_shop_feature_product_slider_optn' => get_theme_mod('jot_shop_feature_product_slider_optn',false),
 				//category slider coloum
@@ -345,7 +335,7 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
         /****************/
         function jot_shop_add_to_compare($pid=''){
         if( is_plugin_active('yith-woocommerce-compare/init.php') ){
-          return '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.esc_url(home_url()).'?action=yith-woocompare-add-product&id='.esc_attr($pid).'" class="compare button" data-product_id="'.esc_attr($pid).'" rel="nofollow">Compare</a></div></span></div>';
+          return '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button"><a href="'.esc_url(home_url()).'?action=yith-woocompare-add-product&id='.esc_attr($pid).'" class="compare button" data-product_id="'.esc_attr($pid).'" rel="nofollow">'.__('compare','jot-shop').'</a></div></span></div>';
 
            }
         }

@@ -261,6 +261,7 @@ wp.customize('jot_shop_col1_texthtml', function(value){
              $('.top-header-col3 .content-html').text(to);
          });
      });
+jot_shop_css( 'jot_shop_abv_hdr_botm_brd','border-bottom-width', '.top-header', 'px' );
 jot_shop_css( 'jot_shop_above_brdr_clr','border-bottom-color', '.top-header,body.jot-shop-dark .top-header');
 wp.customize(
     'jot_shop_abv_hdr_hgt', function (value){

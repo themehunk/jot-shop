@@ -174,6 +174,13 @@ $jot_shop_top_slider_section = new Jot_Shop_WP_Customize_Section( $wp_customize,
   ));
 $wp_customize->add_section( $jot_shop_top_slider_section );
 
+$jot_shop_highlight = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_highlight', array(
+    'title'    => __( 'Highlight', 'jot-shop' ),
+    'panel'    => 'jot-shop-panel-frontpage',
+    'priority' => 4,
+  ));
+$wp_customize->add_section( $jot_shop_highlight );
+
 $jot_shop_category_tab_section = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_category_tab_section', array(
     'title'    => __( 'Tabbed Product Carousel', 'jot-shop' ),
     'panel'    => 'jot-shop-panel-frontpage',
@@ -218,14 +225,6 @@ $jot_shop_product_slide_list = new Jot_Shop_WP_Customize_Section( $wp_customize,
   ));
 $wp_customize->add_section( $jot_shop_product_slide_list );
 
-
-
-$jot_shop_highlight = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_highlight', array(
-    'title'    => __( 'Highlight', 'jot-shop' ),
-    'panel'    => 'jot-shop-panel-frontpage',
-    'priority' => 4,
-  ));
-$wp_customize->add_section( $jot_shop_highlight );
 
 $jot_shop_brand = new Jot_Shop_WP_Customize_Section( $wp_customize, 'jot_shop_brand', array(
     'title'    => __( 'Brand', 'jot-shop' ),
