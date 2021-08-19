@@ -13,26 +13,33 @@ $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_logo_width', 'jot_
 /**************************/
 // Above Header
 /**************************/
+if (get_theme_mod('jot_shop_above_header_layout','abv-none') != 'abv-none') {
+
     $jot_shop_above_brdr_clr = esc_html(get_theme_mod('jot_shop_above_brdr_clr','#fff'));  
     $jot_shop_style.=".top-header,body.jot-shop-dark .top-header{border-bottom-color:{$jot_shop_above_brdr_clr}}";
     $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_abv_hdr_hgt', 'jot_shop_top_header_height_responsive');
     $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_abv_hdr_botm_brd', 'jot_shop_abv_hdr_botm_brd_responsive');
+  }
 
 /**************************/
 // Above Fooetr
 /**************************/
+if (get_theme_mod('jot_shop_above_footer_layout','ft-abv-none') != 'ft-abv-none') {
     $jot_shop_above_frt_brdr_clr = esc_html(get_theme_mod('jot_shop_above_frt_brdr_clr','#fff'));  
     $jot_shop_style.=".top-footer,body.jot-shop-dark .top-footer{border-bottom-color:{$jot_shop_above_frt_brdr_clr}}";
     $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_above_ftr_hgt', 'jot_shop_top_footer_height_responsive');
     $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_abv_ftr_botm_brd', 'jot_shop_top_footer_border_responsive');
+  }
 
 /**************************/
 // Below Fooetr
 /**************************/
+if (get_theme_mod('jot_shop_bottom_footer_layout','ft-btm-none') != 'ft-btm-none') {
     $jot_shop_bottom_frt_brdr_clr = esc_html(get_theme_mod('jot_shop_bottom_frt_brdr_clr'));  
     $jot_shop_style.=".below-footer,body.jot-shop-dark .below-footer{border-top-color:{$jot_shop_bottom_frt_brdr_clr}}";
     $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_btm_ftr_hgt', 'jot_shop_below_footer_height_responsive');
     $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_btm_ftr_botm_brd', 'jot_shop_below_footer_border_responsive');
+  }
 /*********************/
 // Global Color Option
 /*********************/ 
@@ -46,10 +53,12 @@ $jot_shop_style.= jot_shop_responsive_slider_funct( 'jot_shop_logo_width', 'jot_
 .thunk-wishlist .yith-wcwl-wishlistexistsbrowse:hover,
 .thunk-quickview a:hover, .thunk-compare .compare-button a.compare.button:hover,
 .thunk-woo-product-list .thunk-quickview a:hover,.woocommerce .thunk-product-hover a.th-button:hover,#alm-quick-view-modal .alm-qv-image-slider .flex-control-paging li a.flex-active,.menu-close-btn:hover:before, .menu-close-btn:hover:after,.cart-close-btn:hover:after,.cart-close-btn:hover:before,.cart-contents .count-item,[type='submit']:hover,.comment-list .reply a,.nav-links .page-numbers.current, .nav-links .page-numbers:hover,.woocommerce .thunk-product-image-tab-section .thunk-product-hover a.add_to_cart_button:hover,.woocommerce .thunk-product-slide-section .thunk-product-hover a.add_to_cart_button:hover,.woocommerce .thunk-compare .compare-button a.compare.button:hover,.thunk-product .woosw-btn:hover,.thunk-product .woosc-btn:hover,.woosw-copy-btn input,.thunk-hglt-icon:before,.woocommerce .thunk-woo-product-list span.onsale,a.add_to_cart_button.ajax_add_to_cart,a.add_to_cart_button.ajax_add_to_cart:hover,.product-type-grouped .add-to-cart .button,.product-type-variable .thunk-product .button, .product-type-variable .thunk-product .add-to-cart > a,.cat-icon,#search-box #search-button,.woocommerce a.product_type_variable:hover,
-.woocommerce #respond input#submit:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,#move-to-top,.widget.th-about-me a.read-more:hover{background:{$jot_shop_theme_clr}}
+.woocommerce #respond input#submit:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,#move-to-top,.widget.th-about-me a.read-more:hover,#page.jotshop-site .owl-nav  button.owl-prev:hover,
+#page.jotshop-site .owl-nav  button.owl-next:hover{background:{$jot_shop_theme_clr}}
   .open-cart p.buttons a:hover,
   .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.thunk-slide .owl-nav button.owl-prev:hover, .thunk-slide .owl-nav button.owl-next:hover, .jot-shop-slide-post .owl-nav button.owl-prev:hover, .jot-shop-slide-post .owl-nav button.owl-next:hover,.thunk-list-grid-switcher a.selected, .thunk-list-grid-switcher a:hover,.woocommerce .woocommerce-error .button:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce .woocommerce-message .button:hover,#searchform [type='submit']:hover,article.thunk-post-article .thunk-readmore.button:hover,.jot-shop-load-more button:hover,.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current,.thunk-top2-slide.owl-carousel .owl-nav button:hover,.product-slide-widget .owl-carousel .owl-nav button:hover, .thunk-slide.thunk-brand .owl-nav button:hover,.thunk-heading-wrap:before,.woocommerce ul.products li.product .thunk-product-hover a.add_to_cart_button:hover,.product-type-variable .thunk-product .button,.product-type-variable .thunk-product .button:hover{background-color:{$jot_shop_theme_clr};} 
-  .thunk-product-hover .th-button.add_to_cart_button, .woocommerce ul.products .thunk-product-hover .add_to_cart_button, .woocommerce .thunk-product-hover a.th-butto, .woocommerce ul.products li.product .product_type_variable, .woocommerce ul.products li.product a.button.product_type_grouped,.open-cart p.buttons a:hover,.thunk-slide .owl-nav button.owl-prev:hover, .thunk-slide .owl-nav button.owl-next:hover, .jot-shop-slide-post .owl-nav button.owl-prev:hover, .jot-shop-slide-post .owl-nav button.owl-next:hover,body .woocommerce-tabs .tabs li a::before,.thunk-list-grid-switcher a.selected, .thunk-list-grid-switcher a:hover,.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button,#searchform [type='submit']:hover,article.thunk-post-article .thunk-readmore.button,.woocommerce .thunk-product-hover a.th-button,.jot-shop-load-more button,.thunk-top2-slide.owl-carousel .owl-nav button:hover,.product-slide-widget .owl-carousel .owl-nav button:hover, .thunk-slide.thunk-brand .owl-nav button:hover,.page-contact .leadform-show-form input[type='submit'],.woocommerce .thunk-product-hover a.product_type_simple,.post-slide-widget .owl-carousel .owl-nav button:hover{border-color:{$jot_shop_theme_clr}} .loader {
+  .thunk-product-hover .th-button.add_to_cart_button, .woocommerce ul.products .thunk-product-hover .add_to_cart_button, .woocommerce .thunk-product-hover a.th-butto, .woocommerce ul.products li.product .product_type_variable, .woocommerce ul.products li.product a.button.product_type_grouped,.open-cart p.buttons a:hover,.thunk-slide .owl-nav button.owl-prev:hover, .thunk-slide .owl-nav button.owl-next:hover, .jot-shop-slide-post .owl-nav button.owl-prev:hover, .jot-shop-slide-post .owl-nav button.owl-next:hover,body .woocommerce-tabs .tabs li a::before,.thunk-list-grid-switcher a.selected, .thunk-list-grid-switcher a:hover,.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button,#searchform [type='submit']:hover,article.thunk-post-article .thunk-readmore.button,.woocommerce .thunk-product-hover a.th-button,.jot-shop-load-more button,.thunk-top2-slide.owl-carousel .owl-nav button:hover,.product-slide-widget .owl-carousel .owl-nav button:hover, .thunk-slide.thunk-brand .owl-nav button:hover,.page-contact .leadform-show-form input[type='submit'],.woocommerce .thunk-product-hover a.product_type_simple,.post-slide-widget .owl-carousel .owl-nav button:hover,#page.jotshop-site .owl-nav  button.owl-prev:hover,
+#page.jotshop-site .owl-nav  button.owl-next:hover{border-color:{$jot_shop_theme_clr}} .loader {
     border-right: 4px solid {$jot_shop_theme_clr};
     border-bottom: 4px solid {$jot_shop_theme_clr};
     border-left: 4px solid {$jot_shop_theme_clr};}
