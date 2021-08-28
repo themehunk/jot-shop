@@ -23,13 +23,14 @@ if ( ! function_exists( 'jot_shop_cart_total_item' ) ){
    */
  function jot_shop_cart_total_item(){
    global $woocommerce; 
+   $product_no = WC()->cart->get_cart_contents_count();
   ?>
  <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart','jot-shop' ); ?>">
   <i class="fa fa-shopping-basket"></i>
-  <?php /*if(WC()->cart->get_cart_contents_count()!='0'){ */?> 
+  <?php if ($product_no > 0) { ?>
   <span class="count-item"><?php echo WC()->cart->get_cart_contents_count();?></span>
   <span class="cart-total"><?php echo WC()->cart->get_cart_total(); ?></span>
-<?php /*}*/?>
+<?php }  ?>
 </a>
   <?php }
 }
@@ -74,14 +75,15 @@ function jot_shop_add_to_cart_dropdown_fragment( $fragments ){
 }
 add_filter('woocommerce_add_to_cart_fragments', 'jot_shop_add_to_cart_fragment');
 function jot_shop_add_to_cart_fragment($fragments) {
-        ob_start();?>
+        ob_start();
+        $product_no = WC()->cart->get_cart_contents_count(); ?>
 
         <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart','jot-shop' ); ?>">
           <i class="fa fa-shopping-basket"></i> 
-          <?php /*if(WC()->cart->get_cart_contents_count()!='0'){*/ ?> 
+          <?php if ($product_no > 0) { ?>
           <span class="count-item"><?php echo WC()->cart->get_cart_contents_count();?></span>
           <span class="cart-total"><?php echo WC()->cart->get_cart_total(); ?></span>
-           <?php /*}*/?>
+           <?php }?>
         </a>
 
        <?php  $fragments['a.cart-contents'] = ob_get_clean();

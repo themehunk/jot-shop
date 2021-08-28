@@ -160,7 +160,7 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 
 					$image_size = apply_filters( 'single_product_archive_thumbnail_size', 'shop_catalog' );
 
-					echo apply_filters( 'top_store_woocommerce_product_flip_image', wp_get_attachment_image( reset( $attachment_ids ), $image_size, false, array( 'class' => 'show-on-slide' ) ) );
+					echo apply_filters( 'jot_shop_woocommerce_product_flip_image', wp_get_attachment_image( reset( $attachment_ids ), $image_size, false, array( 'class' => 'show-on-slide' ) ) );
 				}
 			}
 		}
@@ -293,8 +293,6 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 				//product-list
 				'jot_shop_single_row_prdct_list' => get_theme_mod('jot_shop_single_row_prdct_list',false),
 				'jot_shop_product_list_slide_optn' => get_theme_mod('jot_shop_product_list_slide_optn',false),
-				//big-feature-product
-				'jot_shop_feature_product_slider_optn' => get_theme_mod('jot_shop_feature_product_slider_optn',false),
 				//category slider coloum
 				'jot_shop_cat_item_no' => get_theme_mod('jot_shop_cat_item_no','5'),
 				'jot_shop_rtl' => (bool)get_theme_mod('jot_shop_rtl'),

@@ -10,11 +10,11 @@ get_template_part( 'inc/header-function');
 get_template_part( 'inc/footer-function');
 get_template_part( 'inc/blog-function');
 // theme-option
-//include_once(ABSPATH.'wp-admin/includes/plugin.php');
-//if ( !is_plugin_active('jot-shop-pro/jot-shop-pro.php') ) {
+include_once(ABSPATH.'wp-admin/includes/plugin.php');
+if ( !is_plugin_active('jot-shop-pro/jot-shop-pro.php') ) {
 get_template_part( 'lib/theme-option/class-jot-shop-admin-settings');
 get_template_part( 'lib/theme-option/theme-option-function');
-//}
+}
 //breadcrumbs
 get_template_part( 'lib/breadcrumbs/breadcrumbs');
 //page-post-meta
