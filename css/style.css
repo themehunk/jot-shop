@@ -2003,7 +2003,6 @@ height: auto;
 .menu-category-list ul[data-menu-style="vertical"] {
     width: 100%;
     border: 1px solid #f1f1f1;
-    border-top:0;
     background: #ffffff;
     position: absolute;
     z-index: 9999;
@@ -2228,11 +2227,11 @@ select#product_cat{
     width: 40%;
     height: calc(1.5em + 1.25rem + 2px);
     padding: .525rem 2rem .525rem 1rem;
-    font-size: .9375rem;
-    line-height: 1.2;
+    font-size: .975rem;
+    line-height: normal;
     color: #4b566b;
     vertical-align: middle;
-    background: #fff ;
+    background: #fff;
     border: 1px solid #dae1e7;
     border-radius: .3125rem;
     border-radius:0rem !important;
@@ -2242,19 +2241,14 @@ select#product_cat{
     border: none;
 }
 .th-wp-auto-search.ui-widget.ui-widget-content {
-    border: 1px solid #c5c5c5;
-z-index:99999999;
-position:relative;
-}
-.th-wp-auto-search.ui-widget.ui-widget-content {
 border: 1px solid #c5c5c5;
-z-index:99999999;
-    position: fixed;
+position: absolute;
 max-width:550px!important;
 max-height:320px;
 overflow-y: auto;
 overflow-x: hidden;
 background: #fff;
+z-index: 9;
 }
 /***************/
 
@@ -3647,6 +3641,9 @@ a.opn-quick-view-text::before {
   background: #FFF;
   color: #9c9c9c;
 }
+.single-product .comment-form{
+  width: 100%;
+}
 .woocommerce .thunk-product-hover .thunk-wishlist a.add_to_wishlist:hover,
 .thunk-wishlist .yith-wcwl-wishlistaddedbrowse:hover
 .thunk-quickview a:hover, .thunk-compare .compare-button a.compare.button:hover{
@@ -4489,12 +4486,14 @@ margin-bottom:10px;
     height: 35px;
     color: #fff;
     background:#ebe9eb;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     border: 1px solid #ddd;
     text-align: center;
     font-size: 20px;
-    line-height: 35px !important;
+    line-height: 35px;
     margin-right:10px;
     border-radius: 5px;
 }
@@ -4845,7 +4844,8 @@ margin-bottom:20px!important;
     margin-right:15px;
     float:left;
     border: 1px solid #9c9c9c;
-        display: flex;
+    display: flex;
+    margin-bottom: 21px;
 }
 .summary input[type=number]::-webkit-inner-spin-button, 
 .summary input[type=number]::-webkit-outer-spin-button { 
@@ -4857,6 +4857,7 @@ margin-bottom:20px!important;
 .woocommerce div.product form.cart {
     margin-bottom: 30px;
     float: left;
+    display: flex;
 }
 .woocommerce div.product form.cart .variations select {
     z-index: 1;
@@ -5390,7 +5391,9 @@ top:0em!important;
 border: 1px solid;
     border-radius: 0;
     color: #9c9c9c;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0;
     height: 45px;
     line-height:45px;
@@ -5791,6 +5794,9 @@ border-radius:3px 0px 0px 3px;
     padding: 15px 0;
     display: block;
 }
+.woocommerce .woocommerce-MyAccount-navigation ul li a{
+  text-decoration: none;
+}
 .woocommerce-MyAccount-navigation ul li:last-child {
 border:0;
 }
@@ -5930,6 +5936,9 @@ background-color:#f1f1f1;
     content: "\f104";
     font-family: fontAwesome;
     line-height: 1;
+}
+.woocommerce nav.woocommerce-pagination{
+  margin-bottom: 21px;
 }
 .woocommerce nav.woocommerce-pagination ul {
     padding: 0;
@@ -8121,6 +8130,9 @@ line-height: 25px;
 .opn-shop-load-more{
   margin-bottom: 30px;
 }
+.woocommerce table.shop_table a{
+  text-decoration: none;
+}
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
@@ -8407,7 +8419,7 @@ margin-right:0;
 }
 .woocommerce div.entry-summary form.cart button[type=submit]{
   width: 200px;
-  height: 35px;
+  height: 37px;
 }
 .single-product div.product form.cart button.minus,
 .single-product div.product form.cart input[type="number"],
@@ -8525,6 +8537,13 @@ h5 {
    clear: both;
    margin: 0 0 1em;
 }
+.woocommerce-page .thunk-list-view ul.products li.product{
+  width: 100%!important;
+}
+.woocommerce .thunk-list-view ul.products li.product a img{
+  width: initial;
+  margin: 0 auto;
+}
 /*single page*/
 .page-head .breadcrumb-trail.breadcrumbs {
     flex: inherit;
@@ -8561,7 +8580,7 @@ h5 {
      width: 100%;
 }
 .woocommerce div.product div.images .woocommerce-product-gallery__trigger {
-    top: 1.5em;
+    top: 1.9em;
   }
 
 /*checkout*/
@@ -9829,7 +9848,7 @@ section.thunk-ribbon-section {
     color: #fff;
     border-radius: 0;
     font-size: 12px;
-    height: 30px;
+    height: 32px;
     line-height: normal;
     letter-spacing: .1em;
     width: 130px;
