@@ -862,7 +862,7 @@ flex: inherit;
 .main-area{
   display: flex;
   position: relative;
-  padding: 0 15px;
+  padding: 0 15px 20px 15px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -3932,7 +3932,7 @@ text-align:center;
 }
 .thunk-banner-wrap a:hover:after,
 .thunk-banner-wrap a:hover:before{
-  opacity: 1;
+    opacity: 1;
     width: 100%;
     height: 100%;
 }
@@ -4855,7 +4855,7 @@ margin-bottom:20px!important;
     margin: 0; 
 }
 .woocommerce div.product form.cart {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     float: left;
     display: flex;
 }
@@ -4876,7 +4876,7 @@ margin-bottom:20px!important;
         margin-bottom: 7.5px;
 }
 .woocommerce div.product form.cart .variations td.label{
-vertical-align:middle;
+     vertical-align:middle;
 }
 .woocommerce div.product form.cart table td {
     padding-left: 0;
@@ -6934,7 +6934,7 @@ position:relative;
 #jotshop-mobile-bar .count-item{
     position: absolute;
     top: 5px;
-    right: 21px;
+    right: 29px;
     left: initial;
     background: #141415;
     color: #fff;
@@ -8431,6 +8431,13 @@ margin-right:0;
   height: 35px;
   line-height: 35px;
 }
+.summary .yith-wcwl-add-button a, .summary .yith-wcwl-wishlistaddedbrowse a, 
+.summary .yith-wcwl-wishlistexistsbrowse a, 
+.woocommerce .entry-summary a.compare.button{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
 /* slider6 */
 .thunk-slider-full-slide.owl-carousel.categoryinfo img {
     width: 65% !important;
@@ -8439,7 +8446,24 @@ margin-right:0;
 .widget_jot_shop_tabbed_product_widget .thunk-product-hover{
   right: 10px;
 }
-
+.single-product.woocommerce .related.products a.compare.button,
+.single-product.woocommerce .related.products .yith-wcwl-wishlistexistsbrowse,
+.single-product.woocommerce .related.products a.add_to_wishlist.single_add_to_wishlist{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+.single-product.woocommerce .related.products .thunk-wishlist .yith-wcwl-add-button > a i,
+.single-product.woocommerce a.compare.button::before,
+.single-product.woocommerce .related.products .add-to-cart a:before{
+  font-size: 12px;
+  line-height: 19px;
+}
+.single-product.woocommerce .related.products .add-to-cart a{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
 }
 @media screen and (min-width: 981px) and (max-width: 1023px){
 .sidebar-content-area,.below-header-col1 {
@@ -8497,6 +8521,9 @@ font-size:15px;
 .no-sidebar .primary-content-area {
     float: none;
     margin: 0 auto !important;
+}
+.woocommerce .entry-summary a.compare.button{
+  margin-left: 5px;
 }
 }
 @media screen and (min-width: 769px) and (max-width: 850px){
@@ -9421,30 +9448,6 @@ margin-bottom: 10px!important;
    padding: 0;
     padding-right:15px;
   }
-/*  .woocommerce .thunk-product-hover a.add_to_cart_button, 
-  .woocommerce .thunk-product-hover .thunk-wishlist a.add_to_wishlist, 
-  .thunk-wishlist .yith-wcwl-wishlistaddedbrowse, .thunk-wishlist .yith-wcwl-wishlistexistsbrowse, 
-  .thunk-quickview a, .thunk-compare .compare-button a.compare.button, 
-  .woocommerce .thunk-product-hover .button.th-button, .woocommerce ul.products li.product .button,
-  .thunk-product .woosw-btn, .woosw-btn, 
-  .thunk-product .woosc-btn, .woosc-btn,
-  .thunk-product .woosw-added,
-  .woosw-added,
-  .summary .woosw-added, 
-  .summary .woosw-btn, 
-  .summary .woosc-btn  {
-    display: block;
-    font-size: 0;
-    padding: 0;
-    position: relative;
-    vertical-align: top;
-    letter-spacing: initial;
-    text-align: center;
-    float: none;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-}*/
 .woocommerce .thunk-product-hover a.add_to_cart_button.ajax_add_to_cart::before {
     content: "\f07a";
     font-family: "FontAwesome";
@@ -9820,6 +9823,12 @@ font-size:16px;
     font-size: 18px;
     color: #FFF;
 }
+#jotshop-mobile-bar a.cart-contents{
+  width: 108px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 #move-to-top {
     right: 30px;
     bottom: 58px;
@@ -9905,6 +9914,8 @@ width:50%;
 .thunk-list-view .os-product-excerpt{
   padding: 0;
   margin: 0;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .post-slide-widget .owl-nav{
   top: -40px;
@@ -9913,6 +9924,9 @@ width:50%;
 #yith-wcwl-form a.add_to_cart_button.ajax_add_to_cart{
   padding: 5px;
   font-size: 9px;
+}
+.woocommerce .entry-summary a.compare.button{
+  margin-left: 5px;
 }
 }
 @media screen and (max-width:550px){

@@ -11,10 +11,10 @@ $jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true ); ?>
     <div class="container">
           <div class="content-wrap">
            <?php 
-           if( shortcode_exists( 'jot-shop' ) && (!defined('JOT_SHOP_PRO'))){
+           if( shortcode_exists( 'jot-shop' ) && (!defined('JOT_SHOP_PRO') && class_exists('WooCommerce'))){
              require_once (THEMEHUNK_CUSTOMIZER_PLUGIN_PATH . 'jot-shop/jot-shop-front-page/front-topslider.php');
            }
-           elseif (defined('JOT_SHOP_PRO')) {
+           elseif (defined('JOT_SHOP_PRO') && class_exists('WooCommerce')) {
             require_once (JOT_SHOP_PRO_DIR_PATH . 'front-page/front-topslider.php');
            }
            ?>

@@ -130,10 +130,24 @@
         CatMenu : function () {
                  // category toggle
                               $(".cat-toggle").click(function(){
-                              $(".product-cat-list").slideToggle();
+                              $(".product-cat-list").slideDown();
                               $(".toggle-icon", this).toggleClass("icon-circle-arrow-down");
                               });
 
+                              // $(document).click(function(){
+                              // $(".product-cat-list").slideUp();
+                              // $(".toggle-icon").removeClass("icon-circle-arrow-down");
+                              // });
+                              $(".product-cat-list").click(function(e){
+                                  e.stopPropagation();
+                              });
+                              
+                              $(document).on('click', function (e) {
+                          if ($(e.target).closest(".cat-toggle").length === 0) {
+                              $(".product-cat-list").slideUp();
+                              $(".toggle-icon").removeClass("icon-circle-arrow-down");
+                          }
+});
                            
                            
                              $("#mobile-nav-tab-category .mobile").ThunkCatMenu({
