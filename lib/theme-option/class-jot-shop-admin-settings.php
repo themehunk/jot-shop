@@ -540,6 +540,9 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
                 }elseif($plugin_slug=='woocommerce'){
                 	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/woocommerce.png' ).'" />'; 
                 $detail='';
+                }elseif($plugin_slug=='th-advance-product-search'){
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-advance-product-search.png' ).'" />'; 
+                $detail='';
                 }elseif($plugin_slug=='one-click-demo-import'){
                 	echo'<img src="'.esc_url(  JOT_SHOP_THEME_URI . 'lib/theme-option/assets/images/one-click-demo-import.png' ).'" />'; 
 		        $detail= '';

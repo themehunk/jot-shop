@@ -129,15 +129,12 @@
         
         CatMenu : function () {
                  // category toggle
-                              $(".cat-toggle").click(function(){
-                              $(".product-cat-list").slideDown();
+                              $(".cat-toggle").on("click keypress",function(e){
+                              $(".product-cat-list").slideToggle();
                               $(".toggle-icon", this).toggleClass("icon-circle-arrow-down");
+                               e.stopPropagation();
                               });
 
-                              // $(document).click(function(){
-                              // $(".product-cat-list").slideUp();
-                              // $(".toggle-icon").removeClass("icon-circle-arrow-down");
-                              // });
                               $(".product-cat-list").click(function(e){
                                   e.stopPropagation();
                               });
@@ -221,7 +218,6 @@
         
         },
         
-       
         MobileMenuFunction : function(){
                  // close-button-active
                    $('body').find('.sider').prepend('<div class="menu-close"><a href="#" class="menu-close-btn">close</a></div>');

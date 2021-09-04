@@ -388,14 +388,7 @@ $jot_shop_main_header_cat_clr = new  Jot_Shop_WP_Customize_Section($wp_customize
     'priority' => 3,
 ));
 $wp_customize->add_section($jot_shop_main_header_cat_clr);
-// header search
-$jot_shop_main_header_srch_clr = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-main-header-srch-clr', array(
-    'title'    => __('Search','jot-shop'),
-    'panel'    => 'jot-shop-panel-color-background',
-    'section'  => 'jot-shop-main-header-clr',
-    'priority' => 4,
-));
-$wp_customize->add_section($jot_shop_main_header_srch_clr);
+
 //Shop Icon
 $jot_shop_main_header_shp_icon = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-main-header-shp-icon', array(
     'title'    => __('Shop Icon','jot-shop'),
