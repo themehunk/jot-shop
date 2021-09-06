@@ -1249,9 +1249,14 @@ justify-content: flex-start;
     order: 2;
     margin-left: 15px;
 }
-
+.off-canvas-button{
+  display: block;
+}
 .site-title span{
   font-size:30px;
+}
+.off-canvas-button:focus{
+  outline: 2px solid thin;
 }
 .thunk-product .woosw-btn:before,
 .woosw-btn:before{
@@ -1613,9 +1618,9 @@ position: absolute;
     z-index: 0;
 }
 .page-template-frontpage .slide-layout-1 .owl-carousel button.owl-dot{
-    width: 11px;
-    height: 11px;
-    line-height: 11px;
+    width: 9px;
+    height: 9px;
+    line-height: 9px;
     border-radius: 50%;
     background: #9e9e9efc;
     margin: 0 4px;

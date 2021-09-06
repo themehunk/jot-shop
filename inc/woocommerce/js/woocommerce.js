@@ -84,6 +84,7 @@
                 off_canvas_wrapper.find('.menu-close').on('click', function(e) {
                  opn_shop_offcanvas_filter_close();
                });
+
              },
       cartDropdown: function (){
            /* woo, wc_add_to_cart_params */
