@@ -223,7 +223,7 @@ if($main_header_layout!=='mhdrtwo'):?>
 					<div class="below-header-col1">
 						<div class="menu-category-list toogleclose">
 						  <div class="toggle-cat-wrap">
-						  	  <p class="cat-toggle">
+						  	  <p class="cat-toggle" tabindex="0">
                     <span class="cat-icon"> 
                       <span class="cat-top"></span>
                        <span class="cat-mid"></span>
@@ -412,16 +412,13 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
         </div>
            <div class="header-support-wrap">
               <div class="header-support-icon">
-                <?php if( class_exists( 'WPCleverWoosw' )){?>
-                <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
-      <?php } ?>
-                 <?php if( class_exists( 'YITH_WCWL' )){?>
+
+                 <?php if( get_theme_mod('jot_shop_whislist_mobile_disable',false) != true && class_exists( 'YITH_WCWL' )){?>
                 <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
       <?php } ?>
         
-        <?php if(class_exists( 'WooCommerce' )){ jot_shop_account(); } ?>
+        <?php if(class_exists( 'WooCommerce' ) && get_theme_mod('jot_shop_account_mobile_disable',false) != true){ jot_shop_account(); } ?>
                
               </div>
               <div class="thunk-icon">
@@ -558,31 +555,11 @@ if( $description || is_customize_preview() ):?>
 /***************************/
 // Product search
 /***************************/
-function jot_shop_product_search_box(){ ?>             
-<div id='search-box' class="wow thmkfadeInDown" data-wow-duration="1s">
-<form action='<?php echo esc_url( home_url( '/'  ) ); ?>' id='search-form' class="woocommerce-product-search" method='get' target='_top'>
-   <input id='search-text' name='s' placeholder='<?php echo esc_attr(get_theme_mod('search_box_text',esc_attr_x( 'Search for Product', 'placeholder', 'jot-shop' ))); ?>' class="form-control search-autocomplete" value='<?php echo get_search_query(); ?>' type='text' title='<?php echo esc_attr_x( 'Search for:', 'label', 'jot-shop' ); ?>' />
-   <div class="vert-brd" ></div>
-   <?php 
-if ( class_exists( 'WooCommerce' ) ):
-$args = array(
-   'taxonomy' => 'product_cat',
-   'name' => 'product_cat',
-  'orderby'    => 'menu_order',
-   'value_field' => 'slug',
-   'class' => 'something',
-   'show_option_all'   => __('All Category','jot-shop'),
-);
-wp_dropdown_categories( $args );
-endif;
-?>
-                        <button id='search-button' value="<?php echo esc_attr_x( 'Submit','submit button', 'jot-shop' ); ?>" type='submit'>                     
-                          <?php echo esc_html__( 'Search', 'jot-shop' ); ?>
-                        </button>
-                        <input type="hidden" name="post_type" value="product" />
-                       </form>
- </div>                    
-<?php }
+function jot_shop_product_search_box(){  
+  if (shortcode_exists( 'th-aps' )) {
+    echo do_shortcode('[th-aps]');          
+  }       
+}
 /**********************************/
 // header icon function
 /**********************************/

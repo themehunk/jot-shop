@@ -12,7 +12,6 @@
             $this.OffCanvas();
             $this.cartDropdown();
             $this.AddtoCartQuanty();
-            $this.AutoCompleteSearch();
             $this.CategoryTabFilter();
             $this.ProductSlide();
             $this.ProductListSlide();
@@ -85,6 +84,7 @@
                 off_canvas_wrapper.find('.menu-close').on('click', function(e) {
                  opn_shop_offcanvas_filter_close();
                });
+
              },
       cartDropdown: function (){
            /* woo, wc_add_to_cart_params */
@@ -169,105 +169,7 @@
             });
 
         },
-        
-        /*AutoCompleteSearch:function(){
-               var searchRequest;
-                   $('.search-autocomplete').autocomplete({
-                   classes: {
-                       "ui-autocomplete" : "ui-my-class"
-                   },
-                   minChars:3,
-                   source: function( request, response, term){
-                   var matcher = $.ui.autocomplete.escapeRegex( request.term );
-                  $.ajax({
-                      type: 'POST',
-                      dataType: 'json',
-                      url: jotshop.ajaxUrl,
-                      data: {
-                       action :'jot_shop_search_site',
-                       'match':matcher,                
-                       },
-        success: function(res){
-              response(res.data);
-         },
-        
-      });
-    }
-  });
-},*/
 
-AutoCompleteSearch:function(){
-
-                   $('.search-autocomplete').autocomplete({
-                   classes: {
-                       "ui-autocomplete" : "th-wp-auto-search",   
-                   }, 
-                   minLength:1,
-                   source: function( request, response, term){
-                    var matcher = $.ui.autocomplete.escapeRegex( request.term );
-                    var cat = $("#product_cat").val();
-                    
-                    $(".search-autocomplete").removeClass("ui-autocomplete-loading");
-                    $("#search-button").addClass("ui-autocomplete-loading"); 
-                    $.ajax({
-                      type: 'POST',
-                      dataType: 'json',
-                      url: jotshop.ajaxUrl,
-                      data: {
-                      action :'jot_shop_search_site',
-                       'match':matcher,  
-                       'cat':cat,              
-                       },
-                      success: function(res){ 
-                        if(res.data.length!== 0){
-                        var oldFn = $.ui.autocomplete.prototype._renderItem;
-                        $.ui.autocomplete.prototype._renderItem = function( ul, item){
-                            var re = new RegExp(this.term, "ig") ;
-                            var t = item.label.replace(re,"<span style='font-family:JosefinSans-Bold; color:#fe696a;'>" + this.term + "</span>");
-                            return $( "<li></li>" )
-                                .data( "item.autocomplete", item )
-                                .append( "<a href=" + item.link + "><div class='srch-prd-img'>" + item.imglink + "</div><div class='srch-prd-content'><span class='title'>" + t + "</span><span class='price'>" + item.price + "</spn></div></a>" )
-                                .appendTo( ul );
-
-                        }
-                      }else{
-                         $.ui.autocomplete.prototype._renderItem = function( ul, item){
-                         return $( "<li></li>" )
-                                .data( "item.autocomplete", item )
-                                .append( "<div class='no-result-msg'>No Result Found</div>" )
-                                .appendTo( ul );
-                              }
-
-                      };
-                        response(res.data.slice(0, 5));   
-                        if(res.data.length > 5){
-                        var href = window.location.href;
-                        var index = href.indexOf('/wp-admin');
-                        var homeUrl = href.substring(0, index);
-                        var serachurl = homeUrl + '?s='+ matcher +'&product_cat='+cat+'&post_type=product';
-                        $(".th-wp-auto-search").append('<a href="'+ serachurl +'" class="search-bar__view-all" >View all results</a>');
-                       }
-                        $(".search-autocomplete").removeClass("ui-autocomplete-loading");
-                        $("#search-button").removeClass("ui-autocomplete-loading"); 
-                      
-                      },
-
-                    });
-                  },
-                  response: function(event, ui){
-                          if (ui.content.length == 0){
-                              var noResult = { value:"",label:"",imglink:"",price:"" }; 
-                              ui.content.push(noResult);  
-                              
-                          }
-                      },
-                }).bind('focus change', function(){ 
-                   $(this).autocomplete("search");
-                   } 
-                );
-
-
- },
  cartopen: function(){
             $(document).on('click','a.cart-contents',function(e){
             e.preventDefault();

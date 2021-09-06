@@ -458,24 +458,8 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
 
        if ( is_array( $recommend_plugins ) && isset( $recommend_plugins[0] ) ){
         foreach($recommend_plugins[0] as $slug=>$plugin){
-            $plugin_info = plugins_api( 'plugin_information', array(
-                       'slug' => $slug,
-                    	'fields' => array(
-                        'downloaded'        => false,
-                        'sections'          => true,
-                        'homepage'          => true,
-                        'added'             => false,
-                        'compatibility'     => false,
-                        'requires'          => false,
-                        'downloadlink'      => false,
-                        'icons'             => false,
-                    )
-                ) );
-                    $plugin_name = $plugin_info->name;
-                    $plugin_slug = $plugin_info->slug;
-                    $version = $plugin_info->version;
-                    $author = $plugin_info->author;
-                    $download_link = $plugin_info->download_link;
+            		$plugin_name = $plugin['name'];
+                    $plugin_slug = $plugin['slug']; 
                    
             
 
@@ -556,22 +540,13 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
                 }elseif($plugin_slug=='woocommerce'){
                 	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/woocommerce.png' ).'" />'; 
                 $detail='';
-                }elseif($plugin_slug=='yith-woocommerce-wishlist'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.jpg' ).'" />'; 
-                $detail='';
-                }elseif($plugin_slug=='yith-woocommerce-compare'){
-                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.jpg' ).'" />'; 
+                }elseif($plugin_slug=='th-advance-product-search'){
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/th-advance-product-search.png' ).'" />'; 
                 $detail='';
                 }elseif($plugin_slug=='one-click-demo-import'){
                 	echo'<img src="'.esc_url(  JOT_SHOP_THEME_URI . 'lib/theme-option/assets/images/one-click-demo-import.png' ).'" />'; 
 		        $detail= '';
                 }
-			    echo '<p class="rcp-detail">'.esc_html($detail).' </p>';
-                echo '<p class="action-btn plugin-card-'.esc_attr( $plugin_slug ).'">
-                        <span>Version:'.esc_html($version).'</span>
-                        '.$author.'
-                        | <a class="plugin-detail thickbox open-plugin-details-modal" href="'.esc_url( $detail_link ).'">'.esc_html__( 'Details', 'jot-shop' ).'</a>
-                </p>';
                 echo'<button data-activated="Plugin Activated" data-msg="Activating Plugin" data-init="'.esc_attr($active_file_name).'" data-slug="'.esc_attr( $plugin_slug ).'" class="button '.esc_attr( $button_class ).'">'.esc_html($button_txt).'</button>';
                 echo '</div>';
         }
@@ -589,32 +564,16 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
 
        if ( is_array( $useful_plugins ) && isset( $useful_plugins[0] ) ){
         foreach($useful_plugins[0] as $slug=>$plugin){
-            $plugin_info = plugins_api( 'plugin_information', array(
-                       'slug' => $slug,
-                    	'fields' => array(
-                        'downloaded'        => false,
-                        'sections'          => true,
-                        'homepage'          => true,
-                        'added'             => false,
-                        'compatibility'     => false,
-                        'requires'          => false,
-                        'downloadlink'      => false,
-                        'icons'             => false,
-                    )
-                ) );
-                    $plugin_name = $plugin_info->name;
-                    $plugin_slug = $plugin_info->slug;
-                    $version = $plugin_info->version;
-                    $author = $plugin_info->author;
-                    $download_link = $plugin_info->download_link;
-                   
-            
+            		$plugin_name = $plugin['name'];
+                    $plugin_slug = $plugin['slug'];
 
             $status = is_dir( WP_PLUGIN_DIR . '/' . $plugin_slug );
             if($plugin_slug=='themehunk-megamenu-plus'){
                 $active_file_name = $plugin_slug . '/themehunk-megamenu.php';
                 }
-            
+            elseif($plugin_slug=='yith-woocommerce-wishlist' || $plugin_slug=='yith-woocommerce-compare'){
+                $active_file_name = $plugin_slug . '/init.php';
+                }
             else{
                 	$active_file_name = $plugin_slug . '/' . $plugin_slug . '.php';
                 }
@@ -677,12 +636,14 @@ if ( ! class_exists( 'Jot_Shop_Admin_Settings' ) ){
                 	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/themehunk-megamenu.png' ).'" />'; 
 		        $detail= '';
                 }
-			    echo '<p class="rcp-detail">'.esc_html($detail).' </p>';
-                echo '<p class="action-btn plugin-card-'.esc_attr( $plugin_slug ).'">
-                        <span>Version:'.esc_html($version).'</span>
-                        '.$author.'
-                        | <a class="plugin-detail thickbox open-plugin-details-modal" href="'.esc_url( $detail_link ).'">'.esc_html__( 'Details', 'jot-shop' ).'</a>
-                </p>';
+                elseif($plugin_slug=='yith-woocommerce-wishlist'){
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/wishlist.jpg' ).'" />'; 
+                $detail='';
+                }elseif($plugin_slug=='yith-woocommerce-compare'){
+                	echo'<img src="'.esc_url(JOT_SHOP_THEME_URI. 'lib/theme-option/assets/images/compare.jpg' ).'" />'; 
+                $detail='';
+                }
+			    
                 echo'<button data-activated="Plugin Activated" data-msg="Activating Plugin" data-init="'.esc_attr($active_file_name).'" data-slug="'.esc_attr( $plugin_slug ).'" class="button '.esc_attr( $button_class ).'">'.esc_html($button_txt).'</button>';
                 echo '</div>';
         }
