@@ -192,8 +192,8 @@ $wp_customize->add_control( 'jot_shop_sticky_header_effect', array(
         'section'  => 'jot-shop-main-header',
         'type'     => 'select',
         'choices'    => array(
-        'scrldwmn'    => __('Effect One','jot-shop'),
-        'scrltop'     => __('Effect Two','jot-shop'),
+        'scrltop'     => __('Effect One','jot-shop'),
+        'scrldwmn'    => __('Effect Two','jot-shop'),
         
         ),
         'priority'   => 11,

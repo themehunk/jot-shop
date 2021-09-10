@@ -637,17 +637,7 @@ endif;
 $social.='</ul>';
 return $social;
 }
-/******************************/
-//Sticky sidebar function
-/******************************/
-function jot_shop_stick_sidebar($class){
-            $jot_shop_sticky_sidebar = get_theme_mod( 'jot_shop_sticky_sidebar');
-            if ($jot_shop_sticky_sidebar){
-                $class = 'bigstr-sticky-sidebar';
-            }
-            return $class;
-}
-add_filter( 'jot_shop_stick_sidebar_class','jot_shop_stick_sidebar', 999 );
+
 /*****************************/
 //add class active
 function jot_shop_body_classes( $classes ){
