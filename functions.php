@@ -157,6 +157,8 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                  'slug'			=>	'yith-woocommerce-compare',
              ),
         ) );
+
+        remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'jot_shop_setup' );
