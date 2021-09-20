@@ -457,6 +457,15 @@ $jot_shop_box_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot_shop
     'priority' => 1,
 ));
 $wp_customize->add_section( $jot_shop_box_color );
+/****************/
+//Mobile Nav Bar
+/****************/
+$jot_shop_mobile_nav_bar = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot_shop_mobile_nav_bar', array(
+    'title'    => __('Mobile Nav Bar', 'jot-shop'),
+    'panel'    => 'jot-shop-panel-color-background',
+    'priority' => 21,
+));
+$wp_customize->add_section( $jot_shop_mobile_nav_bar );
 // product
 $jot_shop_woo_prdct_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-woo-prdct-color', array(
     'title'    => __('Product', 'jot-shop'),

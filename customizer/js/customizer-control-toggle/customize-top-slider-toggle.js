@@ -22,8 +22,6 @@ OPNControlTrigger.addHook( 'jot-shop-toggle-control', function( argument, api ){
 				'jot_shop_lay3_2url',
 				'jot_shop_include_category_slider',
 				'jot_shop_lay3_bg_img',
-				'jot_shop_lay3_bg_img_ovrly',
-				'jot_shop_lay3_heading_txt',
 				'jot_shop_discount_offer_txt',
 				'jot_shop_cat_url',
 				'jot_shop_lay3_url3',
@@ -47,7 +45,6 @@ OPNControlTrigger.addHook( 'jot-shop-toggle-control', function( argument, api ){
 				'jot_shop_top_slider_2_title2',
 				'jot_shop_lay2_adimg3',
 				'jot_shop_lay2_url3',
-				'jot_shop_lay3_bg_img_ovrly',
 				'jot_shop_lay3_bg_img',
 				],
 				callback: function(slideroptn){
@@ -67,9 +64,7 @@ OPNControlTrigger.addHook( 'jot-shop-toggle-control', function( argument, api ){
 				'jot_shop_lay3_adimg3',
 				'jot_shop_lay3_3url',
 				'jot_shop_include_category_slider',
-				'jot_shop_lay3_bg_img_ovrly',
 				'jot_shop_lay3_bg_img',
-				'jot_shop_lay3_heading_txt',
 				],
 				callback: function(slideroptn){
 					if(slideroptn =='slide-layout-3'){
@@ -81,7 +76,6 @@ OPNControlTrigger.addHook( 'jot-shop-toggle-control', function( argument, api ){
 			{
 				controls: [  
 				
-				'jot_shop_lay3_bg_img_ovrly',
 				'jot_shop_lay3_bg_img',
 				],
 				callback: function(slideroptn){

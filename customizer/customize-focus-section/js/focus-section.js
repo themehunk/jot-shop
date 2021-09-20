@@ -42,21 +42,8 @@ jQuery(document).ready(function($){
         focusForCustomShortcutColor: function (){
             var fakeShortcutClasses = [
                 'jot-shop-top-slider-color',
-                'jot-shop-product-cat-slide-tab-color',
                 'jot-shop-cat-slider-color',
-                'jot-shop-product-slider-color',
-                'jot-shop-product-list-slide-color',
-                'jot-shop-product-list-tab-slide-color',
                 'jot-shop-ribbon-color',
-                'jot-shop-highlight-color',
-                'jot-shop-banner-color',
-                'jot-shop-brand-color',
-                'jot-shop-tabimgprd-color',
-                'jot-shop-big-featured-color',
-                'jot-shop-custom-one-color',
-                'jot-shop-custom-two-color',
-                'jot-shop-custom-three-color',
-                'jot-shop-custom-four-color',
             ];
             fakeShortcutClasses.forEach(function (element){
                 $('.customize-partial-edit-shortcut-'+ element).on('click',function (){
