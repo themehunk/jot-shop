@@ -466,9 +466,9 @@ wp.customize( 'jot_shop_theme_clr', function( setting ){
     } );
 
 jot_shop_css( 'jot_shop_text_clr','color','body,.woocommerce-error, .woocommerce-info, .woocommerce-message');
-jot_shop_css( 'jot_shop_title_clr','color','.site-title span a,.sprt-tel b,.widget.woocommerce .widget-title, .open-widget-content .widget-title, .widget-title,.thunk-title .title,.thunk-hglt-box h6,h2.thunk-post-title a, h1.thunk-post-title ,#reply-title,h4.author-header,.page-head h1,.woocommerce div.product .product_title, section.related.products h2, section.upsells.products h2, .woocommerce #reviews #comments h2,.woocommerce table.shop_table thead th, .cart-subtotal, .order-total,.cross-sells h2, .cart_totals h2,.woocommerce-billing-fields h3,.page-head h1 a,.wp-block-group h2');
-jot_shop_css( 'jot_shop_link_clr','color','a,#open-above-menu.jot-shop-menu > li > a');
-jot_shop_css( 'jot_shop_link_hvr_clr','color','a:hover,#open-above-menu.jot-shop-menu > li > a:hover,#open-above-menu.jot-shop-menu li a:hover');
+jot_shop_css( 'jot_shop_title_clr','color','.site-title span a,.sprt-tel b,.widget.woocommerce .widget-title, .open-widget-content .widget-title, .widget-title,.wp-block-group h2,.thunk-title .title,h2.thunk-post-title a, h1.thunk-post-title ,#reply-title,h4.author-header,.page-head h1,.woocommerce div.product .product_title, section.related.products h2, section.upsells.products h2, .woocommerce #reviews #comments h2,.woocommerce table.shop_table thead th, .cart-subtotal, .order-total,.cross-sells h2, .cart_totals h2,.woocommerce-billing-fields h3,.page-head h1 a,.widget.woocommerce .widget-title, .jot-shop-widget-content .widget-title, .widget-title, .wp-block-group h2, .jot-shop-widget-content > h2');
+jot_shop_css( 'jot_shop_link_clr','color','a,#open-above-menu.jot-shop-menu > li > a,.thunk-cat-tab .tab-link li a');
+jot_shop_css( 'jot_shop_link_hvr_clr','color','#open-above-menu.jot-shop-menu > li > a:hover,#open-above-menu.jot-shop-menu li a:hover,.thunk-cat-tab .tab-link li a.active, .thunk-cat-tab .tab-link li a:hover');
 
 //Above Header
 jot_shop_css( 'jot_shop_above_hd_bg_clr','background', '.top-header:before,body.jot-shop-dark .top-header:before');
@@ -486,5 +486,79 @@ jot_shop_css( 'jot_shop_abv_content_link_hvr_clr','color', '.top-header .top-hea
 //move to top
 jot_shop_css( 'jot_shop_move_to_top_bg_clr','background', '#move-to-top');
 jot_shop_css( 'jot_shop_move_to_top_icon_clr','color', '#move-to-top');
+
+
+//cat slider heading
+wp.customize('jot_shop_cat_slider_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-category-slide-section .thunk-title .title').text(to);
+         });
+     });
+//product slide
+wp.customize('jot_shop_product_slider_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-product-slide-section .thunk-title .title').text(to);
+         });
+     });
+//product list
+wp.customize('jot_shop_product_list_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-product-list-section .thunk-title .title').text(to);
+         });
+     });
+//product cat tab 
+wp.customize('jot_shop_cat_tab_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-product-tab-section .thunk-title .title').text(to);
+         });
+     });
+//product cat tab list
+wp.customize('jot_shop_list_cat_tab_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-product-tab-list-section .thunk-title .title').text(to);
+         });
+     });
+
+//Big Featured
+wp.customize('jot_shop_feature_product_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-feature-product-section .thunk-title .title').text(to);
+         });
+     });
+//Ribbon Text
+wp.customize('jot_shop_ribbon_text', function(value){
+         value.bind(function(to) {
+             $('.thunk-ribbon-content h3').text(to);
+         });
+     });
+wp.customize('jot_shop_ribbon_btn_text', function(value){
+         value.bind(function(to) {
+             $('.thunk-ribbon-content a.ribbon-btn').text(to);
+         });
+     });
+//Custom section One
+wp.customize('jot_shop_custom_1_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-custom-one-section .thunk-title .title').text(to);
+         });
+     });
+//Custom section two
+wp.customize('jot_shop_custom_2_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-custom-two-section .thunk-title .title').text(to);
+         });
+     });
+//Custom section three
+wp.customize('jot_shop_custom_3_heading', function(value){
+         value.bind(function(to) {
+             $('.thunk-custom-three-section .thunk-title .title').text(to);
+         });
+     });
+//Custom section four
+wp.customize('jot_shop_custom_4_heading', function(value){
+         value.bind(function(to){
+             $('.thunk-custom-four-section .thunk-title .title').text(to);
+         });
+     });
 
 })( jQuery );

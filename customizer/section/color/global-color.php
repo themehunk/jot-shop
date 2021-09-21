@@ -76,24 +76,24 @@ $wp_customize->add_control(
         'label'      => __('Title Color', 'jot-shop' ),
         'section'    => 'jot-shop-gloabal-color',
         'settings'   => 'jot_shop_title_clr',
-        'priority' => 4,
+        'priority' => 6,
     ) ) 
  );  
 // gloabal background option
 $wp_customize->get_control( 'background_color' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_color' )->priority = 6;
+$wp_customize->get_control( 'background_color' )->priority = 9;
 $wp_customize->get_control( 'background_image' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_image' )->priority = 7;
+$wp_customize->get_control( 'background_image' )->priority = 10;
 $wp_customize->get_control( 'background_preset' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_preset' )->priority = 8;
+$wp_customize->get_control( 'background_preset' )->priority = 11;
 $wp_customize->get_control( 'background_position' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_position' )->priority = 8;
+$wp_customize->get_control( 'background_position' )->priority = 11;
 $wp_customize->get_control( 'background_repeat' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_repeat' )->priority = 9;
+$wp_customize->get_control( 'background_repeat' )->priority = 12;
 $wp_customize->get_control( 'background_attachment' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_attachment' )->priority = 10;
+$wp_customize->get_control( 'background_attachment' )->priority = 13;
 $wp_customize->get_control( 'background_size' )->section = 'jot-shop-gloabal-color';
-$wp_customize->get_control( 'background_size' )->priority = 11;
+$wp_customize->get_control( 'background_size' )->priority = 14;
 /****************/
 //doc link
 /****************/

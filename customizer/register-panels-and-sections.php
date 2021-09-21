@@ -324,7 +324,7 @@ $jot_shop_below_header_clr = new  Jot_Shop_WP_Customize_Section($wp_customize,'j
 $wp_customize->add_section( $jot_shop_below_header_clr);
 
 $jot_shop_icon_header_clr = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-icon-header-clr', array(
-    'title'    => __('Square Icon','jot-shop'),
+    'title'    => __('Shop Icons','jot-shop'),
     'panel'    => 'jot-shop-panel-color-background',
     'section'  => 'jot-shop-header-color',
     'priority' => 4,
@@ -457,6 +457,15 @@ $jot_shop_box_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot_shop
     'priority' => 1,
 ));
 $wp_customize->add_section( $jot_shop_box_color );
+/****************/
+//Mobile Nav Bar
+/****************/
+$jot_shop_mobile_nav_bar = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot_shop_mobile_nav_bar', array(
+    'title'    => __('Mobile Nav Bar', 'jot-shop'),
+    'panel'    => 'jot-shop-panel-color-background',
+    'priority' => 21,
+));
+$wp_customize->add_section( $jot_shop_mobile_nav_bar );
 // product
 $jot_shop_woo_prdct_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-woo-prdct-color', array(
     'title'    => __('Product', 'jot-shop'),
@@ -516,6 +525,14 @@ $jot_shop_cat_slider_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'j
     'priority' => 2,
 ));
 $wp_customize->add_section($jot_shop_cat_slider_color);
+
+$jot_shop_ribbon_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-ribbon-color', array(
+    'title'    => __('Ribbon', 'jot-shop'),
+    'panel'    => 'jot-shop-panel-color-background',
+    'section'  => 'jot-shop-front-page-color',
+    'priority' => 6,
+));
+$wp_customize->add_section($jot_shop_ribbon_color);
 
 $jot_shop_product_slider_color = new  Jot_Shop_WP_Customize_Section($wp_customize,'jot-shop-product-slider-color', array(
     'title'    => __('Product Carousel', 'jot-shop'),

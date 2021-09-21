@@ -181,12 +181,14 @@ ul[data-menu-style="accordion"] li ul.sub-menu > li {
     width: 100%;
 }
 ul[data-menu-style="accordion"] > li > a > .arrow:before {
+    width: 40px;
+    text-align: center;
     float: right;
-    content: "\f105";
+    content: "\f107";
     font-family: 'FontAwesome';
 }
 ul[data-menu-style="accordion"] li.menu-active > a > .arrow:before {
-    content: "\f107" !important;
+    content: "\f106" !important;
     font-family: 'FontAwesome';
 }
 ul[data-menu-style="accordion"] > li > ul.sub-menu {
@@ -313,7 +315,7 @@ display: -webkit-inline-box;
     }
     .jot-shop-menu > li > a > .arrow:before {
         float: right;
-        content: "\f105";
+        content: "\f107";
     }
 .sider.left .jot-shop-menu > li, .sider.right .jot-shop-menu > li {
     float: none;
@@ -327,7 +329,7 @@ display: -webkit-inline-box;
     background: none;
 }
     li.menu-active > a > .arrow:before {
-        content: "\f107" !important;
+        content: "\f106" !important;
     }
     .jot-shop-menu li ul.sub-menu > li {
         width: 100%;
@@ -550,7 +552,7 @@ background: rgba(16,18,19,.95);
     list-style: none;
     justify-content: center;
     margin-bottom: 0;
-    padding: 15px 0;
+    padding: 9px 0;
     text-transform: uppercase;
     width: 100%;
 }
