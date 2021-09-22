@@ -2616,8 +2616,11 @@ vertical-align: middle;
     margin: 0px -7.5px;
 }
 .jot-shop-widget-content {
-    margin: 0 15px 30px 0;
     position:relative; 
+    margin: 0 0 30px 15px;
+}
+.jotshop-site.left .jot-shop-widget-content{
+  margin: 0 15px 30px 0;
 }
 #sidebar-primary .jot-shop-widget-content:nth-of-type(1) {
   margin-top: 15px;
@@ -6275,7 +6278,8 @@ form p label{
   margin-top: 5px;
   margin-right: 10px;
 }
-#searchform [type="submit"] {
+#searchform [type="submit"],
+.widget_product_search button[type="submit"] {
     line-height: 30px;
     font-size: 11px;
     padding: 0px 12px;
@@ -6289,7 +6293,8 @@ form p label{
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-#searchform [type="submit"]:hover{
+#searchform [type="submit"]:hover,
+.widget_product_search button[type="submit"]:hover{
 border:1px solid #ff3377;
 background: #ff3377;
 cursor:pointer;

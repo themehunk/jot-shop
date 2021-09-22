@@ -26,7 +26,6 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 1.0.0 =
 * Released:
-* Typography removed 
 
 Initial release
 
@@ -40,45 +39,6 @@ License for images:
 1. Image used in Screenshots.
 Image Name: screenshot.png
 
-Resource link:https://stocksnap.io/photo/desk-laptop-ICPTTVBVMQ
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/camera-lense-HGRFPBWTEJ
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/top-purse-XPGUG6AKFB
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/sneakers-shoes-U20YIXFQBC
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/top-workspace-KPHFA6ZAX7
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/shoe-footwear-575XG5HORA
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/drone-background-APSRDPFZSR
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/notebook-headphones-QSLCDYFLDX
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/wireless-headphones-EXCBJA3FFQ
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
-
-Resource link:https://stocksnap.io/photo/cool-woman-PLGCXMYH4J
-Licensed under the CCO license.
-License link : https://stocksnap.io/license
 
 == Theme License & Copyright ==
 Jot Shop is distributed under the terms of the GNU GPL
@@ -86,9 +46,9 @@ Jot-Shop-Pro-Copyright 2021, themehunk.com
 License : GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-== Roboto Font ==
-License: Apache License, Version 2.0.
-License URL: http://www.apache.org/licenses/
+== Noto Sans Font ==
+License: SIL Open Font License
+License URL: https://scripts.sil.org/OFL
 
 == Owl Carousel v2.3.4 ==
 License: MIT License
