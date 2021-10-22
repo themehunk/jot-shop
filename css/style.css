@@ -105,7 +105,7 @@ h1 {
   font-size: 24px;
   line-height:38px;
  }
-h2 {
+h2 { 
   font-size: 22px;
   line-height:35px;
  }
@@ -1181,7 +1181,7 @@ text-align:start;
   position: relative;
 }
 .top-footer:before,
-.widget-footer-wrap:before,
+.widget-footer:before,
 .below-footer:before{
     content: "";
     position: absolute;
