@@ -1914,7 +1914,7 @@ margin-right:15px;
 }
 .toggle-icon{
 float:right;
-padding-right: 15px;
+padding-right: 0;
 }
 .menu-category-list .toggle-title{
 font-family: 'NotoSans-Bold';
