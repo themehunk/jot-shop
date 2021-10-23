@@ -10,8 +10,7 @@ License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 
 == Description ==
-Jot Shop is a Free WooCommerce theme for creating clean online stores for your business. It has a stylish Homepage design for listing premium products and high-end experiences. Theme comes with powerful functionality like Section On/Off, Header & Footer layouts, Product styles, Ajax live search, Offcanvas sidebar, Quick view, Pagination options for Shop & Blog page, multiple widgets for sidebar & footer, Color & background options, etc. Theme also supports many Product sections to showcase your product in your homepage, Sections like - Tabbed Product carousel, Woo category section, Product Carousel, Product list carousel. Other than these sections theme has Top Slider layout, Ribbon section with Image & Video, Banner layouts and Service section. Theme is integrated with WooCommerce & Th Variation Swatches plugin and lead form builder plugin which will help you in designing a perfect Online Store. If you’re looking for a highly flexible e-commerce theme, then Jot Shop could have everything you need.
-
+Jot Shop is a Free WooCommerce theme for creating clean and professional shopping stores. It has a stylish Homepage design for listing premium products and high-end experiences. Theme comes with powerful functionality like Section On/Off, Header & Footer layouts, Product styles, Ajax live search, Offcanvas sidebar, Quick view, Pagination option for Shop & Blog page, Color & background options etc. Theme also supports many Product sections to showcase your product in your homepage, Sections like - Tabbed Product carousel, Woo category section, Product Carousel, Product list carousel. Other than these sections theme has Top Slider layout, Ribbon section with Image & Video, Banner layouts and Service section. Theme is integrated with WooCommerce, Th Variation Swatches plugin and lead form builder plugin which will help you in designing a perfect Online Store. If you’re looking for a highly flexible e-commerce theme, then Jot Shop could have everything you need.
 For more information about Theme https://www.themehunk.com
 
 == Frequently Asked Questions ==
@@ -34,10 +33,20 @@ Initial release
 
 == Resources ==
  
+== Resources ==
+ 
 License for images:
 == Screenshots ==
 1. Image used in Screenshots.
 Image Name: screenshot.png
+Resource link: 
+https://stocksnap.io/photo/fitness-male-46YBDQQ43I
+https://stocksnap.io/photo/brown-leather-84G6CURMJ3
+https://stocksnap.io/photo/red-heels-OTIRIRP4UR
+hhttps://stocksnap.io/photo/footwear-outdoor-K8VEP08K07
+https://stocksnap.io/photo/bag-leather-DQCQ6W96UC
+Licensed under the CCO license.
+License link : https://stocksnap.io/license
 
 
 == Theme License & Copyright ==
