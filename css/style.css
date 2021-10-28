@@ -4990,7 +4990,7 @@ color:#1c1d1e!important;
 }
 
 .woocommerce div.product .woocommerce-tabs .panel{
-background: #f4f7f9;
+background: transparent;
     position: relative;
     margin: 0;
     display: none;
@@ -5816,7 +5816,7 @@ line-height: 34px;
     text-align:left;
 }
 article.thunk-article,article.thunk-post-article,.single article,.no-results.not-found,#error-404{
-background:#fff;
+background:transparent;
 margin-bottom:30px;
 }
 .thunk-post-img-wrapper{
@@ -6840,7 +6840,7 @@ margin-top:10px;
     -ms-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
-        z-index: 99999;
+        z-index: 9;
 }
 .search-wrapper.open{
     visibility: visible;
@@ -8162,6 +8162,9 @@ line-height: 25px;
 }
 .thaps-search-box{
   padding: 12px 0;
+}
+#alm-quick-view-content .summary-content .product_meta{
+  background: transparent;
 }
 @media screen and (max-width: 1200px){
 /*hedaer*/
