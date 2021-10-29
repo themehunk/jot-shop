@@ -321,7 +321,7 @@ body #alm-quick-view-modal div.product .flex-viewport {
   #alm-quick-view-content div.summary form.cart {
     position: relative;
     bottom: 0;
-    background: #fff;
+    background: transparent;
     margin: 0 -30px;
     padding: 20px 30px 30px;
     width: 100%;
