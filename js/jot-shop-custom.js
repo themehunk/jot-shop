@@ -89,7 +89,7 @@
                   });   
             
         },
-          cat_toggle : function () {
+          cat_toggle : function () { 
                     $('.header__cat__item.dropdown').on('click', function (e) {
                     e.preventDefault();
                     $(this).toggleClass('open');

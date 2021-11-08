@@ -3,7 +3,7 @@ Contributors: ThemeHunk
 Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
 Requires at least: WordPress 5.3
 Requires PHP: 5.4
-Tested up to: 5.8.1
+Tested up to: 5.8
 Stable tag: 1.0.1
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -23,7 +23,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 == Changelog ==
 = 1.0.1 =
-* Quik View bg issue resolved.
+* Issues fixed.
 
 = 1.0.0 =
 * Released:
@@ -32,7 +32,7 @@ Initial release
 
 == Upgrade Notice ==
 = 1.0.1 =
-* Quik View bg issue resolved.
+* Issues fixed.
 
 == Resources ==
  

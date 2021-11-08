@@ -149,7 +149,7 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 
 					$image_size = apply_filters( 'single_product_archive_thumbnail_size', 'shop_catalog' );
 
-					echo apply_filters( 'open_woocommerce_jot_shop_product_flip_image', wp_get_attachment_image( reset( $attachment_ids ), $image_size, false, array( 'class' => 'show-on-hover' ) ) );
+					echo apply_filters( 'jot_shop_woocommerce_product_flip_image', wp_get_attachment_image( reset( $attachment_ids ), $image_size, false, array( 'class' => 'show-on-hover' ) ) );
 				}
 			}
 			if ('slide' === $hover_style ) {
@@ -206,20 +206,24 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 					$classes[] = 'open-shadow-hover-' . esc_attr($shadow_hvr_style);
 				}	
 			}
-			if ( 'swap' === $hover_style && (!is_admin()) && !jot_shop_is_blog()){
+			if ( 'swap' === $hover_style && !is_page_template('frontpage.php') && (!is_admin()) && !jot_shop_is_blog()){
             global $product;
+            if(!empty($product->get_gallery_image_ids())){
 			$attachment_ids = $product->get_gallery_image_ids();
 			if(count($attachment_ids) > '0'){
                 $classes[] ='jot-shop-swap-item-hover';
 			  }
+			}
 			
 		    }
-		     if('slide' === $hover_style && (!is_admin()) && !jot_shop_is_blog()){
+		     if('slide' === $hover_style && !is_page_template('frontpage.php') && (!is_admin()) && !jot_shop_is_blog()){
             global $product;
+            if(!empty($product->get_gallery_image_ids())){
 			$attachment_ids = $product->get_gallery_image_ids();
 			if(count($attachment_ids) > '0'){
                 $classes[] ='jot-shop-slide-item-hover';
 			  }
+			}
 		
 		   }
 			return $classes;
