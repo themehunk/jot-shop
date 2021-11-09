@@ -866,6 +866,10 @@ flex: inherit;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+input:focus,
+a:focus{
+  outline: 2px dotted #444!important;
+}
 .sidebar-content-area{
     width: 21%;
     box-sizing: border-box;
@@ -1190,6 +1194,9 @@ text-align:start;
     width: 100%;
     height: 100%;
     background: #f7f8f9;
+}
+.widget-footer:before{
+  background: transparent;
 }
 .top-footer-bar:before,
 .widget-footer-wrap:before{
@@ -2482,7 +2489,7 @@ vertical-align: middle;
 }
 .cart-contents .count-item {
     position: absolute;
-    left: 9px;
+    left: 27px;
     height: 23px;
     width: 23px;
     line-height: 23px;
@@ -2520,13 +2527,8 @@ vertical-align: middle;
     -moz-border-radius: 5px;;
     border-radius: 5px;;
     text-align: center;
-    position: absolute;
-    left:0px;
-    top: 50%;
+    position: relative;
     z-index: 9;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
     font-size: 1.2rem;
 }
 .cart-contents .cart-total{

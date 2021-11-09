@@ -29,7 +29,7 @@ if($jot_shop_above_header_layout!=='abv-none'):?>
           	<?php jot_shop_top_header_conetnt_col2($jot_shop_above_header_col2_set,$jot_shop_menu_open); ?>
           </div>
           <div class="top-header-col3">
-          	<?php jot_shop_top_header_conetnt_col2($jot_shop_above_header_col3_set,$jot_shop_menu_open); ?>
+          	<?php jot_shop_top_header_conetnt_col3($jot_shop_above_header_col3_set,$jot_shop_menu_open); ?>
           </div>
         </div> 
     <?php } ?>
@@ -192,8 +192,8 @@ function jot_shop_top_header_conetnt_col3($content,$mobileopen){ ?>
 }
 elseif($content=='widget'){?>
   <div class="content-widget">
-    <?php if( is_active_sidebar('top-header-widget-col2' ) ){
-    dynamic_sidebar('top-header-widget-col2' );
+    <?php if( is_active_sidebar('top-header-widget-col3' ) ){
+    dynamic_sidebar('top-header-widget-col3' );
      }else{?>
       <a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>"><?php esc_html_e( 'Add Widget', 'jot-shop' );?></a>
      <?php }?>
