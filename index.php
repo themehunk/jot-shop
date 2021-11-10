@@ -45,7 +45,7 @@ $jot_shop_sidebar = get_post_meta( $post->ID, 'jot_shop_sidebar_dyn', true );
                         </div><!-- end primary primary-content-area-->
                         <?php 
                         if(jot_shop_is_blog()){
-                               if(get_post_meta(get_option( 'page_for_posts' ),$jot_shop_sidebar)!='no-sidebar'){
+                               if(get_post_meta(get_option( 'page_for_posts' ),'jot_shop_sidebar_dyn',true)!='no-sidebar'){
                                             get_sidebar();
                                     }
                         }elseif($jot_shop_sidebar != 'no-sidebar' ){

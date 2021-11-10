@@ -23,8 +23,6 @@ define('JOT_SHOP_SLIDER_LAYOUT_1', JOT_SHOP_THEME_URI. "customizer/images/slider
 define('JOT_SHOP_SLIDER_LAYOUT_2', JOT_SHOP_THEME_URI. "customizer/images/slider-layout-2.png");
 define('JOT_SHOP_SLIDER_LAYOUT_3', JOT_SHOP_THEME_URI. "customizer/images/slider-layout-3.png");
 define('JOT_SHOP_SLIDER_LAYOUT_4', JOT_SHOP_THEME_URI. "customizer/images/slider-layout-4.png");
-define('SLIDER_LAYOUT_2', JOT_SHOP_THEME_URI. 'customizer/images/slider-layout-2.png');
-define('SLIDER_LAYOUT_4', JOT_SHOP_THEME_URI. 'customizer/images/slider-layout-4.png');
 //category slider
 define('JOT_SHOP_CAT_SLIDER_LAYOUT_1', JOT_SHOP_THEME_URI. "customizer/images/category-slider-1.png");
 define('JOT_SHOP_CAT_SLIDER_LAYOUT_2', JOT_SHOP_THEME_URI. "customizer/images/category-slider-2.png");

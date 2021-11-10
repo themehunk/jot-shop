@@ -24,7 +24,7 @@ get_header();?>
 				</div><!-- .error-heading -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'big-store' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'jot-shop' ); ?></p>
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->
 
