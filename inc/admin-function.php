@@ -286,12 +286,12 @@ function jot_shop_top_slider_content( $jot_shop_slide_content_id, $default ){
 			$jot_shop_slide_content = json_decode( $jot_shop_slide_content );
 			if ( ! empty( $jot_shop_slide_content) ) {
 				foreach ( $jot_shop_slide_content as $slide_item ) :
-					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
-					$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
-					$title  = ! empty( $slide_item->title ) ? apply_filters( 'big-store_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
-					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'big-store_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
-					$text   = ! empty( $slide_item->text ) ? apply_filters( 'big-store_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
-					$link   = ! empty( $slide_item->link ) ? apply_filters( 'big-store_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
+					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
+					$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
+					$title  = ! empty( $slide_item->title ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
+					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
+					$text   = ! empty( $slide_item->text ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
+					$link   = ! empty( $slide_item->link ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
 			?>	
 			<?php if($image!==''):?>
 		                    <div>
@@ -325,8 +325,8 @@ function jot_shop_top_single_slider_content( $jot_shop_slide_content_id, $defaul
 			$jot_shop_slide_content = json_decode( $jot_shop_slide_content );
 			if ( ! empty( $jot_shop_slide_content) ) {
 				foreach ( $jot_shop_slide_content as $slide_item ) :
-					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
-					$link   = ! empty( $slide_item->link ) ? apply_filters( 'big-store_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
+					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
+					$link   = ! empty( $slide_item->link ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
 			?>	
 			<?php if($image!==''):?>
 		                    <div>
@@ -349,12 +349,12 @@ function jot_shop_top_slider_2_content( $jot_shop_slide_content_id, $default ){
 			$jot_shop_slide_content = json_decode( $jot_shop_slide_content );
 			if ( ! empty( $jot_shop_slide_content) ) {
 				foreach ( $jot_shop_slide_content as $slide_item ) :
-					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
-					$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
-					$title  = ! empty( $slide_item->title ) ? apply_filters( 'big-store_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
-					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'big-store_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
-					$text   = ! empty( $slide_item->text ) ? apply_filters( 'big-store_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
-					$link   = ! empty( $slide_item->link ) ? apply_filters( 'big-store_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
+					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
+					$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
+					$title  = ! empty( $slide_item->title ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
+					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
+					$text   = ! empty( $slide_item->text ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
+					$link   = ! empty( $slide_item->link ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
 			?>	
 			<?php if($image!==''):?>
                    <div class="thunk-to2-slide-list">
@@ -383,14 +383,14 @@ function jot_shop_top_slider_6_content( $jot_shop_slide_content_id, $default ){
 			$jot_shop_slide_content6 = json_decode( $jot_shop_slide_content6 );
 			if ( ! empty( $jot_shop_slide_content6) ) {
 				foreach ( $jot_shop_slide_content6 as $slide_item ) :
-					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
-					//$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
-					$title  = ! empty( $slide_item->title ) ? apply_filters( 'big-store_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
-					//$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'big-store_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
-					$text   = ! empty( $slide_item->text ) ? apply_filters( 'big-store_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
+					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
+					//$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
+					$title  = ! empty( $slide_item->title ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
+					//$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
+					$text   = ! empty( $slide_item->text ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
 
-					//$text2   = ! empty( $slide_item->text2 ) ? apply_filters( 'big-store_translate_single_string', $slide_item->text2, 'Top Slider section' ) : '';
-					$link   = ! empty( $slide_item->link ) ? apply_filters( 'big-store_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
+					//$text2   = ! empty( $slide_item->text2 ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->text2, 'Top Slider section' ) : '';
+					$link   = ! empty( $slide_item->link ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
 			?>
 
 
@@ -439,12 +439,12 @@ function jot_shop_top_slider_9_content( $jot_shop_slide_content_id, $default ){
 			$jot_shop_slide_content = json_decode( $jot_shop_slide_content );
 			if ( ! empty( $jot_shop_slide_content) ) {
 				foreach ( $jot_shop_slide_content as $slide_item ) :
-					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
-					//$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
-					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'big-store_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
-					$title  = ! empty( $slide_item->title ) ? apply_filters( 'big-store_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
-					$text   = ! empty( $slide_item->text ) ? apply_filters( 'big-store_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
-					$link   = ! empty( $slide_item->link ) ? apply_filters( 'big-store_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
+					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
+					//$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
+					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
+					$title  = ! empty( $slide_item->title ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
+					$text   = ! empty( $slide_item->text ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
+					$link   = ! empty( $slide_item->link ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
 			?>	
 			<?php if($image!==''):?>
                    <div class="thunk-to2-slide-list">
@@ -478,12 +478,12 @@ function jot_shop_top_slider_multi_content( $jot_shop_slide_content_id, $default
 			$jot_shop_slide_content = json_decode( $jot_shop_slide_content );
 			if ( ! empty( $jot_shop_slide_content) ) {
 				foreach ( $jot_shop_slide_content as $slide_item ) :
-					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
-					$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'big-store_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
-					$title  = ! empty( $slide_item->title ) ? apply_filters( 'big-store_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
-					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'big-store_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
-					$text   = ! empty( $slide_item->text ) ? apply_filters( 'big-store_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
-					$link   = ! empty( $slide_item->link ) ? apply_filters( 'big-store_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
+					$image = ! empty( $slide_item->image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->image_url, 'Top Slider section' ) : '';
+					$logo_image = ! empty( $slide_item->logo_image_url ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->logo_image_url, 'Top Slider section' ) : '';
+					$title  = ! empty( $slide_item->title ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->title, 'Top Slider section' ) : '';
+					$subtitle  = ! empty( $slide_item->subtitle ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->subtitle, 'Top Slider section' ) : '';
+					$text   = ! empty( $slide_item->text ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->text, 'Top Slider section' ) : '';
+					$link   = ! empty( $slide_item->link ) ? apply_filters( 'jot_shop_translate_single_string', $slide_item->link, 'Top Slider section' ) : '';
 			?>	
 			<?php if($image!==''):?>
                    

@@ -22,8 +22,10 @@ Yes our theme supports builder
 Yes, this theme is tested with latest version of WordPress, you can use it for your site.
 
 == Changelog ==
+
 = 1.0.3 =
 * Blog Page Sidebar issue resolved.
+* Th option panel updated.
 
 = 1.0.2 =
 * Text Domain Warning issue fixed.
@@ -39,6 +41,7 @@ Initial release
 == Upgrade Notice ==
 = 1.0.3 =
 * Blog Page Sidebar issue resolved.
+* Th option panel updated.
 
 == Resources ==
  

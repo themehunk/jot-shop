@@ -8694,18 +8694,40 @@ h5 {
     padding-left: 0;
 }
 .thunk-3-add-content .thunk-row {
-    -ms-flex: 0 0 33.33%;
-    flex: 0 0 33.33%;
     max-width: 100%;
     margin-bottom:0;
     padding-top:15px;
     padding-left:7.5px;
     padding-right:7.5px;
 }
+.varlayout-two .thunk-3-add-content .thunk-row{
+   -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+.varlayout-three .thunk-3-add-content .thunk-row{
+   -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+}
 .slide-layout-3 .thunk-3-add-content {
     flex-wrap: inherit;
     margin-right: -7.5px;
     margin-left: -7.5px;
+}
+.slide-layout-3 .thunk-3col-slider-wrap.varlayout-one .thunk-slider-content{
+  width: 76%;
+  padding-right: 7.5px;
+  flex: initial;
+}
+.slide-layout-3 .thunk-3col-slider-wrap.varlayout-one .thunk-add-content{
+  width: 24%;
+  padding-left: 7.5px;
+}
+.slide-layout-3 .thunk-3col-slider-wrap.varlayout-one .thunk-add-content,
+.slide-layout-3 .varlayout-one .thunk-3-add-content,
+.slide-layout-3 .varlayout-one .thunk-3-add-content .thunk-row{
+  flex: initial;
+  max-width: initial;
+  margin: initial;
 }
 .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
  .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
@@ -9121,6 +9143,14 @@ font-size:21px
     padding-top:7.5px;
     padding-left:3.25px;
     padding-right:3.25px;
+}
+.varlayout-two .thunk-3-add-content .thunk-row{
+   -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+.varlayout-three .thunk-3-add-content .thunk-row{
+   -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
 }
 .slide-layout-3 .thunk-3-add-content {
     flex-wrap: inherit;
@@ -10066,4 +10096,3 @@ display:none;
     width: 36%;
   }
 }
-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
