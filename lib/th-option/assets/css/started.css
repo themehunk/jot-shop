@@ -118,23 +118,23 @@
     cursor: pointer;
 }
 
-.appearance_page_thunk_started{
+.appearance_page_jot_shop_thunk_started{
 background:#fff;
 }
 
-.appearance_page_thunk_started .theme_link a.ztabtn.button, .ztabtn{
+.appearance_page_jot_shop_thunk_started .theme_link a.ztabtn.button, .ztabtn{
     color: #FFFFFF !important;
     border-color: #FF6D00 !important;
     background: #FF6D00 !important;
 }
 
-.appearance_page_thunk_started .theme_link {
+.appearance_page_jot_shop_thunk_started .theme_link {
     background: #fff;
     width: 46%;
     padding: 20px;
     box-sizing: border-box;
 }
-.appearance_page_thunk_started .theme_link:nth-child(4), .appearance_page_thunk_started .theme_link:nth-child(2){
+.appearance_page_jot_shop_thunk_started .theme_link:nth-child(4), .appearance_page_jot_shop_thunk_started .theme_link:nth-child(2){
 margin-right:0%;
 }
 
@@ -452,14 +452,14 @@ display: flex;
     height: auto;
     font-size: 15px;
 }
-.appearance_page_thunk_started #Import-Demo-Content .theme_link.import-demo{
+.appearance_page_jot_shop_thunk_started #Import-Demo-Content .theme_link.import-demo{
     width: 100%;
 }
 .import-image{
     margin-right: 45px;
 }
 
-.appearance_page_thunk_started .theme_link.child-theme{
+.appearance_page_jot_shop_thunk_started .theme_link.child-theme{
     width: 100%;
 }
 .child-image{
@@ -474,7 +474,7 @@ display: flex;
     position: relative;
 }
 .get-child:after{
-    content: " New";
+    content: "New";
     background: #ff2121;
     color: #FFF;
     padding: 2px 7px;

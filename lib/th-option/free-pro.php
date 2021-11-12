@@ -240,7 +240,7 @@
                         </div>
                      </td>
                      <td class="status upsell"><?php _e('Get access to all Pro features','jot-shop'); ?> </td>
-                     <td class="status success"><a href="https://themehunk.com/product/jot-shop-pro/" target="_blank" rel="external noreferrer noopener" class="components-button is-primary"><?php _e('Get Jot Shop Pro Now','jot-shop'); ?></a></td>
+                     <td class="status success"><a href="<?php echo esc_url('https://themehunk.com/product/jot-shop-pro/');?>" target="_blank" rel="external noreferrer noopener" class="components-button is-primary"><?php _e('Get Jot Shop Pro Now','jot-shop'); ?></a></td>
                   </tr>
 
 

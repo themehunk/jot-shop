@@ -26,6 +26,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 = 1.0.3 =
 * Blog Page Sidebar issue resolved.
 * Th option panel updated.
+* Screenshot Changed.
+* Style issue resolved.
 
 = 1.0.2 =
 * Text Domain Warning issue fixed.
@@ -42,6 +44,8 @@ Initial release
 = 1.0.3 =
 * Blog Page Sidebar issue resolved.
 * Th option panel updated.
+* Screenshot Changed.
+* Style issue resolved.
 
 == Resources ==
  
@@ -52,11 +56,13 @@ License for images:
 1. Image used in Screenshots.
 Image Name: screenshot.png
 Resource link: 
-https://stocksnap.io/photo/fitness-male-46YBDQQ43I
-https://stocksnap.io/photo/brown-leather-84G6CURMJ3
-https://stocksnap.io/photo/red-heels-OTIRIRP4UR
-hhttps://stocksnap.io/photo/footwear-outdoor-K8VEP08K07
-https://stocksnap.io/photo/bag-leather-DQCQ6W96UC
+https://stocksnap.io/photo/camera-lense-HGRFPBWTEJ
+https://stocksnap.io/photo/vintage-camera-VXR9XRQ7FI
+https://stocksnap.io/photo/desk-laptop-ICPTTVBVMQ
+https://stocksnap.io/photo/headphones-headset-674UH7HXHE
+https://stocksnap.io/photo/audio-speakers-KOZLNZPIFM
+https://stocksnap.io/photo/watch-phone-NIJPP3VQDR
+https://stocksnap.io/photo/drone-background-APSRDPFZSR
 Licensed under the CCO license.
 License link : https://stocksnap.io/license
 

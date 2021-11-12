@@ -13,19 +13,19 @@
         <?php
 		if($this->_check_homepage_setup()){
             $class = "activated";
-            $btn_text = __("Home Page Activated",'jot-shop');
+            $btn_text = __('Home Page Activated','jot-shop');
             $Bstyle = "display:none;";
             $style = "display:inline-block;";
         }else{
             $class = "default-home";
-             $btn_text = __("Set Home Page",'jot-shop');
+             $btn_text = __('Set Home Page','jot-shop');
              $Bstyle = "display:inline-block;";
             $style = "display:none;";
 
 
         }
         ?>
-        <button style="<?php echo $Bstyle; ?>"; class="button activate-now <?PHP echo $class; ?>"><?php _e($btn_text,'jot-shop'); ?></button>
+        <button style="<?php echo $Bstyle; ?>" class="button activate-now <?php echo $class; ?>"><?php echo esc_html($btn_text); ?></button>
 		
          </p>
 		 	 

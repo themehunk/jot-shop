@@ -20,13 +20,13 @@
             <div class="section">
                 <h3><?php _e('Video Tutorials','jot-shop'); ?></h3>
                 <p><?php _e('Want a guide? We have video tutorials to walk you through getting started.','jot-shop'); ?> </p>
-                <a href="https://www.youtube.com/watch?v=M5f7r_OZTYg" target="_blank" class="sidebar-link"><?php _e('Watch Videos','jot-shop'); ?></a>
+                <a href="<?php echo esc_url('https://www.youtube.com/watch?v=M5f7r_OZTYg'); ?>" target="_blank" class="sidebar-link"><?php _e('Watch Videos','jot-shop'); ?></a>
             </div>
             <hr>
 
             <div class="section">
                 <h3><?php _e('Support','jot-shop'); ?> </h3>
                 <p><?php _e('Have a question, we are happy to help! Get in touch with our support team.','jot-shop'); ?></p>
-                <a href="https://themehunk.com/contact-us/" target="_blank" class="sidebar-link"><?php _e('Submit a Ticket','jot-shop'); ?></a>
+                <a href="<?php echo esc_url('https://themehunk.com/contact-us/'); ?>" target="_blank" class="sidebar-link"><?php _e('Submit a Ticket','jot-shop'); ?></a>
             </div>
         </div>

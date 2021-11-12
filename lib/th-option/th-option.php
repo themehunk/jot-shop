@@ -12,7 +12,7 @@ add_action('admin_menu', array($this,'menu_tab'));
 }
 function menu_tab() {
     $menu_title = esc_html__('Jot Shop Options', 'jot-shop');
-    add_theme_page( esc_html__( 'Jot Shop', 'jot-shop' ), $menu_title, 'edit_theme_options', 'thunk_started',array($this,'tab_page'));
+    add_theme_page( esc_html__( 'Jot Shop', 'jot-shop' ), $menu_title, 'edit_theme_options', 'jot_shop_thunk_started',array($this,'tab_page'));
 
 }
 
@@ -21,7 +21,7 @@ function menu_tab() {
 * Enqueue scripts for admin page only: Theme info page
 */
 function admin_scripts( $hook ) {
-if ($hook === 'appearance_page_thunk_started'  ) {
+if ($hook === 'appearance_page_jot_shop_thunk_started'  ) {
 wp_enqueue_style( 'thunk-started-css', get_template_directory_uri() . '/lib/th-option/assets/css/started.css' );
 wp_enqueue_script('jot-shop-admin-load', get_template_directory_uri() . '/lib/th-option/assets/js/th-options.js',array( 'jquery', 'updates' ),'1', true);
 
@@ -42,8 +42,8 @@ function tab_constant(){
     $tab_array = array();
     $tab_array['header'] = array('theme_brand' => __('ThemeHunk','jot-shop'),
     'theme_brand_url' => esc_url($theme_data->get( 'AuthorURI' )),
-    'welcome'=>sprintf(esc_html__('Welcome To %1s Theme', 'jot-shop'), esc_html__($theme_data->get( 'Name' )), $theme_data->get( 'Version' ) ),
-    'welcome_desc' => esc_html__($theme_data->get( 'Name' ).' is a Free WooCommerce theme for creating clean and professional shopping stores.', 'jot-shop' ),
+    'welcome'=>sprintf(esc_html__('Welcome To %1s Theme', 'jot-shop'), esc_html($theme_data->get( 'Name' ),'jot-shop'), $theme_data->get( 'Version' ) ),
+    'welcome_desc' => esc_html($theme_data->get( 'Name' ).' is a Free WooCommerce theme for creating clean and professional shopping stores.', 'jot-shop' ),
     'v'=> 'Version '.$theme_data->get( 'Version' )
     );
     return $tab_array;
