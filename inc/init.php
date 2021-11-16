@@ -13,6 +13,8 @@ get_template_part( 'inc/blog-function');
 include_once(ABSPATH.'wp-admin/includes/plugin.php');
 if ( !is_plugin_active('jot-shop-pro/jot-shop-pro.php') ) {
 get_template_part( 'lib/th-option/th-option');
+get_template_part( 'lib/th-option/child-notify');
+
 }
 //breadcrumbs
 get_template_part( 'lib/breadcrumbs/breadcrumbs');
