@@ -56,6 +56,37 @@
                   </tr>
 
 
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Top Slider Section','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(One Layouts)','jot-shop'); ?> </span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(Four Layouts)','jot-shop'); ?> </span></td>
+
+                  </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Ribbon Section ( Video & Image )','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+
 
                   <tr class="feature-row">
                      <td class="title">
@@ -73,16 +104,29 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4><?php _e('Woo Category Section','jot-shop'); ?> </h4>
+                           <h4><?php _e('Product Carousel Section','jot-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
-                        <span class="info"><?php _e('(One Layouts)','jot-shop'); ?> </span></td>
 
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
-                        <span class="info"><?php _e('(Three Layouts)','jot-shop'); ?> </span></td>
 
                   </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Woo Category Section ','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+
+                  </tr>
+
+
 
 
                    <tr class="feature-row">
@@ -98,6 +142,225 @@
                      </td>
 
                   </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Banner Section  ','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(One Layouts)','jot-shop'); ?> </span></td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        <span class="info"><?php _e('(Six Layouts)','jot-shop'); ?> </span></td>
+
+                  </tr>
+
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Highlight Section','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Move to top','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Sticky Header','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Fully Responsive','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Social Icons','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Ajax Search','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Pre loader','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Blog page setting','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Pagination option ( Shop Page, Blog Page)','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Numbered)','jot-shop'); ?> </span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Numbered, Load More, Infinite Scroll)','jot-shop'); ?> </span>
+                        </td>
+
+                  </tr>
+
+
+                   <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Product Quick View','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                  </tr>
+
+
+
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Product Image Hover Style','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Zoom )','jot-shop'); ?> </span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span><span class="info"><?php _e('(Zoom, Swap and Swap Slide)','jot-shop'); ?> </span>
+                     </td>
+
+                  </tr>
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Highlight Widget','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                     </td>
+
+                  </tr>
+
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4><?php _e('Post Slide Widget','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                        </td>
+
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span>
+                     </td>
+
+                  </tr>
+
 
 
 
@@ -144,15 +407,6 @@
                   </tr>
 
 
-                  <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
-                           <h4> <?php _e('Off Canvas Sidebar','jot-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                  </tr>
 
 
                   <tr class="feature-row">
@@ -180,6 +434,17 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
+                           <h4> <?php _e('Tabbed Product Image Carousel Section','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                  </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
                            <h4> <?php _e('Tabbed Product list Carousel Section','jot-shop'); ?> </h4>
                         </div>
                      </td>
@@ -191,7 +456,7 @@
                    <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4> <?php _e('Product Multi Slide Widget','jot-shop'); ?> </h4>
+                           <h4> <?php _e('Single Product Slide Widget','jot-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
@@ -202,7 +467,18 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4> <?php _e('Product Vertical tabbed Widget','jot-shop'); ?> </h4>
+                           <h4> <?php _e('Tabbed Product Widget','jot-shop'); ?> </h4>
+                        </div>
+                     </td>
+                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
+                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
+                  </tr>
+
+
+                  <tr class="feature-row">
+                     <td class="title">
+                        <div class="title-wrap">
+                           <h4> <?php _e('Testimonial Widget','jot-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
@@ -214,23 +490,12 @@
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
-                           <h4> <?php _e('About us Widget ','jot-shop'); ?> </h4>
+                           <h4> <?php _e('Vertical Tabbed Product Widget','jot-shop'); ?> </h4>
                         </div>
                      </td>
                      <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
                      <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
                   </tr>
-
-
-                   <tr class="feature-row">
-                     <td class="title">
-                        <div class="title-wrap">
-                           <h4> <?php _e('Testimonial Widget ','jot-shop'); ?> </h4>
-                        </div>
-                     </td>
-                     <td class="status error"><span class="dashicon dashicons dashicons-no-alt" size="30"></span></td>
-                     <td class="status success"><span class="dashicon dashicons dashicons-yes" size="30"></span></td>
-                  </tr>                
 
                   
                     <tr class="feature-row th-buy-pro">

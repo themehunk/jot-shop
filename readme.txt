@@ -24,6 +24,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 = 1.0.4 =
 * Child Theme tetx in Th option panel updated.
+* Free Vs Pro features upated.
 
 
 = 1.0.3 =
