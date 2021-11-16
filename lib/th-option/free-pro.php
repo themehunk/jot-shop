@@ -407,8 +407,6 @@
                   </tr>
 
 
-
-
                   <tr class="feature-row">
                      <td class="title">
                         <div class="title-wrap">
