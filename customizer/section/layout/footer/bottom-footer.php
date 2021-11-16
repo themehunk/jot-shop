@@ -235,7 +235,7 @@ $wp_customize->add_setting('jot_shop_bottom_footer_col3_texthtml', array(
 $wp_customize->add_control('jot_shop_bottom_footer_col3_texthtml', array(
         'label'    => __('Text', 'jot-shop'),
         'section'  => 'jot-shop-bottom-footer',
-        'settings' => 'big-store_bottom_footer_col3_texthtml',
+        'settings' => 'jot_shop_bottom_footer_col3_texthtml',
         'type'     => 'textarea',
     ));
 // col3 social media redirection
