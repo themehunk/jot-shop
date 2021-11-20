@@ -492,6 +492,9 @@ display: flex;
 .child-theme-notice{
     margin-right: 39px;
 }
+.get-child{
+    display: none!important;
+}
 @media (min-width: 768px){
 .theme_link {
     width: 18%;
