@@ -4,8 +4,8 @@
                 <span><?php _e('Jot Shop Pro WordPress Theme','jot-shop'); ?> </span>
             </h3>
             <p>
-            <b><?php _e('10+ pre-made premium templates','jot-shop'); ?> </b><br>
-            <?php _e('Jot Shop Pro is one of the most popular single page theme on WordPress.','jot-shop'); ?> </p>
+            <b><?php _e('Pre-made premium templates','jot-shop'); ?> </b><br>
+            <?php _e('Jot Shop Pro is one of the most popular eCommerce theme on WordPress.','jot-shop'); ?> </p>
                 <center><a class="button ztabtn" target="_blank" href="https://themehunk.com/product/jot-shop-pro/"><?php _e('Upgrade','jot-shop'); ?> </a></center>
             </div>
             <hr>
