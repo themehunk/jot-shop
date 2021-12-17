@@ -8168,6 +8168,29 @@ line-height: 25px;
 #alm-quick-view-content .summary-content .product_meta{
   background: transparent;
 }
+
+
+/*th-compare-button animation */
+.woocommerce a.compare.button.loading::before{
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.th-product-compare-btn-wrap {
+    display: none;
+}
+
+
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
