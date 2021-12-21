@@ -260,7 +260,7 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'jot_shop_product_image_e
 add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_quickview',11);
 add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_whish_list',11);
 //for th compare plugin
-add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_add_to_thcompare_fltr',11);
+add_action( 'woocommerce_after_shop_loop_item', 'jot_shop_add_to_compare_fltr',11);
 
 
 //for add to cart 
@@ -303,7 +303,6 @@ add_action( 'woocommerce_after_single_product_summary', 'jot_shop_single_summary
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs',40 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-add_action( 'woocommerce_simple_add_to_cart', 'jot_shop_add_to_thcompare_fltr_single', 30 );
 
 add_filter( 'woocommerce_product_tabs', 'jot_shop_woocommerce_custom_product_tabs', 40 );
 
@@ -345,10 +344,14 @@ echo '</div>';
 /****************/
 // add to compare
 /****************/
-function jot_shop_add_to_thcompare_fltr(){
+function jot_shop_add_to_compare_fltr(){
 global $product;
-      $product_id = $product->get_id();
-    if(function_exists(('th_product_compare_loaded') )){
+$product_id='';
+if(!empty($product)){    
+   $product_id = $product->get_id();
+}
+      
+    if(class_exists(('th_product_compare') )){
     echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
           <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
           </div></span></div>';
@@ -356,17 +359,6 @@ global $product;
            }
         }
 
-
-function jot_shop_add_to_thcompare_fltr_single(){
-global $product;
-      $product_id = $product->get_id();
-    if(function_exists(('th_product_compare_loaded') )){
-    echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
-          <a class="th-product-compare-btn single" data-th-product-id="'.$product_id.'"></a>
-          </div></span></div>';
-
-           }
-        }        
 
 /**********************/
 /** wishlist **/

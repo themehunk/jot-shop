@@ -139,10 +139,10 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                   'img' => 'icon-128x128.jpg',
                  'active_filename' => 'yith-woocommerce-wishlist/init.php',
              ),
-            'yith-woocommerce-compare' => array(
-                 'name' => esc_html__( 'YITH WooCommerce Compare', 'jot-shop' ),
+            'th-product-compare' => array(
+                 'name' => esc_html__( 'TH Product Compare', 'jot-shop' ),
                   'img' => 'icon-128x128.jpg',
-                 'active_filename' => 'yith-woocommerce-compare/init.php',
+                 'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
 
             'themehunk-megamenu-plus' => array(

@@ -52,8 +52,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 Initial release
 
 == Upgrade Notice ==
-= 1.0.5 =
-* Child theme tab removed.
+= 1.0.6 =
+* Th product compare plugin added.
 
 == Resources ==
  

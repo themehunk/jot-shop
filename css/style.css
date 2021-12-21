@@ -8170,6 +8170,56 @@ line-height: 25px;
 }
 
 
+
+
+
+/*th product compare */
+.woocommerce .entry-summary a.th-product-compare-btn {
+    border: 1px solid;
+    border-radius: 0;
+    color: #9c9c9c;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    height: 45px;
+    line-height: 45px;
+    width: 45px;
+    background: transparent;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: normal;
+    min-width: auto;
+}
+
+.woocommerce .entry-summary a.th-product-compare-btn.btn_type:before {
+    content: "\f021";
+    font-family: FontAwesome;
+    display: block;
+    color: #9c9c9c;
+    font-size: 13px;
+}
+
+.woocommerce .entry-summary .th-product-compare-btn-wrap {
+    display: inline-block;
+}   
+.woocommerce .entry-summary .th-product-compare-btn {
+  margin: 0;
+  }
+
+  .woocommerce .entry-summary a.th-product-compare-btn.btn_type.loading:before{
+-webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+} 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /*th-compare-button animation */
 .woocommerce a.compare.button.loading::before{
   -webkit-animation: spin 1s linear infinite;
@@ -8186,9 +8236,18 @@ line-height: 25px;
 }
 
 
-.th-product-compare-btn-wrap {
-    display: none;
+.woocommerce a.button.th-product-compare-btn.loading::after{
+  display: none;
 }
+
+.woocommerce .entry-summary a.th-product-compare-btn.loading::after{
+  display: none;
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 1200px){
