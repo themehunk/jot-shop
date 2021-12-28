@@ -212,3 +212,15 @@ display:none;
     padding-bottom:10px;
     display: block;
 }
+.customize-control-pro-link a{
+  width: 121px;
+  background: #008000;
+  color: #FFF;
+  text-decoration: none;
+    font-size: 14PX;
+    text-align: center;
+   display: block;  
+    padding: 9px;
+    border-radius: 5px;
+    margin: 0 auto;
+}

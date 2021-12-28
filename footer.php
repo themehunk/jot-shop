@@ -15,7 +15,9 @@
           // widget-footer
 		      do_action( 'jot_shop_widget_footer' );
 		      // below-footer
+          // below-footer
           do_action( 'jot_shop_below_footer' );  
+          do_action( 'jot_shop_pro_below_footer' );  
         ?>
      </footer> <!-- end footer -->
     </div> <!-- end jotshop-site -->
