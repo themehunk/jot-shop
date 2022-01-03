@@ -19,7 +19,6 @@ require JOT_SHOP_THEME_DIR . 'customizer/section/layout/header/loader.php';
 //Footer
 require JOT_SHOP_THEME_DIR . 'customizer/section/layout/footer/above-footer.php';
 require JOT_SHOP_THEME_DIR . 'customizer/section/layout/footer/widget-footer.php';
-require JOT_SHOP_THEME_DIR . 'customizer/section/layout/footer/bottom-footer.php';
 
 //section ordering
 require JOT_SHOP_THEME_DIR . 'customizer/section-ordering.php';

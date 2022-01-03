@@ -24,6 +24,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 = 1.0.6 =
 * Th product compare plugin added.
+* Bottom Footer removed and open for pro users.
 
 = 1.0.5 =
 * Child theme tab removed.
@@ -54,9 +55,8 @@ Initial release
 == Upgrade Notice ==
 = 1.0.6 =
 * Th product compare plugin added.
+* Bottom Footer removed and open for pro users.
 
-== Resources ==
- 
 == Resources ==
  
 License for images:
