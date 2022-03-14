@@ -8245,7 +8245,17 @@ line-height: 25px;
 }
 
 
+#shop-product-wrap .th-product-compare-btn-wrap {
+  display: none;
+}
 
+.related.products .th-product-compare-btn-wrap{
+  display:none;
+}
+
+.up-sells.upsells.products .th-product-compare-btn-wrap{
+  display:none;
+}
 
 
 
