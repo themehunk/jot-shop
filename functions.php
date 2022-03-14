@@ -141,7 +141,7 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
              ),
             'th-product-compare' => array(
                  'name' => esc_html__( 'TH Product Compare', 'jot-shop' ),
-                  'img' => 'icon-128x128.jpg',
+                  'img' => 'icon-128x128.png',
                  'active_filename' => 'th-product-compare/th-product-compare.php',
              ),
 
