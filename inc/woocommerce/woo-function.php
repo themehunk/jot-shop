@@ -379,16 +379,12 @@ return $wishlist_permalink ;
 
 function jot_shop_compare_wishlist_check($pid=''){
 
-   if( ( class_exists( 'th_product_compare' ))){
+   if( class_exists( 'th_product_compare' )){
           echo jot_shop_add_to_compare_fltr($pid);
-        }elseif( class_exists( 'WPCleverWoosc' )){
-                    jot_shop_wpc_compare($pid);
-                  }
+        }
                     
                 if( class_exists( 'YITH_WCWL' )){
                       jot_shop_whish_list($pid);
-                    }elseif( ( class_exists( 'WPCleverWoosw' ))){
-                      jot_shop_wpc_wish_list($pid);
                     }
 
 }
