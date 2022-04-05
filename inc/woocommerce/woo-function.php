@@ -35,7 +35,13 @@ if ( ! function_exists( 'jot_shop_cart_total_item' ) ){
   <?php }
 }
 function jot_shop_woo_cart_product(){
+  if ( shortcode_exists('taiowc') ){
     echo do_shortcode('[taiowc]'); 
+  }
+  elseif( shortcode_exists('taiowcp') ){
+    echo do_shortcode('[taiowcp]');
+
+  }
 }
 add_action( 'jot_shop_woo_cart', 'jot_shop_woo_cart_product' );
 add_filter('woocommerce_add_to_cart_fragments', 'jot_shop_add_to_cart_dropdown_fragment');
