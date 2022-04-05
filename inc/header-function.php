@@ -608,9 +608,7 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-stk">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
