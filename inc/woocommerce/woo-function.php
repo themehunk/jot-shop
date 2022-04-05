@@ -34,32 +34,8 @@ if ( ! function_exists( 'jot_shop_cart_total_item' ) ){
 </a>
   <?php }
 }
-//cart view function
-function jot_shop_menu_cart_view($cart_view){
-	global $woocommerce;
-    $cart_view= jot_shop_cart_total_item();
-    return $cart_view;
-}
-add_action( 'open_cart_count','jot_shop_menu_cart_view');
-
 function jot_shop_woo_cart_product(){
-global $woocommerce;
-?>
-<div class="cart-overlay"></div>
-<div id="open-cart" class="open-cart">
-<div class="cart-widget-heading">
-  <h4><?php _e('Shopping Cart','jot-shop');?></h4>
-  <a class="cart-close-btn"><?php _e('close','jot-shop');?></a></div>  
-<div class="open-quickcart-dropdown">
-<?php 
-woocommerce_mini_cart(); 
-?>
-</div>
-<?php if ($woocommerce->cart->is_empty() ) : ?>
-<a class="button return wc-backward" href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>"> <?php _e( 'Return to shop', 'jot-shop' ); ?> </a>
-<?php endif;?>
-</div>
-    <?php
+    echo do_shortcode('[taiowc]'); 
 }
 add_action( 'jot_shop_woo_cart', 'jot_shop_woo_cart_product' );
 add_filter('woocommerce_add_to_cart_fragments', 'jot_shop_add_to_cart_dropdown_fragment');
@@ -366,7 +342,7 @@ if(!empty($product)){
 /**********************/
 function jot_shop_whish_list($pid = ''){
        if( shortcode_exists( 'yith_wcwl_add_to_wishlist' )){
-       echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="fa fa-heart" label='.__('wishlist','jot-shop').' already_in_wishslist_text='.__('Already','jot-shop').' browse_wishlist_text='.__('Added','jot-shop').']' ).'</span></div>';
+       echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="th-icon th-icon-heart1" label='.__('wishlist','jot-shop').' already_in_wishslist_text='.__('Already','jot-shop').' browse_wishlist_text='.__('Added','jot-shop').']' ).'</span></div>';
        }
  } 
 
@@ -394,10 +370,10 @@ function jot_shop_compare_wishlist_check($pid=''){
 /** My Account Menu **/
 function jot_shop_account(){
  if ( is_user_logged_in() ){
-  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="fa fa-user-o" aria-hidden="true"></i><span class="tooltiptext">'.__('Account','jot-shop').'</span></a>';
+  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-user"></i><span class="tooltiptext">'.__('Account','jot-shop').'</span></a>';
   } 
  else {
-  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="fa fa-lock" aria-hidden="true"></i><span class="tooltiptext">'.__('Register','jot-shop').'</span></a>';
+  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-lock1"></i><span class="tooltiptext">'.__('Register','jot-shop').'</span></a>';
 }
  echo $return;
  }

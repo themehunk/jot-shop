@@ -113,6 +113,11 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
             'img' => 'icon-128x128.gif',
             'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
             ),
+            'th-all-in-one-woo-cart' => array(
+                 'name' => esc_html__( 'TH All In One Woo Cart', 'jot-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
+             ),
             'th-variation-swatches' => array(
                 'name' => esc_html__( 'TH Variation Swatches', 'jot-shop' ),
                  'img' => 'icon-128x128.gif',
@@ -172,6 +177,16 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                 'img' => 'icon-128x128.png',
                 'active_filename' => 'woocommerce/woocommerce.php',
             ),
+            'th-advance-product-search' => array(
+            'name' => esc_html__( 'TH Advance Product Search', 'jot-shop' ),
+            'img' => 'icon-128x128.gif',
+            'active_filename' => 'th-advance-product-search/th-advance-product-search.php',
+            ),
+            'th-all-in-one-woo-cart' => array(
+                 'name' => esc_html__( 'TH All In One Woo Cart', 'jot-shop' ),
+                  'img' => 'icon-128x128.png',
+                 'active_filename' => 'th-all-in-one-woo-cart/th-all-in-one-woo-cart.php',
+             ),
 
         ));
 
@@ -318,6 +333,7 @@ function jot_shop_scripts(){
 	// enqueue css
 	$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 	wp_enqueue_style( 'font-awesome', JOT_SHOP_THEME_URI . 'third-party/fonts/font-awesome/css/font-awesome.css', '', JOT_SHOP_THEME_VERSION );
+	wp_enqueue_style( 'th-icon', JOT_SHOP_THEME_URI . 'third-party/fonts/th-icon/style.css', '', JOT_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'animate', JOT_SHOP_THEME_URI . 'css/animate.css','',JOT_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'owl.carousel-css', JOT_SHOP_THEME_URI . 'css/owl.carousel.css','',JOT_SHOP_THEME_VERSION);
 	wp_enqueue_style( 'jot-shop-pro-menu', JOT_SHOP_THEME_URI . 'css/jot-shop-menu.css','',JOT_SHOP_THEME_VERSION);	
