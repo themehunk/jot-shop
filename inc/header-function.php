@@ -74,9 +74,7 @@ if ( has_nav_menu('jot-shop-above-menu' ) ){?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
               <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                 </div>
             </button>
         </div>
@@ -123,9 +121,7 @@ function jot_shop_top_header_conetnt_col2($content,$mobileopen){ ?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
                 <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                 <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                 </div>
             </button>
         </div>
@@ -173,9 +169,7 @@ function jot_shop_top_header_conetnt_col3($content,$mobileopen){ ?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-abv">
                 <div class="btn">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                 <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                 </div>
             </button>
         </div>
@@ -248,9 +242,7 @@ if($main_header_layout!=='mhdrtwo'):?>
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                    <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
@@ -293,7 +285,6 @@ if($main_header_layout!=='mhdrtwo'):?>
                       ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'open_cart_count' );
                          do_action( 'jot_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -301,7 +292,6 @@ if($main_header_layout!=='mhdrtwo'):?>
                       elseif(get_theme_mod('jot_shop_cart_mobile_disable')==false){?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'open_cart_count' );
                                do_action( 'jot_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -346,9 +336,7 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                    <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
@@ -404,9 +392,7 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                    <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
@@ -415,7 +401,7 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
 
                  <?php if( get_theme_mod('jot_shop_whislist_mobile_disable',false) != true && class_exists( 'YITH_WCWL' )){?>
                 <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span><?php _e('Wishlist','jot-shop');?></span></a>
+        <i class="th-icon th-icon-heartline"></span><span><?php _e('Wishlist','jot-shop');?></i></a>
       <?php } ?>
         
         <?php if(class_exists( 'WooCommerce' ) && get_theme_mod('jot_shop_account_mobile_disable',false) != true){ jot_shop_account(); } ?>
@@ -430,7 +416,6 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
                       ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'open_cart_count' );
                          do_action( 'jot_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -438,7 +423,6 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
                       elseif(get_theme_mod('jot_shop_cart_mobile_disable')==false){?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'open_cart_count' );
                                do_action( 'jot_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -505,7 +489,6 @@ function jot_shop_main_header_optn(){
                       ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'open_cart_count' );
                          do_action( 'jot_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -513,7 +496,6 @@ function jot_shop_main_header_optn(){
                       elseif(get_theme_mod('jot_shop_cart_mobile_disable')==false){?>
                            <div class="cart-icon" > 
                             <?php 
-                               do_action( 'open_cart_count' );
                                do_action( 'jot_shop_woo_cart' ); 
                                ?>
                           </div>
@@ -569,7 +551,7 @@ function jot_shop_header_icon(){
 <div class="header-icon">
 <?php 
 if(get_theme_mod('jot_shop_main_header_layout')=='mhdrtwo'){?>
-                <a class="prd-search" href="#"><i class="fa fa-search"></i></a> 
+                <a class="prd-search" href="#"><i class="th-icon th-icon-vector-search"></i></a> 
 <?php } 
 jot_shop_account();
 if( class_exists( 'WPCleverWoosw' )){?>
@@ -578,7 +560,7 @@ if( class_exists( 'WPCleverWoosw' )){?>
 <?php }
  if( class_exists( 'YITH_WCWL' )){?>
  <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
-        <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
+        <i class="th-icon th-icon-heartline"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
       <?php } 
       ?>
 </div>
@@ -626,9 +608,7 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
         <div class="menu-toggle">
             <button type="button" class="menu-btn" id="menu-btn-stk">
                 <div class="btn">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
+                   <i class="th-icon th-icon-TextEditor-Icons-01"></i>
                </div>
             </button>
         </div>
@@ -655,15 +635,11 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
               <div class="thunk-icon">
         
                 <div class="header-icon">
-                  <a class="prd-search" href="#"><i class="fa fa-search"></i></a>     
-                     <?php 
-                     if( class_exists( 'WPCleverWoosw' )){
-                      ?>
-                      <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url()); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
-                     <?php } 
+                  <a class="prd-search" href="#"><i class="th-icon th-icon-vector-search"></i></a>     
+                     <?php  
                     if( class_exists( 'YITH_WCWL' )){
                       ?>
-                      <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a>
+                      <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i class="th-icon th-icon-heartline"></i></a>
                      <?php } 
                      if(class_exists( 'WooCommerce' )){
                         jot_shop_account();
@@ -673,7 +649,6 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
              <?php if(class_exists( 'WooCommerce' )){ ?>
                       <div class="cart-icon" > 
                          <?php 
-                         do_action( 'open_cart_count' );
                          do_action( 'jot_shop_woo_cart' ); 
                          ?>
                        </div>
@@ -707,26 +682,18 @@ function jotshop_mobile_navbar(){?>
 <div id="jotshop-mobile-bar">
   <ul>
     
-    <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><i class="icon below fa fa-home" aria-hidden="true"></i></a></li>
+    <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><span class="th-icon th-icon-home"></span></a></li>
      <?php 
-     if( class_exists( 'WPCleverWoosw' )) { ?>
-    <li><a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-    <?php }
     if( class_exists( 'YITH_WCWL' )){ ?>
-    <li><a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i  class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+    <li><a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><span class="th-icon th-icon-heartline"></span></a></li>
     <?php } ?>
     <li>
             <a href="#" class="menu-btn" id="mob-menu-btn">           
-                <i class="icon fa fa-bars" aria-hidden="true"></i>             
+                <i class="th-icon th-icon-TextEditor-Icons-01" ></i>             
             </a>
  
        </li>
     <li><?php jot_shop_account();?></li>
-    <li><?php 
-           do_action( 'open_cart_count' ); 
-        ?> 
-    </li>
-    
   </ul>
 </div>
 <?php }}
