@@ -327,12 +327,16 @@ echo '</div>';
 /****************/
 // add to compare
 /****************/
-function jot_shop_add_to_compare_fltr(){
-global $product;
-$product_id='';
-if(!empty($product)){    
-   $product_id = $product->get_id();
-}
+function jot_shop_add_to_compare_fltr($pid = ''){
+      if (is_shop()) {
+        global $product;
+        $product_id='';
+        if(!empty($product)){    
+        $product_id = $product->get_id();
+        }
+      } else{
+        $product_id = $pid;
+      }
       
     if(class_exists(('th_product_compare') )){
     echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">

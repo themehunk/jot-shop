@@ -25,6 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 = 1.0.8 =
 * TH All In One Woo Cart integrated.
 * Th-Icons integrated.
+* Th Compare compatibility for shop page and home page.
 
 = 1.0.7 =
 * Th product compare plugin issue fixed.
@@ -63,6 +64,7 @@ Initial release
 = 1.0.8 =
 * TH All In One Woo Cart integrated.
 * Th-Icons integrated.
+* Th Compare compatibility for shop page and home page.
 
 == Resources ==
  
