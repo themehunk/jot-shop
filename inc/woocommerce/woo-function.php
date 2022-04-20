@@ -256,7 +256,8 @@ remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_p
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 
-
+//To disable th compare button 
+remove_action('woocommerce_init','th_compare_add_action_shop_list');
 
 /***************/
 // single page
