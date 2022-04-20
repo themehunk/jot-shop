@@ -8219,6 +8219,8 @@ line-height: 25px;
   .woocommerce .entry-summary a.th-product-compare-btn.btn_type.loading:before{
 -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
+  left: initial;
+  top: initial;
 } 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -8266,7 +8268,10 @@ line-height: 25px;
   display:none;
 }
 
+.woocommerce .jotshop-site .th-product-compare-btn .blockUI{
+  display: none!important;
 
+}
 
 
 @media screen and (max-width: 1200px){
