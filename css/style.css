@@ -868,7 +868,10 @@ flex: inherit;
 }
 input:focus,
 a:focus{
-  outline: 2px dotted #444!important;
+  outline: thin solid
+}
+.thunk-post-excerpt p a{
+  text-decoration: underline;
 }
 .sidebar-content-area{
     width: 21%;
@@ -8278,7 +8281,14 @@ line-height: 25px;
 .wp-block-latest-comments__comment{
   line-height: inherit;
 }
+.logged-in-as a:nth-of-type(2){
+  display: block;
+    max-width: 108px;
+    text-align: center;
+    justify-content: center;
+    margin: 9px 0;
 
+}
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
@@ -8609,6 +8619,12 @@ margin-right:0;
   width: 35px;
   height: 35px;
   line-height: 35px;
+}
+.comment-form{
+  width: 100%;
+}
+.comment-form .required-field-message{
+  display: block;
 }
 }
 @media screen and (min-width: 981px) and (max-width: 1023px){
