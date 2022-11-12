@@ -258,7 +258,8 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 
 //To disable th compare button 
 remove_action('woocommerce_init','th_compare_add_action_shop_list');
-
+//To disable th compare Pro button 
+remove_action('woocommerce_init', 'tpcp_add_action_shop_list');
 /***************/
 // single page
 /***************/
@@ -339,7 +340,7 @@ function jot_shop_add_to_compare_fltr($pid = ''){
         $product_id = $pid;
       }
       
-    if(class_exists(('th_product_compare') )){
+    if(class_exists('th_product_compare') || class_exists('Tpcp_product_compare')){
     echo '<div class="thunk-compare"><span class="compare-list"><div class="woocommerce product compare-button">
           <a class="th-product-compare-btn compare button" data-th-product-id="'.$product_id.'"></a>
           </div></span></div>';

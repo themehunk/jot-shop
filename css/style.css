@@ -2617,7 +2617,7 @@ header .taiowc-cart-item{
 .jot-shop-widget-content .textwidget,
 .jot-shop-widget-content .wp-block-group h2 + *,
 .woocommerce .jot-shop-widget-content ul.product_list_widget,
-.jot-shop-widget-content .widget-title + *{
+.woocommerce .jot-shop-widget-content .widget-title + *{
    border: 1px solid #eeeeee; 
    padding: 15px;
 }
@@ -4657,6 +4657,9 @@ padding-top:15px;
 }
 .thunk-list-view .thunk-wishlist{
   margin-left: 15px;
+}
+.thunk-list-view .thunk-compare{
+  float: left;
 }
 /************************/
 /*Product catalog style*/
