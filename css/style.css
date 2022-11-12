@@ -8275,7 +8275,9 @@ line-height: 25px;
   display: none!important;
 
 }
-
+.wp-block-latest-comments__comment{
+  line-height: inherit;
+}
 
 @media screen and (max-width: 1200px){
 /*hedaer*/
@@ -8538,7 +8540,8 @@ line-height: 27px;
   padding-left: 1.5rem;
 }
 .responsive-main-header .header-support-icon a.account,
-.responsive-main-header .header-support-icon a {
+.responsive-main-header .header-support-icon a,
+.responsive-main-header .taiowc-wrap {
    margin-left: 0.7rem;
 }
  .responsive-main-header .menu-toggle .menu-btn{
