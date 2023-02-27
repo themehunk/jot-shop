@@ -62,7 +62,7 @@ font-family: "NotoSans-Regular", sans-serif;
     width: 10px;
 }
 .jot-shop-menu li ul.sub-menu li > a > .arrow:before {
-    content: "\f105" !important;
+    content: "\f105";
 }
 
 .jot-shop-menu  ul.sub-menu {
@@ -115,7 +115,7 @@ background-color: #FFF;
     font-size: 16px;
     font-family: FontAwesome;
     height: auto;
-    content: "\f104";
+    content: "\f105";
     text-shadow: none;
 }
 .jot-shop-menu > li > ul.sub-menu > li ul.sub-menu {
@@ -208,7 +208,7 @@ ul[data-menu-style="accordion"] > li {
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
 ul[data-menu-style="accordion"] ul.sub-menu li.menu-active > a > .arrow:before {
-    content: "\f107" !important;
+    content: "\f107";
 }
 body{
 transition: all 0.2s ease-in-out;
@@ -246,6 +246,13 @@ transition: all 0.2s ease-in-out;
 /*end hamburger menu*/
 /****************************/
 @media screen and (max-width: 1024px){
+.jot-shop-menu a,
+.jot-shop-menu li{
+    position: relative;
+}
+ul[data-menu-style="accordion"] ul.sub-menu li.menu-active > a > .arrow:before {
+    content: "\f106";
+}
 .main-header #open-above-menu,.below-header #open-above-menu{
    display:block;
 }
@@ -313,8 +320,11 @@ display: -webkit-inline-box;
         padding-right: 10px;
         color: #FF5737;
     }
-    .jot-shop-menu > li > a > .arrow:before {
+    .jot-shop-menu > li > a > .arrow:before{
         float: right;
+        content: "\f107";
+    }
+   .woocommerce.theme-jot-shop .thunk-product-cat-list > li > ul.sub-menu li > a > .arrow:before{
         content: "\f107";
     }
 .sider.left .jot-shop-menu > li, .sider.right .jot-shop-menu > li {
@@ -350,7 +360,7 @@ display: -webkit-inline-box;
         position: static;
     }
     .jot-shop-menu li ul.sub-menu li.menu-active > a > .arrow:before {
-        content: "\f107" !important;
+        content: "\f106";
     }
   .jot-shop-menu > li > a,.top-header-bar .jot-shop-menu > li > a, 
     .bottom-header-bar .jot-shop-menu > li > a {
@@ -683,6 +693,9 @@ margin-left:5px;
     width: 50px;
     line-height: 25px;
         top: 7px;
+}
+.jot-shop-menu li ul.sub-menu li > a > .arrow:before{
+    content: "\f107";
 }
 .header-support-content {
     padding: 0px 15px 0px 15px;
