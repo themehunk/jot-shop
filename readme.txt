@@ -1,6 +1,6 @@
 == Theme: Jot Shop ==
 Contributors: ThemeHunk
-Tags: e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
+Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
 Requires at least: WordPress 5.0
 Requires PHP: 5.4
 Tested up to: 6.1
@@ -24,6 +24,10 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 = 2.0.0 =
 * Mobile menu issue resolved.
+* Block Support added.
+* Blank Template Added.
+* Unlimited Blocks Plugin added.
+* Style Improved.
 
 = 1.0.9 =
 * TH Compare Pro Integrated.
@@ -71,6 +75,10 @@ Initial release
 == Upgrade Notice ==
 = 2.0.0 =
 * Mobile menu issue resolved.
+* Block Support added.
+* Blank Template Added.
+* Unlimited Blocks Plugin added.
+* Style Improved.
 
 == Resources ==
  

@@ -128,6 +128,11 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
             ),
+            'unlimited-blocks' => array(
+                'name' => esc_html__( 'Unlimited Blocks', 'jot-shop' ),
+                 'img' => 'icon-128x128.png',
+                'active_filename' => 'unlimited-blocks/unlimited-blocks.php',
+            ), 
             'wp-popup-builder' => array(
                 'name' => esc_html__( 'WP Popup Builder – Popup Forms & Newsletter', 'jot-shop' ),
                  'img' => 'icon-128x128.png',
@@ -200,7 +205,6 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
             ),
         ) );
         
-        remove_theme_support( 'widgets-block-editor' );
 	}
 endif;
 add_action( 'after_setup_theme', 'jot_shop_setup' );
