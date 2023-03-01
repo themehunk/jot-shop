@@ -538,9 +538,15 @@ if( $description || is_customize_preview() ):?>
 // Product search
 /***************************/
 function jot_shop_product_search_box(){  
-  if (shortcode_exists( 'th-aps' )) {
-    echo do_shortcode('[th-aps]');          
-  }       
+    if ( shortcode_exists('th-aps') ){
+
+                echo do_shortcode('[th-aps]');
+
+              }elseif ( shortcode_exists('tapsp') ){
+
+                echo do_shortcode('[tapsp]');
+
+              }    
 }
 /**********************************/
 // header icon function
