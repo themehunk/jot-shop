@@ -8292,6 +8292,11 @@ line-height: 25px;
     margin: 9px 0;
 
 }
+/*   */
+.jot-shop-quantity #wc-stripe-payment-request-wrapper,
+.jot-shop-quantity #wc-stripe-payment-request-button-separator{
+  display: none;
+}
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
