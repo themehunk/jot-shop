@@ -3322,6 +3322,9 @@ background-color:#ff3377;
   top: 7px;
   right: initial;
 }
+.product-type-variable .onsale .th-onsale-symbol{
+  display: none;
+}
 .thunk-product-image {
     display: block;
     position: relative;
@@ -8291,6 +8294,11 @@ line-height: 25px;
     justify-content: center;
     margin: 9px 0;
 
+}
+/*   */
+.single-product .entry-summary .jot-shop-quantity #wc-stripe-payment-request-wrapper,
+.single-product .entry-summary .jot-shop-quantity #wc-stripe-payment-request-button-separator{
+  display: none;
 }
 @media screen and (max-width: 1200px){
 /*hedaer*/
