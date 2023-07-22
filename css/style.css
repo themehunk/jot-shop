@@ -3322,6 +3322,9 @@ background-color:#ff3377;
   top: 7px;
   right: initial;
 }
+.product-type-variable .onsale .th-onsale-symbol{
+  display: none;
+}
 .thunk-product-image {
     display: block;
     position: relative;
@@ -8293,8 +8296,8 @@ line-height: 25px;
 
 }
 /*   */
-.jot-shop-quantity #wc-stripe-payment-request-wrapper,
-.jot-shop-quantity #wc-stripe-payment-request-button-separator{
+.single-product .entry-summary .jot-shop-quantity #wc-stripe-payment-request-wrapper,
+.single-product .entry-summary .jot-shop-quantity #wc-stripe-payment-request-button-separator{
   display: none;
 }
 @media screen and (max-width: 1200px){

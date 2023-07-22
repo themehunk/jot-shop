@@ -25,6 +25,7 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 
 = 2.0.2 =
 * Fix: wc stripe payment style css issue resolved.
+* Fix: onsale double symbol issue resolved.
 
 = 2.0.1 =
 * Editor.css Added.
@@ -83,6 +84,7 @@ Initial release
 == Upgrade Notice ==
 = 2.0.2 =
 * Fix: wc stripe payment style css issue resolved.
+* Fix: onsale double symbol issue resolved.
 
 == Resources ==
  
