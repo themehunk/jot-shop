@@ -3543,6 +3543,10 @@ a.add_to_cart_button.ajax_add_to_cart.loading{
     font-size: 20px;
     line-height: 27px;
   color:#ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .product-type-variable .thunk-product .add-to-cart > a:before,
 .product-type-grouped .add-to-cart .button:before{
@@ -5070,7 +5074,7 @@ section.upsells.products > h2,
     margin: 0px 0px 20px 0px;
     border-bottom: 2px solid #f0f0f0;
     width: 100%;
-    padding: 0px 0px 20px;
+    padding: 0px 0px 21px;
 }
 .woocommerce #reviews #comments ol.commentlist li{
     border-bottom: 1px solid #f1f1f1;
