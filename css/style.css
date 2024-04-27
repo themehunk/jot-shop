@@ -8304,6 +8304,9 @@ line-height: 25px;
 .single-product .entry-summary .jot-shop-quantity #wc-stripe-payment-request-button-separator{
   display: none;
 }
+.sold-individually .jot-shop-quantity {
+    display: none;
+}
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
