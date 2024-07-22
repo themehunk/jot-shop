@@ -419,7 +419,7 @@ code, kbd, pre, samp {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
-body{
+body.theme-jot-shop{
     color:#1c1d1e;
     background:#eee;
     font-style: normal;
@@ -435,6 +435,9 @@ body{
     -moz-osx-font-smoothing: grayscale; 
     text-rendering: optimizeLegibility; 
     -moz-font-feature-settings: "liga" on; 
+}
+body.theme-jot-shop a{
+  text-decoration: none;
 }
 .thunk-post-excerpt a,.thunk-content-wrap .entry-content a,
 .widget .textwidget a,
@@ -3505,6 +3508,20 @@ a.add_to_cart_button.ajax_add_to_cart,
     justify-content: center;
     align-items: center;
 }
+.theme-jot-shop a.add_to_cart_button.ajax_add_to_cart,
+.theme-jot-shop .product_type_simple .add-to-cart .button,
+.theme-jot-shop .product_type_variable .add-to-cart .button,
+.theme-jot-shop .product_type_external .add-to-cart .button,
+.theme-jot-shop .product-type-grouped .add-to-cart .button,
+.theme-jot-shop .product-type-variable .thunk-product .button,
+.theme-jot-shop .product-type-variable .thunk-product .add-to-cart > a{
+  font-size: 0;
+}
+body.theme-jot-shop :where(a):is(.wc-block-components-product-name) {
+    text-decoration: none;
+}
+
+
 .woocommerce #page.jotshop-site .thunk-product .add-to-cart > a{
   background:#ff3377;
 }
