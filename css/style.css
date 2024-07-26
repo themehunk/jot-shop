@@ -8324,6 +8324,9 @@ line-height: 25px;
 .sold-individually .jot-shop-quantity {
     display: none;
 }
+.woocommerce-tabs a{
+  outline: 0;
+}
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
