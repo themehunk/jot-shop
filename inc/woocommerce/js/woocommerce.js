@@ -269,6 +269,7 @@
                                       data: {
                                         action :'jot_shop_cat_filter_ajax',
                                         'data_cat_slug':data_term_id,
+                                        'nonce':jotshop.jotnonce,
                                        },
                                 dataType: 'html'
                               }).done( function( response ){

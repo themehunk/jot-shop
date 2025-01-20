@@ -301,7 +301,7 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 				'jot_shop_cat_item_no' => get_theme_mod('jot_shop_cat_item_no','5'),
 				'jot_shop_rtl' => (bool)get_theme_mod('jot_shop_rtl'),
 				'jot_shop_frontpage_sidebar' => get_post_meta( get_option( 'page_on_front' ), 'jot_shop_sidebar_dyn', true ),
-				
+				'jotnonce'         => wp_create_nonce( 'jotshop_nonce' ),	
 				
 				
 			);
