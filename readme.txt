@@ -1,8 +1,7 @@
 == Theme: Jot Shop ==
 Contributors: ThemeHunk
 Tags: wide-blocks, block-patterns, block-styles, editor-style, e-commerce, blog, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, add_editor_style, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
-Requires at least: WordPress 5.0
-Requires PHP: 5.4
+Requires PHP: 5.5
 Tested up to: 6.7
 Stable tag: 2.0.7
 License: GPLv3 or later
@@ -24,6 +23,15 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 == Changelog ==
 
 = 2.0.7 =
+* New: Theme Option Updated.
+* Update: Theme Option updated.
+* Update: New Wishlist added.
+* New: Vayu Blocks added in recommended plugins.
+* New: Theme added in new imprter.
+* Update: Welcome tab style issue updated.
+* New: Twitter share button added. 
+* Update: Video tab removed.
+* Update: Theme tested with new importer.
 * Fix: Security Issue fixed.
 
 = 2.0.6 =
@@ -99,8 +107,8 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
 Initial release
 
 == Upgrade Notice ==
-= 2.0.5 =
-* Update: Theme made compatible with WordPress 6.6.
+= 2.0.7 =
+* New: Theme Option Updated.
 
 == Resources ==
  
