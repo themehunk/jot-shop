@@ -20,6 +20,20 @@ function jot_shop_custom_logo(){
    <?php  }
 }
 endif;
+
+if (!function_exists('jot_shop_get_image_alt_text')) {
+	function jot_shop_get_image_alt_text($image_url) {
+		$attachment_id = attachment_url_to_postid($image_url); // Get Attachment ID
+		
+		if ($attachment_id) {
+			$alt_text = get_post_meta($attachment_id, '_wp_attachment_image_alt', true); // Get ALT Text
+			return $alt_text ? $alt_text : 'No ALT text found';
+		}
+		
+		return '';
+	}
+	}
+
 /*********************/
 // Menu 
 /*********************/
@@ -240,33 +254,38 @@ $jot_shop_banner_layout     = get_theme_mod( 'jot_shop_banner_layout','bnr-two')
 // first
 $jot_shop_bnr_1_img     = get_theme_mod( 'jot_shop_bnr_1_img','');
 $jot_shop_bnr_1_url     = get_theme_mod( 'jot_shop_bnr_1_url','');
+$jot_shop_bnr_1_alt     = jot_shop_get_image_alt_text($jot_shop_bnr_1_img);
 // second
 $jot_shop_bnr_2_img     = get_theme_mod( 'jot_shop_bnr_2_img','');
 $jot_shop_bnr_2_url     = get_theme_mod( 'jot_shop_bnr_2_url','');
+$jot_shop_bnr_2_alt     = jot_shop_get_image_alt_text($jot_shop_bnr_2_img);
 // third
 $jot_shop_bnr_3_img     = get_theme_mod( 'jot_shop_bnr_3_img','');
 $jot_shop_bnr_3_url     = get_theme_mod( 'jot_shop_bnr_3_url','');
+$jot_shop_bnr_3_alt     = jot_shop_get_image_alt_text($jot_shop_bnr_3_img);
 // fouth
 $jot_shop_bnr_4_img     = get_theme_mod( 'jot_shop_bnr_4_img','');
 $jot_shop_bnr_4_url     = get_theme_mod( 'jot_shop_bnr_4_url','');
+$jot_shop_bnr_4_alt     = jot_shop_get_image_alt_text($jot_shop_bnr_4_img);
 // fifth
 $jot_shop_bnr_5_img     = get_theme_mod( 'jot_shop_bnr_5_img','');
 $jot_shop_bnr_5_url     = get_theme_mod( 'jot_shop_bnr_5_url','');
+$jot_shop_bnr_5_alt     = jot_shop_get_image_alt_text($jot_shop_bnr_5_img);
 
 if($jot_shop_banner_layout=='bnr-one'){?>
 <div class="thunk-banner-wrap bnr-layout-1 thnk-col-1">
  	 <div class="thunk-banner-col1">
- 	 	<div class="thunk-banner-col1-content"><a href="<?php echo esc_url($jot_shop_bnr_1_url);?>"><img src="<?php echo esc_url($jot_shop_bnr_1_img );?>"></a>
+ 	 	<div class="thunk-banner-col1-content"><a href="<?php echo esc_url($jot_shop_bnr_1_url);?>"><img src="<?php echo esc_url($jot_shop_bnr_1_img );?>" alt="<?php echo esc_attr($jot_shop_bnr_1_alt );?>"></a>
  	 	</div>
  	 </div>
   </div>
 <?php }elseif($jot_shop_banner_layout=='bnr-two'){?>
 <div class="thunk-banner-wrap bnr-layout-2 thnk-col-2">
  	 <div class="thunk-banner-col1">
- 	 	<div class="thunk-banner-col1-content"><a href="<?php echo esc_url($jot_shop_bnr_1_url);?>"><img src="<?php echo esc_url($jot_shop_bnr_1_img );?>"></a></div>
+ 	 	<div class="thunk-banner-col1-content"><a href="<?php echo esc_url($jot_shop_bnr_1_url);?>"><img src="<?php echo esc_url($jot_shop_bnr_1_img );?>" alt="<?php echo esc_attr($jot_shop_bnr_1_alt );?>"></a></div>
  	 </div>
  	 <div class="thunk-banner-col2">
- 	 	<div class="thunk-banner-col2-content"><a href="<?php echo esc_url($jot_shop_bnr_2_url);?>"><img src="<?php echo esc_url($jot_shop_bnr_2_img );?>"></a></div>
+ 	 	<div class="thunk-banner-col2-content"><a href="<?php echo esc_url($jot_shop_bnr_2_url);?>"><img src="<?php echo esc_url($jot_shop_bnr_2_img );?>" alt="<?php echo esc_attr($jot_shop_bnr_2_alt );?>"></a></div>
  	 </div>
   </div>
 
@@ -468,9 +487,6 @@ function jot_shop_top_slider_9_content( $jot_shop_slide_content_id, $default ){
 	endif;	
 }
 
-
-
-
 function jot_shop_top_slider_multi_content( $jot_shop_slide_content_id, $default ){
 //passing the seeting ID and Default Values
 	$jot_shop_slide_content = get_theme_mod( $jot_shop_slide_content_id, $default );
@@ -602,36 +618,36 @@ $class_original='';
 }
 $social.='<ul class="social-icon ' .esc_attr($class_original). ' ">';
 if($f_link = get_theme_mod('social_shop_link_facebook','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($f_link).'"><i class="fa fa-facebook"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($f_link).'" aria-label="facebook"><i class="fa fa-facebook"></i></a></li>';
 endif;
 if($l_link = get_theme_mod('social_shop_link_linkedin','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($l_link).'"><i class="fa fa-linkedin"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($l_link).'" aria-label="linkedin"><i class="fa fa-linkedin"></i></a></li>';
 endif;
 if($p_link = get_theme_mod('social_shop_link_pintrest','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($p_link).'"><i class="fa fa-pinterest"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($p_link).'" aria-label="pinterest"><i class="fa fa-pinterest"></i></a></li>';
 endif;
 if($t_link = get_theme_mod('social_shop_link_twitter','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($t_link).'"><i class="fa fa-twitter"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($t_link).'" aria-label="twitter"><i class="fa fa-twitter"></i></a></li>';
 endif;
 if($insta_link = get_theme_mod('social_shop_link_insta','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($insta_link).'"><i class="fa fa-instagram"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($insta_link).'" aria-label="instagram"><i class="fa fa-instagram"></i></a></li>';
 endif;
 if($tum_link = get_theme_mod('social_shop_link_tumblr','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($tum_link).'"><i class="fa fa-tumblr"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($tum_link).'" aria-label="tumblr"><i class="fa fa-tumblr"></i></a></li>';
 endif;
 if($y_link = get_theme_mod('social_shop_link_youtube','#')) :
-	$social.='<li><a target="_blank" href="'.esc_url($y_link).'"><i class="fa fa-youtube-play"></i></a></li>';
+	$social.='<li><a target="_blank" href="'.esc_url($y_link).'" aria-label="youtube"><i class="fa fa-youtube-play"></i></a></li>';
 endif;
 if($stumb_link = get_theme_mod('social_shop_link_stumbleupon','#')):
-	$social.='<li><a target="_blank" href="'.esc_url($stumb_link).'">
+	$social.='<li><a target="_blank" href="'.esc_url($stumb_link).'" aria-label="stumbleupon">
 	 <i class="fa fa-stumbleupon"></i></a></li>';
 endif;
 if($dribble_link = get_theme_mod('social_shop_link_dribble','#')):
-	$social.='<li><a target="_blank" href="'.esc_url($dribble_link).'">
+	$social.='<li><a target="_blank" href="'.esc_url($dribble_link).'" aria-label="dribble">
 	 <i class="fa fa-dribbble"></i></a></li>';
 endif;
 if($skype_link = get_theme_mod('social_shop_link_skype','#')):
-	$social.='<li><a target="_blank" href="'.esc_url($skype_link).'">
+	$social.='<li><a target="_blank" href="'.esc_url($skype_link).'" aria-label="skype">
 	 <i class="fa fa-skype"></i></a></li>';
 endif;
 $social.='</ul>';
