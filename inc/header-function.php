@@ -400,7 +400,7 @@ $offcanvas = get_theme_mod('jot_shop_canvas_alignment','cnv-none');
               <div class="header-support-icon">
 
                  <?php if( get_theme_mod('jot_shop_whislist_mobile_disable',false) != true && class_exists( 'YITH_WCWL' )){?>
-                <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
+                <a class="whishlist" aria-lebel="Wishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i class="th-icon th-icon-heartline"></span><span><?php _e('Wishlist','jot-shop');?></i></a>
       <?php } ?>
         
@@ -519,7 +519,7 @@ if($title_disable!='' || $tagline_disable!=''){
 if($title_disable!=''){ 
 ?>
 <div class="site-title"><span>
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-label="Site Title"><?php bloginfo( 'name' ); ?></a>
 </span>
 </div>
 <?php
@@ -557,15 +557,15 @@ function jot_shop_header_icon(){
 <div class="header-icon">
 <?php 
 if(get_theme_mod('jot_shop_main_header_layout')=='mhdrtwo'){?>
-                <a class="prd-search" href="#"><i class="th-icon th-icon-vector-search"></i></a> 
+                <a class="prd-search" aria-lebel="Search" href="#"><i class="th-icon th-icon-vector-search"></i></a> 
 <?php } 
 jot_shop_account();
 if( class_exists( 'WPCleverWoosw' )){?>
-  <a class="whishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>">
+  <a class="whishlist" aria-lebel="Wishlist" href="<?php echo esc_url( WPcleverWoosw::get_url() ); ?>">
         <i  class="fa fa-heart-o" aria-hidden="true"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
 <?php }
  if( class_exists( 'YITH_WCWL' )){?>
- <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
+ <a class="whishlist" aria-lebel="Wishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>">
         <i class="th-icon th-icon-heartline"></i><span class="tooltiptext"><?php echo esc_html('Wishlist','jot-shop');?></span></a>
       <?php } 
       ?>
@@ -641,11 +641,11 @@ add_action('jot_shop_site_preloader','jot_shop_preloader');
               <div class="thunk-icon">
         
                 <div class="header-icon">
-                  <a class="prd-search" href="#"><i class="th-icon th-icon-vector-search"></i></a>     
+                  <a class="prd-search" aria-lebel="Search" href="#"><i class="th-icon th-icon-vector-search"></i></a>     
                      <?php  
                     if( class_exists( 'YITH_WCWL' )){
                       ?>
-                      <a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i class="th-icon th-icon-heartline"></i></a>
+                      <a class="whishlist" aria-lebel="Wishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><i class="th-icon th-icon-heartline"></i></a>
                      <?php } 
                      if(class_exists( 'WooCommerce' )){
                         jot_shop_account();
@@ -691,7 +691,7 @@ function jotshop_mobile_navbar(){?>
     <li><a class="gethome" href="<?php echo esc_url( get_home_url() ); ?>"><span class="th-icon th-icon-home"></span></a></li>
      <?php 
     if( class_exists( 'YITH_WCWL' )){ ?>
-    <li><a class="whishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><span class="th-icon th-icon-heartline"></span></a></li>
+    <li><a class="whishlist" aria-lebel="Wishlist" href="<?php echo esc_url( jot_shop_whishlist_url() ); ?>"><span class="th-icon th-icon-heartline"></span></a></li>
     <?php } ?>
     <li>
             <a href="#" class="menu-btn" id="mob-menu-btn">           

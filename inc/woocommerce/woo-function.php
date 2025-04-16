@@ -382,10 +382,10 @@ function jot_shop_compare_wishlist_check($pid=''){
 /** My Account Menu **/
 function jot_shop_account(){
  if ( is_user_logged_in() ){
-  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-user"></i><span class="tooltiptext">'.__('Account','jot-shop').'</span></a>';
+  $return = '<a class="account" aria-label="Account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-user"></i><span class="tooltiptext">'.__('Account','jot-shop').'</span></a>';
   } 
  else {
-  $return = '<a class="account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-lock1"></i><span class="tooltiptext">'.__('Register','jot-shop').'</span></a>';
+  $return = '<a class="account" aria-label="Account" href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"><i class="th-icon th-icon-lock1"></i><span class="tooltiptext">'.__('Register','jot-shop').'</span></a>';
 }
  echo $return;
  }

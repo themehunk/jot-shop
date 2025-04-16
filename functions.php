@@ -11,7 +11,7 @@
  * Theme functions and definitions
  */
 if ( ! function_exists( 'jot_shop_setup' ) ) :
-define( 'JOT_SHOP_THEME_VERSION','2.0.7');
+define( 'JOT_SHOP_THEME_VERSION','2.0.8');
 define( 'JOT_SHOP_THEME_DIR', get_template_directory() . '/' );
 define( 'JOT_SHOP_THEME_URI', get_template_directory_uri() . '/' );
 define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
