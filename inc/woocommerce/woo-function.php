@@ -370,7 +370,7 @@ function jot_shop_whish_list($pid = ''){
            if ( shortcode_exists( 'thwl_add_to_wishlist' ) ) { ?>
               <div class="thunk-wishlist">
                 <span class="thunk-wishlist-inner">
-                  <?= do_shortcode('[thwl_add_to_wishlist 
+                  <?php echo do_shortcode('[thwl_add_to_wishlist 
                     product_id="' . esc_attr($product_id) . '" 
                     add_icon="th-icon th-icon-heart1" 
                     add_text="" 

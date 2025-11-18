@@ -8414,6 +8414,13 @@ line-height: 25px;
 .thunk-product .thw-add-to-wishlist-button.loading{
   opacity: 1;
 }
+.thunk-product-hover .thunk-compare{
+  margin: 0;
+}
+.wp-block-woocommerce-checkout,
+.wp-block-woocommerce-cart{
+  font-size: 16px;
+}
 @media screen and (max-width: 1200px){
 /*hedaer*/
   .below-header-col2{
