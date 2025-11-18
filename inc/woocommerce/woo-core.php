@@ -173,6 +173,8 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 		 * @return array;
 		 */
 		function jot_shop_post_class( $classes ){
+			 // Only run inside WooCommerce product loops (shop, archive, related, upsell, cross-sell)
+    if ( !( is_product() && function_exists( 'wc_get_loop_prop' ) && !wc_get_loop_prop( 'name' ) )) {
 			if (!jot_shop_is_blog()|| is_shop() || is_product_taxonomy() || post_type_exists( 'product' )){
                 $classes[] = 'thunk-woo-product-list';
 				$qv_enable = get_theme_mod( 'jot_shop_woo_quickview_enable',true);
@@ -226,6 +228,7 @@ if ( ! class_exists( 'Jot_Shop_Pro_Woocommerce_Ext' ) ) :
 			}
 		
 		   }
+		}
 			return $classes;
 		}
 		/**

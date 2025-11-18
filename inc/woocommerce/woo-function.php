@@ -260,6 +260,13 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 remove_action('woocommerce_init','th_compare_add_action_shop_list');
 //To disable th compare Pro button 
 remove_action('woocommerce_init', 'tpcp_add_action_shop_list');
+
+// To disable Wishlist button for loop button at shop page
+remove_action( 'wp', 'thwl_hook_wishlist_loop_button_position');
+
+// To disable Wishlist button for loop button at single page
+// remove_action( 'wp', 'thwl_hook_wishlist_single_button_position');
+
 /***************/
 // single page
 /***************/
@@ -330,13 +337,12 @@ echo '</div>';
 // add to compare
 /****************/
 function jot_shop_add_to_compare_fltr($pid = ''){
-      if (is_shop()) {
         global $product;
         $product_id='';
         if(!empty($product)){    
         $product_id = $product->get_id();
         }
-      } else{
+       else{
         $product_id = $pid;
       }
       
@@ -353,15 +359,59 @@ function jot_shop_add_to_compare_fltr($pid = ''){
 /** wishlist **/
 /**********************/
 function jot_shop_whish_list($pid = ''){
-       if( shortcode_exists( 'yith_wcwl_add_to_wishlist' )){
-       echo '<div class="thunk-wishlist"><span class="thunk-wishlist-inner">'.do_shortcode('[yith_wcwl_add_to_wishlist product_id='.$pid.' icon="th-icon th-icon-heart1" label='.__('wishlist','jot-shop').' already_in_wishslist_text='.__('Already','jot-shop').' browse_wishlist_text='.__('Added','jot-shop').']' ).'</span></div>';
-       }
+        global $product;
+        $product_id='';
+        if(!empty($product)){    
+        $product_id = $product->get_id();
+        }
+       else{
+        $product_id = $pid;
+      }
+           if ( shortcode_exists( 'thwl_add_to_wishlist' ) ) { ?>
+              <div class="thunk-wishlist">
+                <span class="thunk-wishlist-inner">
+                  <?php echo do_shortcode('[thwl_add_to_wishlist 
+                    product_id="' . esc_attr($product_id) . '" 
+                    add_icon="th-icon th-icon-heart1" 
+                    add_text="" 
+                    add_browse_icon="th-icon th-icon-favorite"
+                    browse_text=""
+                    theme_style="yes"
+                    icon_style="icon_only_no_style"
+                    custom_class="th-wishlist-integrated"
+                  ]'); ?>
+                </span>
+              </div>
+        <?php } elseif ( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) ) { ?>
+          <div class="thunk-wishlist">
+  <span class="thunk-wishlist-inner">
+    <?php
+      echo do_shortcode(
+        '[yith_wcwl_add_to_wishlist 
+          product_id="' . esc_attr($product_id) . '" 
+          icon="th-icon th-icon-heart1" 
+          label="' . esc_html__('wishlist', 'jot-shop') . '" 
+          already_in_wishslist_text="' . esc_html__('Already', 'jot-shop') . '" 
+          browse_wishlist_text="' . esc_html__('Added', 'jot-shop') . '"]'
+      );
+    ?>
+  </span>
+</div>
+
+        <?php }
  } 
 
 function jot_shop_whishlist_url(){
-$wishlist_page_id =  get_option( 'yith_wcwl_wishlist_page_id' );
-$wishlist_permalink = get_the_permalink( $wishlist_page_id );
-return $wishlist_permalink ;
+  $wishlist_page_id = '';
+        
+if (class_exists( 'THWL_Wishlist' )) {
+  $wishlist_page_id =  get_option( 'thwl_page_id' );
+        }
+elseif( class_exists( 'YITH_WCWL' ) ){
+  $wishlist_page_id =  get_option( 'yith_wcwl_wishlist_page_id' );
+}
+$wishlist_permalink = get_the_permalink($wishlist_page_id);
+  return $wishlist_permalink;
 } 
 
 
