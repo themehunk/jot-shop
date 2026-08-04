@@ -112,6 +112,11 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
                  'img' => 'icon-128x128.png',
                 'active_filename' => 'themehunk-customizer/themehunk-customizer.php',
             ),
+            'th-store-one' => array(
+				'name' => esc_html__( 'TH Store One', 'jot-shop' ),
+				'img' => 'icon-128x128.png',
+				'active_filename' => 'th-store-one/th-store-one.php',
+				),
             'vayu-blocks' => array(
 				'name' => esc_html__( 'Vayu blocks For Gutenberg', 'jot-shop' ),
 				'img' => 'icon-128x128.png',
@@ -139,7 +144,7 @@ define( 'JOT_SHOP_THEME_SETTINGS', 'jot-shop-settings' );
 				),
             'lead-form-builder' => array(
                 'name' => esc_html__( 'Lead Form Builder', 'jot-shop' ),
-                 'img' => 'icon-128x128.png',
+                 'img' => 'icon-128x128.gif',
                 'active_filename' => 'lead-form-builder/lead-form-builder.php',
             ),
             'th-variation-swatches' => array(

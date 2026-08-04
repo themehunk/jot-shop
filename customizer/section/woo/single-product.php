@@ -7,7 +7,7 @@ if ( ! class_exists( 'WooCommerce' ) ){
     return;
 }
 $wp_customize->add_setting( 'jot_shop_product_single_sidebar_disable', array(
-                'default'               => false,
+                'default'               => true,
                 'sanitize_callback'     => 'jot_shop_sanitize_checkbox',
             ) );
 $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'jot_shop_product_single_sidebar_disable', array(
